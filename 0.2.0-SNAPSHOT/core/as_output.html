@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span> Convert to Output </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Codec
+    import scalax.io.Output._
+
+    implicit val codec = Codec.UTF8
+
+    new java.io.File(&quot;io&quot;).asOutput.write(&quot;hi file&quot;)
+  </pre></div>
+</span>

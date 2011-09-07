@@ -1,0 +1,10 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+      import scalax.file.{Path, PathMatcher}
+      import scalax.file.PathMatcher._
+
+      val path:Path = Path(&quot;/tmp/&quot;)
+      val fileCount: Int = path.children ().collect{case IsFile (f)=&gt; f}.foldLeft (0){(count, _) =&gt; count+1}
+    </pre></div>
+</span>

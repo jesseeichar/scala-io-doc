@@ -1,0 +1,37 @@
+<span>
+    <div class="example_summary"><span><span> Create new paths relative to another path </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path(&quot;file&quot;)
+
+    // if path is a directory then you can use the \
+    // methods to make a new path based on that directory
+    val child1: Path = path \ &quot;childFile&quot;
+    val child3: Path = path \ &quot;dir1&quot; \ &quot;f3&quot;
+    val child4: Path = path \ Path(&quot;f4&quot;)
+    val child5: Path = path \ Path(&quot;dir2&quot;) \ Path(&quot;f5&quot;)
+    val child6: Path = path / Path(&quot;dir2&quot;, &quot;f5&quot;)
+    val child7: Path = path / &quot;dir2&quot; / &quot;f5&quot;
+
+    // if on windows
+    val child8: Path = Path(&quot;c:&quot;) / &quot;dir2&quot; / &quot;f5&quot;
+    val child9: Path = Path(&quot;c:&quot;) \ &quot;dir2&quot; \ &quot;f5&quot;
+    val child10: Path = Path(&quot;c:&quot;, &quot;dir2&quot;, &quot;f5&quot;)
+
+    // the resolve methods is essentially an alias for \ for those
+    // who are uncomfortable with operator type methods.  Also to
+    // maintain a familiar feel with NIO Path
+    val child11: Path = path.resolve(&quot;child&quot;)
+    val child12: Path = path.resolve(Path(&quot;child&quot;, &quot;grandchild&quot;))
+
+    // make a Path relative to another path
+    // This should result in path &quot;child&quot;
+    val relative: Path = path.relativize(Path(&quot;file&quot;, &quot;child&quot;))
+
+    // Parent paths and root of the current path
+    val parent: Option[Path] = path.parent
+    val parents: List[Path] = path.parents
+    val root: Option[Path] = path.root
+  </pre></div>
+</span>

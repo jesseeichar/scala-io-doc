@@ -1,0 +1,26 @@
+<span>
+    <div class="example_summary"><span><span> A discouraged method of creating Scala IO objects from java objects </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+
+    val reader = new StringReader(&quot;hello&quot;)
+    // the fromReader method is passed a reference to a reader
+    // this means the Resource can only be used a single time
+    // only do this if you are passed a resource from a method and have
+    // no way of constructing the resource within the fromReader method.
+    val in = Resource.fromReader(reader)
+
+    val numVowels = in.chars.filter(&quot;aeiou&quot; contains _).size
+
+    // *BOOM!* the second use will result in an exception because
+    // Resource does not have access to the construction of the reader
+    // just the reference to a previously created reader
+    val numNumbers = in.chars.filter('0' to '9' contains _)
+
+    // If you need a code block to construct the resource consider the following pattern:
+    val in2 = Resource.fromReader {
+      val string = &quot;hello&quot;
+      new StringReader(string)
+    }
+  </pre></div>
+</span>

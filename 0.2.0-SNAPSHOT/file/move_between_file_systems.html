@@ -1,0 +1,13 @@
+<span>
+    <div class="example_summary"><span><span> Move a file from one filesystem to another </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file._
+    import ramfs.RamFileSystem
+
+    val fs = RamFileSystem()
+    val ramPath = fs(&quot;/&quot;,&quot;tmp&quot;)
+    val path = Path(&quot;file&quot;)  // default filesystem
+
+    path.moveTo(ramPath)
+  </pre></div>
+</span>

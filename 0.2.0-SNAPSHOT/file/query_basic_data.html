@@ -1,0 +1,43 @@
+<span>
+    <div class="example_summary"><span><span> Query paths for basic information such as readable/writable, size etc...  </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    import java.net.{URI,URL}
+
+    val path: Path = Path(&quot;file&quot;)
+    // There are two ways to query about the access mode of the underlying
+    // path object.  One is similar to the java.file.File.  The other is based
+    // a single query to test several attributes at once.
+
+    // first the java.file.File way
+    val executable: Boolean = path.canExecute
+    val readable: Boolean = path.canRead
+    val writable: Boolean = path.canWrite
+
+    // next check if file is read and write
+
+    import Path.AccessModes._
+
+    val readWrite: Boolean = path.checkAccess(Read, Write)
+
+    val uri: URI = path.toURI
+    val url: URL = path.toURL
+
+    val exists: Boolean = path.exists
+    val notExists: Boolean = path.nonExistent
+
+    val hidden: Boolean = path.isHidden
+    val isSymLink: Boolean = path.isSymlink
+
+    // query last modified information
+    val lastModified: Long = path.lastModified
+    path.lastModified = System.currentTimeMillis
+
+    val length = path.size
+
+    // A way to test if path is a file/directory without using the matchers
+    val isFile: Boolean = path.isFile
+    val isDirectory: Boolean = path.isDirectory
+
+  </pre></div>
+</span>

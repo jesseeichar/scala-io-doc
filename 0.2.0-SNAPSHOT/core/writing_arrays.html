@@ -1,0 +1,12 @@
+<span>
+    <div class="example_summary"><span><span> Writing Arrays is a special situation because of how Java and Scala use arrays.  For performance Scala uses the Java Array object and coerces them into Traversable objects when the Scala collections methods are needed.  However the implicit resolution will not choose a TraversableConverter.  Fortunately Scala IO provides several Converters for converting Arrays to bytes.  <p> The point of this example is explain that if one is creating a custom converter he will have to consider creating both a OutputConverter[Traversable[_]] as well as a OutputConverter[Array[_]]</p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Resource._
+
+    val out = fromFile(&quot;out&quot;)
+    out.write(Array(1,2,3,4))(OutputConverter.IntAsByteArrayConverter)
+    out.write(Array(1,2,3,4))
+
+  </pre></div>
+</span>

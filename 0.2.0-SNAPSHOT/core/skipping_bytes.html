@@ -1,0 +1,16 @@
+<span>
+    <div class="example_summary"><span><span> How to skip the first X bytes.  </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val in:Input = Resource.fromURL(&quot;file://someFile&quot;)
+
+    // Skip the first 10 bytes.  If underlying resource supports it the
+    // bytes will not be read
+    // Remember resource is lazy as of assignment resource has not yet been opened
+    val restOfBytes = in.bytes.drop(10)
+
+    // After assignment of ''string'' the resource has been opened and processed
+    val string = new String(restOfBytes.toArray)
+  </pre></div>
+</span>

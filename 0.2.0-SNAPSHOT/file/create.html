@@ -1,0 +1,22 @@
+<span>
+    <div class="example_summary"><span><span> Create files and directories </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path (&quot;/tmp/file&quot;)
+
+    // create file but fail if the file already exists.
+    // an exception may be thrown
+    path.createFile()
+
+    // force create a file will fail if it is a directory which
+    // contain children
+    path.createFile(failIfExists=false)
+
+    // TODO createFile with attributes
+
+    // create a directory at the path location
+    path.createDirectory()
+    path.createDirectory(failIfExists=false)
+  </pre></div>
+</span>

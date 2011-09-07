@@ -1,0 +1,25 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{Path, FileSystem}
+    // first use default param to indicate defaultFileSystem
+    val path1: Path = Path (&quot;/tmp/file1&quot;)
+
+    // include windows examples for completeness
+    val path2: Path = Path (&quot;file://c:/tmp/file2&quot;)
+    val path3: Path = Path (&quot;file://c:\\tmp\\file3&quot;)
+
+    //now explicitly state the filesystem
+    val path4: Path = Path (&quot;/tmp/file4&quot;)(FileSystem.default)
+
+    // or declare an implicit val so it can be reused (this is bot really
+    // required since the default paramter is the default filesystem but
+    // it illustrates how another filesystem can be used
+    implicit val fs = FileSystem.default
+    // fs will now be used to create the path
+    val path5: Path = Path (&quot;/tmp/file5&quot;)
+
+    // a filesystem can also be used to create Paths
+    val path6: Path = fs (&quot;/tmp/file6&quot;)
+  </pre></div>
+</span>

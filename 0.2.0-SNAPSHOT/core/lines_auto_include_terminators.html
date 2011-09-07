@@ -1,0 +1,10 @@
+<span>
+    <div class="example_summary"><span><span> Explicitly declare line ending as AutoDetect and include terminator </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Line.Terminators.Auto
+
+    val lines = Resource.fromFile(&quot;file&quot;).lines(Auto(),true)
+    println(lines.size)
+  </pre></div>
+</span>
