@@ -264,7 +264,7 @@ a stream of known length into memory.
         <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a></span>)</span><span class="result">: ResourceView[<span name="scala.Char" class="extype">Char</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.$</p><p>If the codec is not the same as the source codec (the codec of
+      <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.</p><p>If the codec is not the same as the source codec (the codec of
 the underlying data) then the characters will converted to the
 desired codec.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
@@ -286,21 +286,26 @@ desired codec.
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#copyData" data-isabs="false">
-      <a id="copyData(Output):Unit"></a>
+    </li><li visbl="pub" name="scalax.io.InputResource#copyDataTo" data-isabs="false">
+      <a id="copyDataTo(Output,Boolean):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">copyData</span>
+        <span class="name">copyDataTo</span>
         
-        <span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></span>, <span name="finalize">finalize: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
-as efficiently as possible.
-</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
+as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to</p></dd><dt class="param">finalize</dt><dd class="cmt"><p>do not forward request to output's copyFrom method.
+				 Often only one end of the transaction will know how to efficiently transfer
+				 data so a common pattern is to check the output and see if the
+				 type of the Output object is a known type.  If not then the
+				 output object will be sent the request.  However, to prevent
+				 an infinite loop the finalize will be set to true so the request
+				 is not then forwarded back to copyTo
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -593,13 +598,11 @@ number of bytes in advance.
       <span class="symbol"> 
         <span class="name">slurpString</span>
         
-        <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: String</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads all the characters into memory.</p><div class="fullcomment"><div class="comment cmt"><p>Loads all the characters into memory. There is no protection against
-loading very large files/amounts of data.</p><p>If the codec is not the same as the source codec (the codec of
-the underlying data) then the characters will converted to the
-desired codec.
+loading very large files/amounts of data.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
          The codec representing the desired encoding of the characters
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>

@@ -121,13 +121,13 @@ override the default values.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scalax.io.Buffers#BufferSize" data-isabs="false">
-      <a id="BufferSize:Int(8192)"></a>
+      <a id="BufferSize:Int(4096)"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">BufferSize</span>
         
-        <span class="result">: Int(8192)</span>
+        <span class="result">: Int(4096)</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd></dl></div>
@@ -142,6 +142,17 @@ override the default values.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.Buffers#arrayBuffer" data-isabs="false">
+      <a id="arrayBuffer(Option[Long]):Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">arrayBuffer</span>
+        
+        <span class="params">(<span name="size">size: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>)</span><span class="result">: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Byte" class="extype">Byte</span>]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -247,17 +258,6 @@ override the default values.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Buffers#inputStreamBuffer" data-isabs="false">
-      <a id="inputStreamBuffer:Array[Byte]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">inputStreamBuffer</span>
-        
-        <span class="result">: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Byte" class="extype">Byte</span>]</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -280,6 +280,28 @@ override the default values.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.Buffers#nioByteBuffer" data-isabs="false">
+      <a id="nioByteBuffer(Option[Long]):ByteBuffer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">nioByteBuffer</span>
+        
+        <span class="params">(<span name="size">size: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>)</span><span class="result">: <span name="java.nio.ByteBuffer" class="extype">ByteBuffer</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scalax.io.Buffers#nioDirectBuffer" data-isabs="false">
+      <a id="nioDirectBuffer(Option[Long]):ByteBuffer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">nioDirectBuffer</span>
+        
+        <span class="params">(<span name="size">size: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>)</span><span class="result">: <span name="java.nio.ByteBuffer" class="extype">ByteBuffer</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">

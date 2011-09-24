@@ -105,21 +105,7 @@ catcher {
     </li></ol>
             </div>
 
-        <div class="types members" id="types">
-              <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.io.Seekable#OpenSeekable" data-isabs="false">
-      <a id="OpenSeekable:OpenSeekable"></a>
-      <h4 class="signature">
-      <span class="kind">type</span>
-      <span class="symbol"> 
-        <span class="name">OpenSeekable</span>
         
-        <span class="result"> = <a name="scalax.io.Seekable" class="extype" href="../io/Seekable.html">Seekable</a> { ... /* 2 definitions in type refinement */ }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="../io/Seekable.html">Seekable</a></dd></dl></div>
-    </li></ol>
-            </div>
         
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
@@ -409,7 +395,7 @@ It is recommended that those javadocs are read and the warnings present in those
 a stream of known length into memory.</p><div class="fullcomment"><div class="comment cmt"><p>This method aspires to be the fastest way to read
 a stream of known length into memory.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#bytes" data-isabs="false">
+    </li><li visbl="pub" name="scalax.file.FileOps#bytes" data-isabs="false">
       <a id="bytes:ResourceView[Byte]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -421,7 +407,7 @@ a stream of known length into memory.
       </h4>
       <p class="shortcomment cmt">Obtains a Traversable for conveniently processing the resource as bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a Traversable for conveniently processing the resource as bytes.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an non-strict traversable over all the bytes
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.FileOps" class="extype" href="">FileOps</a> → <a name="scalax.io.Seekable" class="extype" href="../io/Seekable.html">Seekable</a> → <a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileOps#bytesAsInts" data-isabs="false">
       <a id="bytesAsInts:ResourceView[Int]"></a>
       <h4 class="signature">
@@ -445,7 +431,7 @@ a stream of known length into memory.
         <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="../io/Codec.html">Codec</a></span>)</span><span class="result">: ResourceView[<span name="scala.Char" class="extype">Char</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.$</p><p>If the codec is not the same as the source codec (the codec of
+      <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.</p><p>If the codec is not the same as the source codec (the codec of
 the underlying data) then the characters will converted to the
 desired codec.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
@@ -467,20 +453,46 @@ desired codec.
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#copyData" data-isabs="false">
-      <a id="copyData(Output):Unit"></a>
+    </li><li visbl="pub" name="scalax.io.Output#copyDataFrom" data-isabs="false">
+      <a id="copyDataFrom(Input,Boolean):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">copyData</span>
+        <span class="name">copyDataFrom</span>
         
-        <span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="../io/Output.html">Output</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="input">input: <a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></span>, <span name="finalize">finalize: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Copy data from an input to this output.</p><div class="fullcomment"><div class="comment cmt"><p>Copy data from an input to this output.  Input will call this method from copyTo if
+it does not know how to efficiently copy the data.  This method thus will copy as effiently as
+possible and if all else fails simply write the bytes
+</p></div><dl class="paramcmts block"><dt class="param">input</dt><dd class="cmt"><p>the source to read data from</p></dd><dt class="param">finalize</dt><dd class="cmt"><p>do not forward request to input's copyTo method.
+				 Often only one end of the transaction will know how to efficiently transfer
+				 data so a common pattern is to check the input and see if the
+				 type of the Input object is a known type.  If not then the
+				 input object will be sent the request.  However, to prevent
+				 an infinite loop the finalize will be set to true so the request
+				 is not then forwarded back to copyFrom
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="../io/Output.html">Output</a></dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.Input#copyDataTo" data-isabs="false">
+      <a id="copyDataTo(Output,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">copyDataTo</span>
+        
+        <span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="../io/Output.html">Output</a></span>, <span name="finalize">finalize: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
-as efficiently as possible.
-</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
+as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to</p></dd><dt class="param">finalize</dt><dd class="cmt"><p>do not forward request to output's copyFrom method.
+				 Often only one end of the transaction will know how to efficiently transfer
+				 data so a common pattern is to check the output and see if the
+				 type of the Output object is a known type.  If not then the
+				 output object will be sent the request.  However, to prevent
+				 an infinite loop the finalize will be set to true so the request
+				 is not then forwarded back to copyTo
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
@@ -798,13 +810,11 @@ then the write will begin at the first byte of the file.
       <span class="symbol"> 
         <span class="name">slurpString</span>
         
-        <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="../io/Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="../io/Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: String</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="../io/Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="../io/Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads all the characters into memory.</p><div class="fullcomment"><div class="comment cmt"><p>Loads all the characters into memory. There is no protection against
-loading very large files/amounts of data.</p><p>If the codec is not the same as the source codec (the codec of
-the underlying data) then the characters will converted to the
-desired codec.
+loading very large files/amounts of data.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
          The codec representing the desired encoding of the characters
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="../io/Input.html">Input</a></dd></dl></div>

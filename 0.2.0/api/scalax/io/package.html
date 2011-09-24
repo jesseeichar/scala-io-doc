@@ -48,7 +48,18 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.io.ArrayBufferSeekableChannel" data-isabs="false">
+              <ol><li visbl="pub" name="scalax.io.Adapter" data-isabs="true">
+      <a id="Adapter:Adapter[S]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Adapter.html"><span class="name">Adapter</span></a>
+        <span class="tparams">[<span name="S">+S</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Supporting classes for converting between resource types.</p>
+    </li><li visbl="pub" name="scalax.io.ArrayBufferSeekableChannel" data-isabs="false">
       <a id="ArrayBufferSeekableChannel:ArrayBufferSeekableChannel"></a>
       <h4 class="signature">
       <span class="kind">class</span>
@@ -56,17 +67,6 @@
         <a href="ArrayBufferSeekableChannel.html"><span class="name">ArrayBufferSeekableChannel</span></a>
         
         <span class="result"> extends SeekableByteChannel</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" name="scalax.io.ArrayIterator" data-isabs="false">
-      <a id="ArrayIterator:ArrayIterator[A]"></a>
-      <h4 class="signature">
-      <span class="kind">class</span>
-      <span class="symbol"> 
-        <a href="ArrayIterator.html"><span class="name">ArrayIterator</span></a>
-        <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="result"> extends Iterator[A]</span>
       </span>
       </h4>
       
@@ -273,17 +273,6 @@ require Longs for indexing.</p>
       </span>
       </h4>
       <p class="comment cmt">The actual <a name="scalax.io.LongTraversableView" class="extype" href="LongTraversableView.html">LongTraversableView</a> implementations.</p>
-    </li><li visbl="pub" name="scalax.io.NioByteBufferIterator" data-isabs="false">
-      <a id="NioByteBufferIterator:NioByteBufferIterator"></a>
-      <h4 class="signature">
-      <span class="kind">class</span>
-      <span class="symbol"> 
-        <a href="NioByteBufferIterator.html"><span class="name">NioByteBufferIterator</span></a>
-        
-        <span class="result"> extends Iterator[Byte]</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scalax.io.OpenOption" data-isabs="true">
       <a id="OpenOption:OpenOption"></a>
       <h4 class="signature">
@@ -297,6 +286,17 @@ require Longs for indexing.</p>
       <p class="comment cmt">A flag interface for indicating that the object
 represents a filesystem dependent option for opening
 a file.</p>
+    </li><li visbl="pub" name="scalax.io.package#OpenSeekable" data-isabs="false">
+      <a id="OpenSeekable:OpenSeekable"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">OpenSeekable</span>
+        
+        <span class="result"> = <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.OpenedResource" data-isabs="true">
       <a id="OpenedResource:OpenedResource[R]"></a>
       <h4 class="signature">
@@ -772,6 +772,17 @@ is to make the type signatures easier to read
       </span>
       </h4>
       <p class="comment cmt">Several options that are supported by most filesystems.</p>
+    </li><li visbl="pub" name="scalax.io.extractor" data-isabs="false">
+      <a id="extractor:extractor"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="extractor/package.html"><span class="name">extractor</span></a>
+        
+        
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scalax.io.nio" data-isabs="false">
       <a id="nio:nio"></a>
       <h4 class="signature">

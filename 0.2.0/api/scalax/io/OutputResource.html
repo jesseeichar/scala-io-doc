@@ -316,6 +316,27 @@ val calculatedResult = resource.acquireAndGet {
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.OutputResource#copyDataFrom" data-isabs="false">
+      <a id="copyDataFrom(Input,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">copyDataFrom</span>
+        
+        <span class="params">(<span name="input">input: <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></span>, <span name="finalize">finalize: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Copy data from an input to this output.</p><div class="fullcomment"><div class="comment cmt"><p>Copy data from an input to this output.  Input will call this method from copyTo if
+it does not know how to efficiently copy the data.  This method thus will copy as effiently as
+possible and if all else fails simply write the bytes
+</p></div><dl class="paramcmts block"><dt class="param">input</dt><dd class="cmt"><p>the source to read data from</p></dd><dt class="param">finalize</dt><dd class="cmt"><p>do not forward request to input's copyTo method.
+				 Often only one end of the transaction will know how to efficiently transfer
+				 data so a common pattern is to check the input and see if the
+				 type of the Input object is a known type.  If not then the
+				 input object will be sent the request.  However, to prevent
+				 an infinite loop the finalize will be set to true so the request
+				 is not then forwarded back to copyFrom
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="">OutputResource</a> → <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">

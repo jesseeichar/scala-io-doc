@@ -58,18 +58,7 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="prt" name="scalax.io.ResourceAdapting.Adapter" data-isabs="true">
-      <a id="Adapter:Adapter[S]"></a>
-      <h4 class="signature">
-      <span class="kind">trait</span>
-      <span class="symbol"> 
-        <a href="ResourceAdapting$$Adapter.html"><span class="name">Adapter</span></a>
-        <span class="tparams">[<span name="S">+S</span>]</span>
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Supporting classes for converting between resource types.</p>
-    </li><li visbl="prt" name="scalax.io.ResourceAdapting.ChannelInputStreamAdapter" data-isabs="false">
+              <ol><li visbl="prt" name="scalax.io.ResourceAdapting.ChannelInputStreamAdapter" data-isabs="false">
       <a id="ChannelInputStreamAdapter:ChannelInputStreamAdapter[In]"></a>
       <h4 class="signature">
       <span class="kind">class</span>
@@ -229,7 +218,7 @@
       <span class="symbol"> 
         <span class="name">closeAction</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="src">src: <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>[A]</span>)</span><span class="result">: <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>[<a name="scalax.io.ResourceAdapting.Adapter" class="extype" href="ResourceAdapting$$Adapter.html">Adapter</a>[A]]</span>
+        <span class="params">(<span name="src">src: <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>[A]</span>)</span><span class="result">: <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>[<a name="scalax.io.Adapter" class="extype" href="Adapter.html">Adapter</a>[A]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates a CloseAction that is an bridge/adapter of a CloseAction
@@ -237,7 +226,7 @@ based on Resource[S] to so it works work on a Resource[C] that is
 also a ResourceAdapting.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a CloseAction that is an bridge/adapter of a CloseAction
 based on Resource[S] to so it works work on a Resource[C] that is
 also a ResourceAdapting.Adapter[S]
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>[scalax.io.ResourceAdapting.Adapter]
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>[scalax.io.Adapter]
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
