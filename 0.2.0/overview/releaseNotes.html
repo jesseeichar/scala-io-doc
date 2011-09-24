@@ -1,0 +1,19 @@
+The major changes are:
+<ul>
+	<li>Bug fixes</li>
+	<li>Several sequence type operations added to LongTraversable (like apply, zip, containsSlice, indexOf, sameElements, sliding, etc...)</li>
+	<li>the method limitFold has been added so that arbitrary sections of a LongTraversable can be read</li>
+	<li>copyData for copying data between and Input and an Output object</li>
+	<li>Lots and Lots of performance improvements.</li>
+</ul>
+<p>
+A word about the performance.  Most of the operations are based on the LongTraversable which has 2 major performance impacts 
+<ol>
+	<li>LongTraversable is not specialized for Bytes so there is a lot of autoboxing that takes place</li>
+	<li>Function1 is not specialized for Bytes so even if LongTraversable is specialized the boxing will still be an issue because of Function1.</li>
+</ol>
+</p><p>
+The focus of 0.3.0 will be find a solution to these two issues.  
+</p><p>
+That said the performance compared to 0.1.x and 0.2.0-SNAPSHOT is improved by often 1000x or more and can be considered quite useable for many applications but because of the technical challenges the API may have to be changed.  We will see.
+</p>
