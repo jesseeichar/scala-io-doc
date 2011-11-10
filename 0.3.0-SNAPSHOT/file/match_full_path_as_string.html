@@ -1,0 +1,14 @@
+<span>
+    <div class="example_summary"><span><span> Match a Path against the full path as a string </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    Path(&quot;/tmp/file&quot;) match {
+      case Path(&quot;/tmp/file&quot;) =&gt; println(&quot;it's a match&quot;)
+      case _ =&gt; println(&quot;no match&quot;)
+    }
+    Path(&quot;/tmp/file&quot;) match {
+      case Path(stringPath) =&gt; println(&quot;path as a string is:&quot; + stringPath)
+      case _ =&gt; println(&quot;no match&quot;)
+    }
+  </pre></div>
+</span>

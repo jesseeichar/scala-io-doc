@@ -1,0 +1,40 @@
+<span>
+    <div class="example_summary"><span><span> several examples of writing data </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource._
+    import java.io.File
+    import scalax.io.{Seekable,Codec}
+    // see codec example for why codec is required
+    implicit val codec = Codec.UTF8
+
+    val someFile: Seekable = fromFile(&quot;someFile&quot;)
+
+    // write bytes
+    // By default the file write will replace
+    // an existing file with the new data
+    someFile.write (Array (1,2,3) map ( _.toByte))
+
+    // another option for write is openOptions which allows the caller
+    // to specify in detail how the write should take place
+    // the openOptions parameter takes a collections of OpenOptions objects
+    // which are filesystem specific in general but the standard options
+    // are defined in the OpenOption object
+    // in addition to the definition common collections are also defined
+    // WriteAppend for example is a List(Create, Append, Write)
+    someFile.write (List (1,2,3) map (_.toByte))
+
+    // write a string to the file
+    someFile.write(&quot;Hello my dear file&quot;)
+
+    // with all options (these are the default options explicitely declared)
+    someFile.write(&quot;Hello my dear file&quot;)(codec = Codec.UTF8)
+
+    // Convert several strings to the file
+    // same options fromString as for write
+    someFile.writeStrings( &quot;It costs&quot; :: &quot;one&quot; :: &quot;dollar&quot; :: Nil)
+
+    // Now all options
+    someFile.writeStrings(&quot;It costs&quot; :: &quot;one&quot; :: &quot;dollar&quot; :: Nil,
+                    separator=&quot;||\n||&quot;)(codec = Codec.UTF8)
+  </pre></div>
+</span>

@@ -1,0 +1,15 @@
+<span>
+    <div class="example_summary"><span><span> when several operation need to be performed on a file it is often more performant to execute them within an function passed to the open method this is because the underlying filesystem has options for optimizing the use of the file channels for example a file could be mapped into memory for the duration of the function and all operations could be performed using the same channel object </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{FileOps, Path}
+    // see codec examples in scala io core for details on why there is an implicit codec here
+    implicit val codec = scalax.io.Codec.UTF8
+
+    val file: FileOps =  Path (&quot;file&quot;)
+
+    file.open()( f =&gt; {
+      val s = f.slurpString
+      file.write(s.replaceAll(&quot;l&quot;, &quot;L&quot;))
+    })
+  </pre></div>
+</span>

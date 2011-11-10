@@ -1,0 +1,15 @@
+<span>
+    <div class="example_summary"><span><span> Operate on all children </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{Path, PathMatcher }
+    import scalax.file.PathMatcher._
+
+    val path: Path = Path(&quot;/tmp/&quot;)
+    
+    // print name of all files and directories that are children of path 
+    path.children().foreach { path =&gt; println(path.name) }
+
+    // Print only the files
+    path.children().filter(IsFile).foreach(path =&gt; println(path.name))
+  </pre></div>
+</span>

@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span> See {creating-pathsets} for more details on creating PathSets.  <p> This examples selects all descendants of src/main that are scala files and starts with an s.  </p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path(&quot;/tmp/&quot;)
+
+    path / &quot;src&quot; / &quot;main&quot; ** &quot;s*.scala&quot; foreach (println)
+
+  </pre></div>
+</span>

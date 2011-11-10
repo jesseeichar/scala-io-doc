@@ -1,0 +1,31 @@
+<span>
+    <div class="example_summary"><span><span> Perform an actions within a file lock </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{FileOps, Path}
+
+    val file: FileOps =  Path (&quot;file&quot;)
+
+    implicit val codec = scalax.io.Codec.UTF8
+
+    // By default the entire file is locked with exclusive access
+    val result: Option[String] = file.withLock() { s =&gt;
+      s.slurpString
+    }
+
+    // if the filesystem does not support locking then None will be returned
+    result match {
+      case None =&gt; file.slurpString // oh well this is the best I can do
+      case Some(data) =&gt; data
+    }
+
+    def fail: Nothing = throw new AssertionError(&quot;Uh oh&quot;)
+
+    // or perhaps we only lock part of the file
+    val result2: Traversable[Byte] = file.withLock(10, 20) { s =&gt;
+      s.bytes slice (10,20)
+    } getOrElse {fail}
+
+
+
+  </pre></div>
+</span>

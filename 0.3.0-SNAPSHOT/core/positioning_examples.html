@@ -1,0 +1,18 @@
+<span>
+    <div class="example_summary"><span><span> When writing, the unit of the position parameter is not always in bytes.  Rather it is determined by by what type of data is being written.  <div> For example if a string is being written then the position refers to the position in characters.</div> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    // see codec example for why codec is required
+    implicit val codec = Codec.UTF8
+
+    val someFile: Seekable = Resource.fromFile(&quot;someFile&quot;)
+    // &quot;people&quot; is being written after the 6th character
+    someFile.patch(6, &quot;people&quot;,OverwriteAll)
+
+    // 1,2,3 is being written after the 8th byte (2nd integer)
+    someFile.insert(2,List(1,2,3))
+
+    // 1,2,3 is being written after the 2nd byte
+    someFile.insert(2,List[Byte](1,2,3))
+  </pre></div>
+</span>

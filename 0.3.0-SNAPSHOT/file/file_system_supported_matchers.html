@@ -1,0 +1,38 @@
+<span>
+    <div class="example_summary"><span><span> Examples use the Filesystem's built-in matcher syntax to create a path matcher.  <p> Some filesystems have support for native searching and matching of files.  Normally using the PathSet API ({creating-pathsets} such as / and will use the native support, however in some cases there may be multiple supported syntax or the PathSet API does not support all the features of the native API.  For example there could be an SQL like query language for a filesystem.  To take advantage of these features paths and filesystems have a <em>matcher</em> method which takes a string as a query and another string as a syntax identifier.  </p><p> There are two syntaxes that are supported by all filesystems and they are GLOB and REGEX which are typically used by the PathSets etc...  </p><p> By default the GLOB syntax is used.  </p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+
+    import scalax.file.{Path, PathMatcher, FileSystem}
+
+    // there are three factory methods that matchers
+    // Path.matcher (instance method)
+    // FileSystem.matcher
+
+    // default type of matcher created is a glob matcher
+    val InTmpDir: PathMatcher[Path] = Path(&quot;/tmp/file&quot;).matcher(&quot;/tmp/**&quot;)
+
+    // If you can also create through the FileSystem
+    val InBinDir: PathMatcher[Path] = FileSystem.default.matcher(&quot;/bin/*&quot;)
+
+    // you can explicitly declare the GLOB matcher
+    import PathMatcher.StandardSyntax.GLOB
+    val StartsWithH: PathMatcher[Path] = FileSystem.default.matcher(&quot;**/H*&quot;, GLOB)
+
+    // a Regex matcher is also available
+    import PathMatcher.StandardSyntax.REGEX
+    val ContainsVowel: PathMatcher[Path] = FileSystem.default.matcher(&quot;.*[aeiou].*&quot;, REGEX)
+
+    // If a filesystem supports a filesystem specific sytax you can declare that
+    val CustomSyntaxMatcher: PathMatcher[Path] = FileSystem.default.matcher(&quot;/tmp/@123&quot;, &quot;customSyntax&quot;)
+
+    // now demonstrate use
+    // See FileSystem.matcher for details on creating a matcher
+    Path(&quot;/tmp/file&quot;) match {
+      case InTmpDir(path) =&gt; println(&quot;Path name is in tmp dir&quot;)
+      case InBinDir(path) =&gt; println(&quot;File is in the bin dir&quot;)
+      case StartsWithH(path) =&gt; println(&quot;Path name starts with an H&quot;)
+      case ContainsVowel(path) =&gt; println(&quot;File contains a vowel&quot;)
+      case CustomSyntaxMatcher(path) =&gt; println(&quot;CustomMatcher matched&quot;)
+    }
+  </pre></div>
+</span>

@@ -1,0 +1,24 @@
+<span>
+    <div class="example_summary"><span><span> In order to perform several output operations with a single open connection.  </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val output:Output = Resource.fromFile(&quot;someFile&quot;)
+
+    // open the resource and perform two write operations
+    // Since it is a single opened connection the resulting
+    // underlying stream will always have both lines written to
+    // it.  So a file will have two lines.
+    //
+    // In the case where openOutput is not used
+    // but instead two writes are used the resulting file
+    // might only have a single line.  Of course if the
+    // underlying resource is a SocketOutputStream then
+    // the socket connection will be opened twice and
+    // and both lines will be sent to the server
+    output.openOutput {out =&gt;
+      out.write(&quot;first write\n&quot;)
+      out.write(&quot;second write\n&quot;)
+    }
+  </pre></div>
+</span>

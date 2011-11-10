@@ -1,0 +1,17 @@
+<span>
+    <div class="example_summary"><span><span> add all bytes in stream together </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import java.io.InputStream
+    import java.net.URL
+
+    // see codec examples in scala io core for details on why there is an implicit codec here
+    implicit val codec = scalax.io.Codec.UTF8
+
+    val url:Input = Resource.fromURL(&quot;file://someFile&quot;)
+
+    // Actual type is InputStreamResource[InputStream] but that is only needed if you want to convert to a reader
+    val url2: InputStreamResource[InputStream] = Resource.fromURL(&quot;file://someFile&quot;)
+    val sum: Int = url.bytesAsInts.reduceLeft (_ + _)
+  </pre></div>
+</span>
