@@ -1,0 +1,30 @@
+<span>
+    <div class="example_summary"><span><span> Using PathMatching to create path sets.  <p>Most examples compare using PathMatcher vs using a function.  Using a function is more flexible and more composeable but PathMatchers can often be passed to the underlying operating system (in Java 7+) and therefore are usually more performant than the function based solution.</p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    import Path._
+    import scalax.file.PathSet
+    import scalax.file.PathMatcher._
+    
+
+    // two ways to select all files
+    val files = Path(&quot;tmp&quot;) ** IsFile
+    val files2 = Path(&quot;tmp&quot;) ** ((_:Path).isFile)
+    
+    // select all directories
+    val directories = Path(&quot;tmp&quot;) ** IsDirectory
+    val directories2 = Path(&quot;tmp&quot;) ** ((_:Path).isDirectory)
+    
+    // find all writeable, executable files
+    import Path.AccessModes._
+    val writeable = Path(&quot;tmp&quot;) ** AccessMatcher(Write, Execute) // can put multiple 
+    import scalax.file.attributes._
+    val writeable2 = Path(&quot;tmp&quot;) ** AttributeMatcher(WriteAccessAttribute(true), ExecuteAccessAttribute(true))
+    val writeable3 = Path(&quot;tmp&quot;) ** ((_:Path).canWrite)
+    
+    // find all files with a particular datestamp that are writeable but not executable
+    import Path.AccessModes._
+    val timeStamped = Path(&quot;tmp&quot;) ** AttributeMatcher(WriteAccessAttribute(true), ExecuteAccessAttribute(false), LastModifiedAttribute(123456000L))
+    val timeStamped2 = Path(&quot;tmp&quot;) ** ((p:Path) =&gt; p.canWrite &amp;&amp; p.canExecute &amp;&amp; p.lastModified == 123456000L)
+  </pre></div>
+</span>
