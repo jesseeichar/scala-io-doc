@@ -121,7 +121,7 @@
       <span class="symbol"> 
         <a href="CloseableIterator.html"><span class="name">CloseableIterator</span></a>
         <span class="tparams">[<span name="A">+A</span>]</span>
-        <span class="result"> extends LongIterator[A] with Closeable</span>
+        <span class="result"> extends Iterator[A] with Closeable</span>
       </span>
       </h4>
       
@@ -165,7 +165,7 @@
       <span class="symbol"> 
         <a href="Continue.html"><span class="name">Continue</span></a>
         <span class="tparams">[<span name="A">+A</span>]</span>
-        <span class="params">(<span name="result">result: A</span>, <span name="skip">skip: Long</span>)</span><span class="result"> extends FoldResult[A] with Product with Serializable</span>
+        <span class="params">(<span name="result">result: A</span>)</span><span class="result"> extends FoldResult[A] with Product with Serializable</span>
       </span>
       </h4>
       <p class="comment cmt">Signal indicating that the fold should continue to process another value
@@ -249,17 +249,6 @@
       </h4>
       <p class="comment cmt">Creates a Traversable[String] from a Traversable[Char] where each String is a line as indicated by the
 <a name="scalax.io.Line.Terminators.Terminator" class="extype" href="Line$$Terminators$$Terminator.html">Terminator</a>.</p>
-    </li><li visbl="pub" name="scalax.io.LongIterator" data-isabs="true">
-      <a id="LongIterator:LongIterator[A]"></a>
-      <h4 class="signature">
-      <span class="kind">trait</span>
-      <span class="symbol"> 
-        <a href="LongIterator.html"><span class="name">LongIterator</span></a>
-        <span class="tparams">[<span name="A">+A</span>]</span>
-        <span class="result"> extends Iterator[A]</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scalax.io.LongTraversable" data-isabs="true">
       <a id="LongTraversable:LongTraversable[A]"></a>
       <h4 class="signature">
@@ -319,17 +308,6 @@ a file.</p>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.package" class="extype" href="package$.html">package</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OpenedLongTraversable" data-isabs="false">
-      <a id="OpenedLongTraversable:OpenedLongTraversable[A]"></a>
-      <h4 class="signature">
-      <span class="kind">class</span>
-      <span class="symbol"> 
-        <a href="OpenedLongTraversable.html"><span class="name">OpenedLongTraversable</span></a>
-        <span class="tparams">[<span name="A">+A</span>]</span>
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scalax.io.OpenedResource" data-isabs="true">
       <a id="OpenedResource:OpenedResource[R]"></a>
       <h4 class="signature">
