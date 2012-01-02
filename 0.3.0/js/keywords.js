@@ -1,6 +1,6 @@
 IO_PAGES=[{"section":"overview","id":"index","name":"Scala IO Documentation ","depth":0,"shortName":"Overview","type":"overview","keywords":"overview"},
 	{"section":"getting-started","id":"index","name":"Getting Started Guide","depth":0,"shortName":"Getting Started","type":"overview","keywords":"start introduction intro"},
-	{"section":"overview","id":"releaseNotes","name":"Release Notes for 0.3.0","depth":0,"shortName":"Release Notes","type":"overview","keywords":"release notes"},
+	{"section":"releaseNotes","id":"index","name":"Release Notes for 0.3.0","depth":0,"shortName":"Release Notes","type":"overview","keywords":"release notes"},
 	{"section":"roadmap","id":"index","name":"Scala IO Development Roadmap","depth":0,"shortName":"Roadmap","type":"overview","keywords":"future map roadmap"},
 	{"section":"core","id":"index","name":"Scala IO Core API","depth":0,"shortName":"Core API","type":"overview","keywords":"core"},
 	{"section":"core","id":"access segment of input","name":"Access Segment Of Input","depth":1,"shortName":"Access Segment Of Input","type":"category","keywords":"Access Segment Of Input"},
