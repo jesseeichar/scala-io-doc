@@ -1,0 +1,9 @@
+<span>
+    <div class="example_summary"><span><span> Default behaviour with the parameter defaults.  Autodetect ending assuming one of \n, \r\n or \r.  The terminator is not included in results </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val lines = Resource.fromFile(&quot;file&quot;).lines()
+    println(lines.size)
+  </pre></div>
+</span>

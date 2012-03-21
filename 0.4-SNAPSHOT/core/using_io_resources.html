@@ -1,0 +1,29 @@
+<span>
+    <div class="example_summary"><span><span> The typical IO objects are java IO objects converted into Resource objects using the Resource object's factory methods.  Once a Resource has been created there are methods for converting between them.  <p> The following examples demonstrate using the Resource objects and converting between them.  </p><p> All resources are also Seekable, Input, Output, ReadChars and/or WriteChars so all normal IO operations are possible but the following examples are Resource only operations</p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import scalax.io.managed._
+    import java.io._
+    import java.nio.channels._
+
+    val resource = Resource.fromInputStream(new FileInputStream(&quot;file&quot;))
+
+    // The Resource objects have methods for converting between the common types
+    val readChars: ReadCharsResource[Reader] = resource.reader(Codec.UTF8)
+    val readableByteChannel: ReadableByteChannelResource[ReadableByteChannel] =
+              resource.readableByteChannel
+
+    // there are also several ways to obtain the underlying java object
+    // for certain operations.  Typically this is to micro manage how the
+    // data is read from the input
+    val availableBytes: Int = resource.acquireAndGet{
+      inputStream =&gt; inputStream.available
+    }
+
+    // If you want to perform an operation and have the option to easily
+    // get the exception acquireFor is a good solution
+    val firstLine: Either[scala.List[scala.Throwable], String] = readChars.acquireFor{
+      reader =&gt; new BufferedReader(reader).readLine()
+    }
+  </pre></div>
+</span>

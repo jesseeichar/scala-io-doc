@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span> Convert to WriteChars </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Codec
+    import scalax.io.JavaConverters._
+    import java.io.StringWriter
+
+    new java.io.File(&quot;io&quot;).asBinaryWriteChars(Codec.UTF8).write(&quot;This is a message in UTF8&quot;)
+    new StringWriter().asWriteChars
+  </pre></div>
+</span>

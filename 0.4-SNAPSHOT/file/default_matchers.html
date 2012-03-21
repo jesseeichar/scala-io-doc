@@ -1,0 +1,28 @@
+<span>
+    <div class="example_summary"><span><span> Demonstrate matching using the matchers that are provided in Path.Matching </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    import scalax.file.PathMatcher._
+
+    // This example tests if the path is a file, directory, exists or does not exist
+    Path(&quot;/tmp/file&quot;) match {
+      case IsFile(file) =&gt; println(&quot;it's a file!&quot; + file)
+      case IsDirectory(dir) =&gt; println(&quot;it's a directory!&quot; + dir)
+      case Exists(path) =&gt; println(&quot;It exists... but what is it?&quot; + path)
+      case NonExistent(path) =&gt; println(&quot;It does not exist!&quot; + path)
+      case _ =&gt; println(&quot;I give up&quot;)
+    }
+
+    // Now match based on the permissions of the path
+    // Set up matchers we want to use
+    import Path.AccessModes._
+    val RWE = new AccessMatcher(Read, Write, Execute)
+    val RW = new AccessMatcher(Read, Write)
+    val R = new AccessMatcher(Read)
+    Path(&quot;/tmp/file&quot;) match {
+      case RWE(path) =&gt; println(&quot;path is rwe&quot; + path)
+      case RW(path) =&gt; println(&quot;path is rw&quot; + path)
+      case R(path) =&gt; println(&quot;path is r&quot; + path)
+    }
+  </pre></div>
+</span>

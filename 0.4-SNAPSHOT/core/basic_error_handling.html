@@ -1,0 +1,26 @@
+<span>
+    <div class="example_summary"><span><span> Demonstrate how to define custom error handling.  <p> All processors have an onError method that allow custom handling of errors during processing.  </p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+    import scalax.io.processing.Processor
+
+    val bytes = Resource.fromFile(&quot;somefile&quot;).bytes
+
+    val return1OnError:PartialFunction[Throwable,Option[Byte]] = {
+      case _ =&gt; Some(1.toByte)
+    }
+    val process:Processor[Char] = for {
+      processor &lt;- bytes.processor
+        // On error handles an error raised during the call of next
+        // it does not catch and handle errors from the yield or
+        // or any processors later in the for-comprehension
+      byte &lt;- processor.next onError return1OnError
+    } yield {
+      byte.toChar
+    }
+
+    process.acquireAndGet{ char =&gt;
+      // do something with char
+    }
+  </pre></div>
+</span>

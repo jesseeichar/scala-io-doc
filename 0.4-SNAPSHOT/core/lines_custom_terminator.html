@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span> Explicitly declare a custom line terminator and <em>do not</em> include terminator </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Line.Terminators.Custom
+
+    val readChars:ReadChars = Resource.fromFile(&quot;file&quot;).reader
+    val lines = readChars.lines(Custom(&quot;**&quot;))
+    println(lines.size)
+  </pre></div>
+</span>

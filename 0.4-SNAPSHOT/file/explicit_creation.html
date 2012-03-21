@@ -1,0 +1,18 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{Path, FileSystem}
+    val path1: Path = Path (&quot;/tmp/file1&quot;,'/')
+    
+    // when an absolute path is desired don't forget &quot;/&quot;
+    val path2: Path = Path (&quot;/&quot;,&quot;tmp&quot;,&quot;file1&quot;)
+
+    // include windows examples for completeness
+    val path3: Path = Path (&quot;c:/tmp/file2&quot;,'/')
+    val path4: Path = Path (&quot;c:&quot;,&quot;tmp&quot;,&quot;file2&quot;)
+    val path5: Path = Path (&quot;&quot;&quot;c:\tmp\file3&quot;&quot;&quot;,'\\')
+
+    // a filesystem can also be used to create Paths
+    val path6: Path = FileSystem.default (&quot;/tmp/file6&quot;,'/')
+  </pre></div>
+</span>

@@ -1,0 +1,27 @@
+<span>
+    <div class="example_summary"><span><span> The write method of Output and Seekable objects accepts several types of inputs with no effort required on the part of a developer.  Several of the default types including integers, longs, doubles, etc...  are have converter implementations.  </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Resource._
+
+    val out = fromFile(&quot;out&quot;)
+    // Selected Converter is OutputConverter.IntConverter
+    out.write(3)
+    // Selected Converter is OutputConverter.LongConverter
+    out.write(3L)
+    // Selected Converter is OutputConverter.ByteConverter
+    out.write(3.toByte)
+    // Selected Converter is OutputConverter.DoubleConverter
+    out.write(3.0)
+    // Selected Converter is OutputConverter.IntConverter
+    out.write(List[Byte](3))
+    // Selected Converter is OutputConverter.LongConverter
+    out.write(3L)
+    // Selected Converter is OutputConverter.ByteConverter
+    out.write(3.toByte)
+    // Selected Converter is OutputConverter.DoubleConverter
+    out.write(3.0)
+    // Selected Converter is OutputConverter.TraversableIntConverter
+    out.write(List(1,2,3,4))
+  </pre></div>
+</span>

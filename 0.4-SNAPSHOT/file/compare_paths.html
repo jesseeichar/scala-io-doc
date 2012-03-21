@@ -1,0 +1,20 @@
+<span>
+    <div class="example_summary"><span><span> Compare two paths.  Some are lexigraphic, for sorting Paths by name for example, and others are for comparing paths or age of paths </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    val path: Path = Path(&quot;file&quot;)
+
+    // several simple path comparison queries
+    val endsWith: Boolean = path.endsWith(Path(&quot;file&quot;))
+    val startsWith: Boolean = path.startsWith(Path(&quot;file&quot;))
+    val isSame: Boolean = path.isSame(Path(&quot;file&quot;))
+    val isFresher: Boolean = path.isFresher(Path(&quot;/&quot;, &quot;tmp&quot;, &quot;file&quot;))
+    //several lexigraphic comparisons
+    val lessThan: Boolean = path &lt; Path(&quot;other&quot;)
+    val lessThanEqual: Boolean = path &lt;= Path(&quot;other&quot;)
+    val greaterThan: Boolean = path &gt; Path(&quot;other&quot;)
+    val greaterThanEqual: Boolean = path &gt;= Path(&quot;other&quot;)
+    val compare: Int = path.compare(Path(&quot;other&quot;))
+    val compareTo: Int = path.compareTo(Path(&quot;other&quot;))
+  </pre></div>
+</span>

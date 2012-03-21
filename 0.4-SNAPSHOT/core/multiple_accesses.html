@@ -1,0 +1,48 @@
+<span>
+    <div class="example_summary"><span><span> Multiple Random accesses from a file opened only a single time </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val someFile: Seekable = Resource.fromFile(&quot;someFile&quot;)
+
+    // Often it is preferable to open a file/resource a single time
+    // and perform several operations on that file with the single
+    // connection as it normally offers better performance and uses
+    // fewer resources
+
+    // for more details on processing see the processing examples
+    // these examples just give quick impression of how to do
+    // a couple tasks
+    // The following will replace the first instanceof &quot;hello&quot; with &quot;Hello&quot;
+    for {
+      fileProcessor &lt;- someFile.seekableProcessor
+      file = fileProcessor.asSeekable
+    } {
+      val index = file.chars.indexOf(&quot;hello&quot;)
+      file.patch(index,&quot;Hello&quot;,OverwriteAll)
+    }
+
+    // This example demonstrates processing a file as strings and
+    // while convenient if the codec used is a variable sized codec like
+    // UTF8 it can be quite expensive since determining the index in the file
+    // requires counting from the beginning of the file each time
+    for {
+      file &lt;- someFile.seekableProcessor.map(_.asSeekable)
+    } {
+      val index = file.chars.indexOf(&quot;hello&quot;)
+      // move to position index
+      file.position = index
+      // overwrite data starting at index with Hello
+      file.write(&quot;Hello&quot;)
+      // continue overwriting with World.
+      // It is important to note that we are not inserting data
+      // data insertion is intentionally made more difficult because
+      // it is very expensive since copies of the file must be made
+      // to perform the operation
+      file.write(&quot; World&quot;)
+      file.insert(index,&quot;&lt;&quot;)
+
+      file.insert(index+(&quot;Hello World&quot;.size),&quot;&gt;&quot;)
+    }
+  </pre></div>
+</span>

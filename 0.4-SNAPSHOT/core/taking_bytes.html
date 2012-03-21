@@ -1,0 +1,19 @@
+<span>
+    <div class="example_summary"><span><span> How to close resource after reading first X bytes </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val in:Input = Resource.fromURL(&quot;file://someFile&quot;)
+
+    // Take first 10 bytes then close resource.
+    // Remember the resource is lazy so firstTenBytes is not
+    // an in-memory collection and accessing it will open
+    // the resource and read the data.  At the moment of
+    // ''firstTenBytes'' the resource has not been opened.
+    val firstTen = in.bytesAsInts.take(10)
+
+    // This statement will open resource take first 10 bytes add
+    // them together and close resource.
+    val sum = firstTen.reduceLeft(_ + _)
+  </pre></div>
+</span>

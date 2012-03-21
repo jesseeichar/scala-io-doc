@@ -1,0 +1,27 @@
+<span>
+    <div class="example_summary"><span><span> Delete files and directories </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path (&quot;/tmp/file&quot;)
+
+    // Will throw IOException if file could not be deleted
+    // even if it cannot be deleted because it does not exist
+    path.delete()
+
+    // Will not throw exception if file does not exist but will
+    // if it is a non-empty directory or not writeable
+    path.deleteIfExists()
+
+    // Delete path and all children.  This is currently not a safe method so
+    // it should be used with caution.  Future versions will be better
+    // by default it will throw an exception if one of the files cannot be deleted
+    path.deleteRecursively()
+
+    // Delete path and all children. If a file cannot be deleted then continue on and delete
+    // all that can be deleted
+    path.deleteRecursively(true)
+    // or
+    path.deleteRecursively(continueOnFailure=true)
+  </pre></div>
+</span>
