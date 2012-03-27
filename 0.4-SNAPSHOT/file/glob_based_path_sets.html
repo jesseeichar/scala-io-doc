@@ -1,0 +1,16 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    // All java files in any subdirectory of .
+    val javaFiles = Path(&quot;.&quot;) ** &quot;*.java&quot;
+
+    // All java or scala files in subdirectory of
+    val jvmFiles = Path(&quot;.&quot;) ** &quot;*.{java,scala}&quot;
+
+    // A crazy example that illustrates a substantial portion of the glob
+    // syntax
+    val complexSearch = Path(&quot;.&quot;) ** &quot;a/?/[a-z]/d.{x,y}&quot;
+  </pre></div>
+</span>

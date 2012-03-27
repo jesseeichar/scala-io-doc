@@ -3,7 +3,7 @@
     <div class="example_code"><pre class="brush: scala">
     import java.io.File
     import scalax.file.Path
-    import Path.jfile2path
+    import scalax.file.ImplicitConversions.jfile2path
 
     val filePath: Path = new File (&quot;/tmp/file&quot;)
   </pre></div>

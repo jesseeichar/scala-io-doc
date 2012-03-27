@@ -2,7 +2,7 @@
     <div class="example_summary"><span><span> Demonstrate making PathSets and Combining Paths </span></span></div> 
     <div class="example_code"><pre class="brush: scala">
     import scalax.file.Path
-    import Path._
+    import scalax.file.ImplicitConversions._
     import scalax.file.PathSet
     // find all .java files in a tmp or one of its sub-directories
     val descendantJavaFiles : PathSet[Path] = &quot;/tmp&quot; ** &quot;*.java&quot;

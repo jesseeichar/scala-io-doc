@@ -1639,24 +1639,43 @@ paths have different roots the other path is returned.  If the two paths
 reference the same path then the other path is returned</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>relative path from the current path to the other path
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
-      <a id="resolve(String):Path"></a>
+      <a id="resolve(String*):Path"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">resolve</span>
         
-        <span class="params">(<span name="other">other: String</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Constructs a path from other using the same file system as this
 path and resolves the this and other in the same manner as
 <code> Path#resolve(Path)</code></p><div class="fullcomment"><div class="comment cmt"><p>Constructs a path from other using the same file system as this
 path and resolves the this and other in the same manner as
-<code> Path#resolve(Path)</code></p><p>Examples (path separator assumed to be /):</p><pre>
-path resolve &quot;a/b/c&quot; // result is Path / a / b / c
-path resolve &quot;//..//b//&quot; // result is Path / .. / b
-
-</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
+<code> Path#resolve(Path)</code></p><p>Examples:</p><pre>
+path resolve (&quot;a/b/c&quot;,'/') // result is Path / a / b / c
+path resolve (&quot;//..//b//&quot;,'/') // result is Path / .. / b
+</pre></div><dl class="paramcmts block"><dt class="param">pathSegments</dt><dd class="cmt"><p>the path segments that make up the path</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of this
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
+      <a id="resolve(String,Char):Path"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resolve</span>
+        
+        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Constructs a path from other using the same file system as this
+path and resolves the this and other in the same manner as
+<code> Path#resolve(Path)</code></p><div class="fullcomment"><div class="comment cmt"><p>Constructs a path from other using the same file system as this
+path and resolves the this and other in the same manner as
+<code> Path#resolve(Path)</code></p><p>Examples:</p><pre>
+path resolve (&quot;a/b/c&quot;,'/') // result is Path / a / b / c
+path resolve (&quot;//..//b//&quot;,'/') // result is Path / .. / b
+</pre></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the string representation of the path with segment separators as indicated by separator</p></dd><dt class="param">separator</dt><dd class="cmt"><p>the separator character used in other</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of this
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
       <a id="resolve(Path):Path"></a>
       <h4 class="signature">
@@ -1745,6 +1764,47 @@ the filesystem
 the filesystem
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd><dt>See also</dt><dd><span class="cmt"><p>FileSystem#separator
 </p></span></dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
+      <a id="sibling(String*):Path"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sibling</span>
+        
+        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as sibling(Path)
+</p><div class="fullcomment"><div class="comment cmt"><p>Resolves other against this path's parent in the same manner as sibling(Path)
+</p></div><dl class="paramcmts block"><dt class="param">pathSegments</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or other if there is no parent
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
+      <a id="sibling(String,Char):Path"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sibling</span>
+        
+        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as sibling(Path)
+</p><div class="fullcomment"><div class="comment cmt"><p>Resolves other against this path's parent in the same manner as sibling(Path)
+</p></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt class="param">separator</dt><dd class="cmt"><p>the separator character that is used in other</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or other if there is no parent
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
+      <a id="sibling(Path):Path"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sibling</span>
+        
+        <span class="params">(<span name="other">other: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as in resolve(Path).</p><div class="fullcomment"><div class="comment cmt"><p>Resolves other against this path's parent in the same manner as in resolve(Path).</p><p>If parent does not exist other will be returned.  Otherwise parent.resolve(other) will be returned
+</p></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or None if parent is None
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#simpleName" data-isabs="false">
       <a id="simpleName:String"></a>
       <h4 class="signature">
