@@ -1,0 +1,35 @@
+<span>
+    <div class="example_summary"><span><span> Asychronously copy a section of one file to another.  <p> The simplest method for performing asynchronous IO in scala-io is to use the processor API to create a process and then turn it into a future.  (Or use the async method on LongTraversable, see other examples for that) </p><p> The act of creating a Future will execute the process and return the result of the processor as the result of the future.  </p> </span></span></div> 
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+
+    val in = Resource.fromFile(&quot;/tmp/in&quot;)
+    val out = Resource.fromFile(&quot;/tmp/out&quot;)
+
+    // construct a processor in the normal way
+    // make sure to yield something so that map
+    // and flatmap calls are used instead of
+    // foreach.
+    val processor = for {
+      in &lt;- in.bytes.processor
+      // drop the first 5 bytes
+      _ &lt;- in.drop(5)
+      // create a Vector of the next 30 bytes
+      data &lt;- in.take(30)
+      // write the data to the output
+    } yield out.write(data)
+
+    // execute the process
+    // note that there is not repeat calls in the process
+    // (like repeatUntilEmpty).  Thus the result is not
+    // a LongTraversable.  if processor was of type
+    // Processor[LongTraversable] futureExec would
+    // have to be used instead.  See futureExec example
+    // for more details.
+    processor.future.onComplete {
+      case Right(_) =&gt; println(&quot;Yay done :)&quot;)
+      case Left(_) =&gt; println(&quot;Uh oh failure :(&quot;)
+    }
+
+  </pre></div>
+</span>

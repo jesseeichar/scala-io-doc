@@ -333,7 +333,55 @@ and traversing that object).
         <span class="result">: <span name="akka.dispatch.Future" class="extype">Future</span>[<span name="scala.Option" class="extype">Option</span>[<a name="scalax.io.processing.ByteProcessorAPI" class="extype" href="ByteProcessorAPI.html">ByteProcessorAPI</a>]]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a></dd></dl></div>
+      <p class="shortcomment cmt">Start the execution of the process in another thread and return a
+future for accessing the result when it is ready.</p><div class="fullcomment"><div class="comment cmt"><p>Start the execution of the process in another thread and return a
+future for accessing the result when it is ready.</p><p>It is important to realize that if the result of the process is
+a LongTraversable the processing will not in fact be executed
+because LongTraversables are non-strict (lazy).</p><p>In the case where the Processor has a resulting type of
+LongTraversable, one must execute either futureExec which will
+execute all LongTraversables recursively in the process or
+obtain the LongTraversable (normally by calling the traversable method)
+and visit each element in the LongTraversable.
+(See <a name="scalax.io.LongTraversable" class="extype" href="../LongTraversable.html">LongTraversable</a>.async)</p><p>See futureExec docs for examples when to use futureExec.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>A Future that will return the result of executing the process
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a></dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.processing.Processor#futureExec" data-isabs="false">
+      <a id="futureExec():Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">futureExec</span>
+        
+        <span class="params">()</span><span class="result">: <span name="akka.dispatch.Future" class="extype">Future</span>[<span name="scala.Unit" class="extype">Unit</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Call execute asynchronously.</p><div class="fullcomment"><div class="comment cmt"><p>Call execute asynchronously.</p><p>The use of this method over future is that this will recursively
+visit each element of a LongTraversable if the Processor contains a
+LongTraversable.</p><p>For Example:</p><pre>
+val processor = for {
+      in &lt;- in.blocks().processor
+      outApi &lt;- out.outputProcessor
+      _ &lt;- in.repeatUntilEmpty()
+      block &lt;- in.next
+      _ &lt;- outApi.write(block)
+    } yield ()
+
+     processor.futureExec()
+</pre><p>The example illustrates a case where futureExec is desired because
+(as a result of the repeatUntilEmpty) the contained object
+is a LongTraversable.  If future is executed the write will
+not be executed because the writes occur only when an element in
+the LongTraversable is visited.</p><p>An equivalent way of writing the previous example is:</p><pre>
+     val processor2 = for {
+       in &lt;- in.blocks().processor
+       outApi &lt;- out.outputProcessor
+       _ &lt;- in.repeatUntilEmpty()
+       block &lt;- in.next
+     } yield outApi.asOutput.write(block)
+
+     processor.futureExec()
+</pre></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a future so one can observe when the process is finished
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
@@ -414,26 +462,24 @@ use map to convert the contained value to a float.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.processing.Processor#onError" data-isabs="false">
-      <a id="onError[U&gt;:ByteProcessorAPI](PartialFunction[Throwable, Option[U]]):Processor[U]"></a>
+    </li><li visbl="pub" name="scalax.io.processing.Processor#onFailure" data-isabs="false">
+      <a id="onFailure[U&gt;:ByteProcessorAPI](PartialFunction[Throwable, Option[U]]):Processor[U]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">onError</span>
+        <span class="name">onFailure</span>
         <span class="tparams">[<span name="U">U &gt;: <a name="scalax.io.processing.ByteProcessorAPI" class="extype" href="ByteProcessorAPI.html">ByteProcessorAPI</a></span>]</span>
         <span class="params">(<span name="handler">handler: <span name="scala.PartialFunction" class="extype">PartialFunction</span>[Throwable, <span name="scala.Option" class="extype">Option</span>[U]]</span>)</span><span class="result">: <a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a>[U]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">                        hooks/geocat/data/data/tmp
-Declare an error handler for handling an error when executing the processor.</p><div class="fullcomment"><div class="comment cmt"><p>                        hooks/geocat/data/data/tmp
-Declare an error handler for handling an error when executing the processor.  It is important to realize that
+      <p class="shortcomment cmt">Declare an error handler for handling an error when executing the processor.</p><div class="fullcomment"><div class="comment cmt"><p>Declare an error handler for handling an error when executing the processor.  It is important to realize that
 this will catch exceptions caused ONLY by the current processor, not by 'child' Processors.  IE processors
 that are executed within a flatmap or map of this processor.</p><p>Examples:</p><pre>
 for {
   mainProcessor &lt;- input.bytes.processor
   // if the read fails 1 will be assigned to first and passed to second as the argument of flatmap
-  first &lt;- mainProcessor.read onError {_ =&gt; -1}
-  // if this read fails an exception will be thrown that will NOT be caught by the above onError method
+  first &lt;- mainProcessor.read onFailure {_ =&gt; -1}
+  // if this read fails an exception will be thrown that will NOT be caught by the above onFailure method
   second &lt;- mainProcessor.read
 } yield (first,second)
 </pre><p>to handle errors of groups of processors a <b>composite</b> processor must be created and the error handler
@@ -447,7 +493,7 @@ for {
     second &lt;- mainProcessor.read
   } yield (first,second)
   // attach the error handler
-  tuple &lt;- groupProcessor onError {case t =&gt; log(t); None}
+  tuple &lt;- groupProcessor onFailure {case t =&gt; log(t); None}
 } yield tuple
 </pre><p>To handle all errors in one place the yielded processor can have the
 error handler attached:</p><pre>
@@ -457,7 +503,7 @@ val process = for {
   second &lt;- mainProcessor.read
 } yield (first,second)
 
-process.onError{case _ =&gt; log(t); None}
+process.onFailure{case _ =&gt; log(t); None}
 
 process.acquireAndGet(...)
 </pre></div><dl class="paramcmts block"><dt class="tparam">U</dt><dd class="cmt"><p>The value that will be returned from the handler.  Also the type of the returned processor</p></dd><dt class="param">handler</dt><dd class="cmt"><p>
@@ -555,16 +601,20 @@ for {
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scalax.io.processing.Processor#timeout" data-isabs="false">
-      <a id="timeout(Long):TimingOutProcessor[ByteProcessorAPI]"></a>
+      <a id="timeout(Duration):TimingOutProcessor[ByteProcessorAPI]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">timeout</span>
         
-        <span class="params">(<span name="timeout">timeout: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scalax.io.processing.TimingOutProcessor" class="extype">TimingOutProcessor</span>[<a name="scalax.io.processing.ByteProcessorAPI" class="extype" href="ByteProcessorAPI.html">ByteProcessorAPI</a>]</span>
+        <span class="params">(<span name="timeout">timeout: <span name="akka.util.Duration" class="extype">Duration</span></span>)</span><span class="result">: <span name="scalax.io.processing.TimingOutProcessor" class="extype">TimingOutProcessor</span>[<a name="scalax.io.processing.ByteProcessorAPI" class="extype" href="ByteProcessorAPI.html">ByteProcessorAPI</a>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a></dd></dl></div>
+      <p class="shortcomment cmt">Create a modified processor that will throw a java.util.concurrent.TimeoutException
+if the process takes longer than the provided timeout.</p><div class="fullcomment"><div class="comment cmt"><p>Create a modified processor that will throw a java.util.concurrent.TimeoutException
+if the process takes longer than the provided timeout.
+</p></div><dl class="paramcmts block"><dt class="param">timeout</dt><dd class="cmt"><p>the length of time before the timeout exception is thrown</p></dd><dt>returns</dt><dd class="cmt"><p>a new processor with a timeout associated with it
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.processing.Processor" class="extype" href="Processor.html">Processor</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.processing.ByteProcessor#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">

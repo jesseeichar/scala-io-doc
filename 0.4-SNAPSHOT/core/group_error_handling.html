@@ -1,5 +1,5 @@
 <span>
-    <div class="example_summary"><span><span> Demonstrate how to handle the error of a sequence of processors in a for-comprehension.  <p> Since onError returns a potential default value it can only be used to catch the exception raised by a single processor.  This example demonstrates how to use onError to handle the exceptions raised by any of several processors </p> </span></span></div> 
+    <div class="example_summary"><span><span> Demonstrate how to handle the error of a sequence of processors in a for-comprehension.  <p> Since onFailure returns a potential default value it can only be used to catch the exception raised by a single processor.  This example demonstrates how to use onFailure to handle the exceptions raised by any of several processors </p> </span></span></div> 
     <div class="example_code"><pre class="brush: scala">
     import scalax.io.Resource
     import scalax.io.processing.Processor
@@ -19,7 +19,7 @@
         byte2 &lt;- processor.next
       } yield {byte1 + byte2 toChar}
       // add the handler to the new processor
-      finalValue &lt;- group onError return1OnError
+      finalValue &lt;- group onFailure return1OnError
     } yield {
       finalValue
     }
@@ -29,7 +29,7 @@
     }
     
     // similarly the resulting processor can have an error handler attached
-    process onError return1OnError acquireAndGet {char =&gt;
+    process onFailure return1OnError acquireAndGet {char =&gt;
       // do something
     }
   </pre></div>

@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.io.OutputConverter</title>
+          <title>scalax.io.OutputConverter.ByteBlockConverter</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
@@ -12,30 +12,25 @@
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <a title="Go to companion" href="OutputConverter$.html"><img src="../../lib/trait_to_object_big.png" /></a>
-        <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.io" class="extype" href="package.html">io</a></p>
-        <h1><a title="Go to companion" href="OutputConverter$.html">OutputConverter</a></h1>
+        <img src="../../lib/object_big.png" />
+        <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.io" class="extype" href="package.html">io</a>.<a name="scalax.io.OutputConverter" class="extype" href="OutputConverter$.html">OutputConverter</a></p>
+        <h1>ByteBlockConverter</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">trait</span>
+      <span class="kind">object</span>
       <span class="symbol"> 
-        <span class="name">OutputConverter</span>
-        <span class="tparams">[<span name="T">-T</span>]</span>
-        <span class="result"> extends (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, T) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">ByteBlockConverter</span>
+        
+        <span class="result"> extends <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>]</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Functions used by Seekable and Output to either convert data to bytes for writing
-or write directly to an output stream depending on the requirements of the caller.
-</p></div><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">(<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, T) ⇒ <span name="scala.Unit" class="extype">Unit</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
-        </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="scalax.io.OutputConverter.ArrayAdapter" class="extype" href="OutputConverter$$ArrayAdapter.html">ArrayAdapter</a>, <a name="scalax.io.OutputConverter.BooleanArrayConverter" class="extype" href="OutputConverter$$BooleanArrayConverter$.html">BooleanArrayConverter</a>, <a name="scalax.io.OutputConverter.BooleanConverter" class="extype" href="OutputConverter$$BooleanConverter$.html">BooleanConverter</a>, <a name="scalax.io.OutputConverter.ByteArrayConverter" class="extype" href="OutputConverter$$ByteArrayConverter$.html">ByteArrayConverter</a>, <a name="scalax.io.OutputConverter.ByteBlockConverter" class="extype" href="OutputConverter$$ByteBlockConverter$.html">ByteBlockConverter</a>, <a name="scalax.io.OutputConverter.ByteBufferConverter" class="extype" href="OutputConverter$$ByteBufferConverter$.html">ByteBufferConverter</a>, <a name="scalax.io.OutputConverter.ByteConverter" class="extype" href="OutputConverter$$ByteConverter$.html">ByteConverter</a>, <a name="scalax.io.OutputConverter.DoubleArrayConverter" class="extype" href="OutputConverter$$DoubleArrayConverter$.html">DoubleArrayConverter</a>, <a name="scalax.io.OutputConverter.DoubleConverter" class="extype" href="OutputConverter$$DoubleConverter$.html">DoubleConverter</a>, <a name="scalax.io.OutputConverter.FloatArrayConverter" class="extype" href="OutputConverter$$FloatArrayConverter$.html">FloatArrayConverter</a>, <a name="scalax.io.OutputConverter.FloatConverter" class="extype" href="OutputConverter$$FloatConverter$.html">FloatConverter</a>, <a name="scalax.io.OutputConverter.IntArrayConverter" class="extype" href="OutputConverter$$IntArrayConverter$.html">IntArrayConverter</a>, <a name="scalax.io.OutputConverter.IntAsByteArrayConverter" class="extype" href="OutputConverter$$IntAsByteArrayConverter$.html">IntAsByteArrayConverter</a>, <a name="scalax.io.OutputConverter.IntAsByteConverter" class="extype" href="OutputConverter$$IntAsByteConverter$.html">IntAsByteConverter</a>, <a name="scalax.io.OutputConverter.IntConverter" class="extype" href="OutputConverter$$IntConverter$.html">IntConverter</a>, <a name="scalax.io.OutputConverter.LongArrayConverter" class="extype" href="OutputConverter$$LongArrayConverter$.html">LongArrayConverter</a>, <a name="scalax.io.OutputConverter.LongConverter" class="extype" href="OutputConverter$$LongConverter$.html">LongConverter</a>, <a name="scalax.io.OutputConverter.NonTraversableAdapter" class="extype" href="OutputConverter$$NonTraversableAdapter.html">NonTraversableAdapter</a>, <a name="scalax.io.OutputConverter.ShortArrayConverter" class="extype" href="OutputConverter$$ShortArrayConverter$.html">ShortArrayConverter</a>, <a name="scalax.io.OutputConverter.ShortConverter" class="extype" href="OutputConverter$$ShortConverter$.html">ShortConverter</a>, <a name="scalax.io.OutputConverter.TraversableBooleanConverter" class="extype" href="OutputConverter$$TraversableBooleanConverter$.html">TraversableBooleanConverter</a>, <a name="scalax.io.OutputConverter.TraversableByteConverter" class="extype" href="OutputConverter$$TraversableByteConverter$.html">TraversableByteConverter</a>, <a name="scalax.io.OutputConverter.TraversableDoubleConverter" class="extype" href="OutputConverter$$TraversableDoubleConverter$.html">TraversableDoubleConverter</a>, <a name="scalax.io.OutputConverter.TraversableFloatConverter" class="extype" href="OutputConverter$$TraversableFloatConverter$.html">TraversableFloatConverter</a>, <a name="scalax.io.OutputConverter.TraversableIntAsByteConverter" class="extype" href="OutputConverter$$TraversableIntAsByteConverter$.html">TraversableIntAsByteConverter</a>, <a name="scalax.io.OutputConverter.TraversableIntConverter" class="extype" href="OutputConverter$$TraversableIntConverter$.html">TraversableIntConverter</a>, <a name="scalax.io.OutputConverter.TraversableLongConverter" class="extype" href="OutputConverter$$TraversableLongConverter$.html">TraversableLongConverter</a>, <a name="scalax.io.OutputConverter.TraversableShortConverter" class="extype" href="OutputConverter$$TraversableShortConverter$.html">TraversableShortConverter</a></div>
+          <div class="superTypes hiddenContent"><a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>], (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, <a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -51,7 +46,7 @@ or write directly to an output stream depending on the requirements of the calle
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="scalax.io.OutputConverter" class="in"><span>OutputConverter</span></li><li name="scala.Function2" class="in"><span>Function2</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="scalax.io.OutputConverter.ByteBlockConverter" class="in"><span>ByteBlockConverter</span></li><li name="scalax.io.OutputConverter" class="in"><span>OutputConverter</span></li><li name="scala.Function2" class="in"><span>Function2</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -63,37 +58,10 @@ or write directly to an output stream depending on the requirements of the calle
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="scalax.io.OutputConverter#sizeInBytes" data-isabs="true">
-      <a id="sizeInBytes:Int"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">sizeInBytes</span>
         
-        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The number of bytes the data will be converted to.</p><div class="fullcomment"><div class="comment cmt"><p>The number of bytes the data will be converted to.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OutputConverter#toBytes" data-isabs="true">
-      <a id="toBytes(T):TraversableOnce[Byte]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">toBytes</span>
-        
-        <span class="params">(<span name="data">data: T</span>)</span><span class="result">: TraversableOnce[<span name="scala.Byte" class="extype">Byte</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Converts the data to bytes</p><div class="fullcomment"><div class="comment cmt"><p>Converts the data to bytes</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the data to convert to bytes</p></dd><dt>returns</dt><dd class="cmt"><p>The data converted to bytes
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -150,19 +118,19 @@ or write directly to an output stream depending on the requirements of the calle
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scalax.io.OutputConverter#apply" data-isabs="false">
-      <a id="apply(WritableByteChannel,T):Unit"></a>
+      <a id="apply(WritableByteChannel,ByteBlock):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="out">out: <span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span></span>, <span name="data">data: T</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="out">out: <span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span></span>, <span name="data">data: <a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Write the data to the OutputStream in the most efficient way possible
 </p><div class="fullcomment"><div class="comment cmt"><p>Write the data to the OutputStream in the most efficient way possible
 </p></div><dl class="paramcmts block"><dt class="param">out</dt><dd class="cmt"><p>the output object that the converter write to</p></dd><dt class="param">data</dt><dd class="cmt"><p>the data to convert for the OutputStream
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputConverter" class="extype" href="">OutputConverter</a> → Function2</dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> → Function2</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -189,13 +157,13 @@ or write directly to an output stream depending on the requirements of the calle
               
         </dd></dl></div>
     </li><li visbl="pub" name="scala.Function2#curried" data-isabs="false">
-      <a id="curried:(WritableByteChannel) ⇒ (T) ⇒ Unit"></a>
+      <a id="curried:(WritableByteChannel) ⇒ (ByteBlock) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">curried</span>
         
-        <span class="result">: (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>) ⇒ (T) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="result">: (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>) ⇒ (<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function2</dd></dl></div>
@@ -301,6 +269,18 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.OutputConverter.ByteBlockConverter#sizeInBytes" data-isabs="false">
+      <a id="sizeInBytes:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sizeInBytes</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The number of bytes the data will be converted to.</p><div class="fullcomment"><div class="comment cmt"><p>The number of bytes the data will be converted to.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputConverter.ByteBlockConverter" class="extype" href="">ByteBlockConverter</a> → <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -312,6 +292,18 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scalax.io.OutputConverter.ByteBlockConverter#toBytes" data-isabs="false">
+      <a id="toBytes(ByteBlock):TraversableOnce[Byte]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toBytes</span>
+        
+        <span class="params">(<span name="data">data: <a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a></span>)</span><span class="result">: TraversableOnce[<span name="scala.Byte" class="extype">Byte</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Converts the data to bytes</p><div class="fullcomment"><div class="comment cmt"><p>Converts the data to bytes</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the data to convert to bytes</p></dd><dt>returns</dt><dd class="cmt"><p>The data converted to bytes
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputConverter.ByteBlockConverter" class="extype" href="">ByteBlockConverter</a> → <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Function2#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -324,13 +316,13 @@ or write directly to an output stream depending on the requirements of the calle
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function2 → AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.Function2#tupled" data-isabs="false">
-      <a id="tupled:((WritableByteChannel, T)) ⇒ Unit"></a>
+      <a id="tupled:((WritableByteChannel, ByteBlock)) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">tupled</span>
         
-        <span class="result">: ((<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, T)) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="result">: ((<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, <a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>)) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function2</dd></dl></div>
@@ -382,13 +374,13 @@ or write directly to an output stream depending on the requirements of the calle
         <div class="values members" id="values">
               <h3>Deprecated Value Members</h3>
               <ol><li visbl="pub" name="scala.Function2#curry" data-isabs="false">
-      <a id="curry:(WritableByteChannel) ⇒ (T) ⇒ Unit"></a>
+      <a id="curry:(WritableByteChannel) ⇒ (ByteBlock) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name deprecated">curry</span>
         
-        <span class="result">: (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>) ⇒ (T) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="result">: (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>) ⇒ (<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function2</dd><dt>Annotations</dt><dd>
@@ -398,8 +390,10 @@ or write directly to an output stream depending on the requirements of the calle
     </li></ol>
             </div>
 
-        <div name="scala.Function2" class="parent">
-              <h3>Inherited from (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, T) ⇒ <span name="scala.Unit" class="extype">Unit</span></h3>
+        <div name="scalax.io.OutputConverter" class="parent">
+              <h3>Inherited from <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>]</h3>
+            </div><div name="scala.Function2" class="parent">
+              <h3>Inherited from (<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>, <a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
