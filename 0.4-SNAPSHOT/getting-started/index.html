@@ -39,7 +39,7 @@ libraryDependencies += "{{props.groupId}}" %% "scala-io-file" % "{{props.version
  &lt;version>{{props.version}}&lt;/version>
 &lt;/dependency>
 </pre></div>
-       Note that the scala version (_version) needs to be kept up to date manually unlike the sbt version
+       Note that the scala version (_{{props.scalaVersion}}) needs to be kept up to date manually unlike the sbt version
     </p>
 
     There is an example maven project prepackaged at <a href="http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-maven-project.zip">example-maven-project.zip</a>.
@@ -47,7 +47,7 @@ libraryDependencies += "{{props.groupId}}" %% "scala-io-file" % "{{props.version
 > curl -L http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-maven-project.zip > \
     tmp.zip &amp;&amp; unzip tmp.zip &amp;&amp; rm tmp.zip
 > cd example-maven-project
-# if the version is a snapshot version edit pom and uncomment the snapshot repository
+# if a SNAPSHOT version edit pom.xml and uncomment the snapshot repository section
 > mvn compile exec:java -Dexec.mainClass="Main"
     </pre>
   </p>
@@ -57,14 +57,13 @@ libraryDependencies += "{{props.groupId}}" %% "scala-io-file" % "{{props.version
     Naturally a manual download option is also available.  The dependencies are fairly simple:
     <ul>
       <li>
-        <a href="http://scala-tools.org/repo-releases/com/github/jsuereth/scala-arm/scala-arm_{{props.scalaVersion}}/{{props.armVersion}}/scala-arm_{{props.scalaVersion}}-{{props.armVersion}}.jar">Scala ARM</a>
           <a href="http://search.maven.org/remotecontent?filepath=com/github/jsuereth/scala-arm/scala-arm_{{props.scalaVersion}}/{{props.armVersion}}/scala-arm_{{props.scalaVersion}}-{{props.armVersion}}.jar">Scala Core</a>
       </li>
       <li>
-        <a href="http://search.maven.org/remotecontent?filepath={{props.ioMavenPath}}/scala-io-core_{{props.scalaVersion}}/{{props.version}}/scala-io-core_{{props.scalaVersion}}-{{props.version}}.jar">Scala Core</a>
+        <a href="{{props.SNAPSHOT_DOWNLOAD_URL}}{{props.ioMavenPath}}/scala-io-core_{{props.scalaVersion}}/{{props.version}}/scala-io-core_{{props.scalaVersion}}-{{props.version}}.jar">Scala Core</a>
       </li>
       <li>
-        <a href="http://search.maven.org/remotecontent?filepath={{props.ioMavenPath}}/scala-io-file_{{props.scalaVersion}}/{{props.version}}/scala-io-file_{{props.scalaVersion}}-{{props.version}}.jar">Scala File (Optional)</a>
+        <a href="{{props.SNAPSHOT_DOWNLOAD_URL}}{{props.ioMavenPath}}/scala-io-file_{{props.scalaVersion}}/{{props.version}}/scala-io-file_{{props.scalaVersion}}-{{props.version}}.jar">Scala File (Optional)</a>
       </li>
     </ul>
   </p>
