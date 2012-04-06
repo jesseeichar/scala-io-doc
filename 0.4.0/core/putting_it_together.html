@@ -1,0 +1,19 @@
+<span>
+    <div class="example_summary"><span><span> An example with drop take and limitFold.  </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+
+    import scalax.io._
+
+    val in:Input = Resource.fromURL(&quot;file://someFile&quot;)
+
+    /**
+     * Skip first 10 bytes and sum a random number of bytes up
+     * to 20 bytes
+     */
+    in.bytes.drop(10).take(20).limitFold(10) {
+      case (acc, next) if util.Random.nextBoolean =&gt; End(acc + next)
+      case (acc, next) =&gt; End(acc + next)
+    }
+  </pre></div>
+    <span></span>
+  </span>

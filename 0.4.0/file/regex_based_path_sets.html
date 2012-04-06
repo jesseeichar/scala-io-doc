@@ -1,0 +1,20 @@
+<span>
+    <div class="example_summary"><span><span> Illustrate how to do matching using regular expression </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+    
+    // this will find all paths that are a child of &quot;.&quot; that == eng or fra or deu
+    // notice that the .r at the end, this converts the string to a regular expression
+    // and so the PathFilter that is created using the regular expression to do the match
+    val engORfraORdeu = Path(&quot;.&quot;) * &quot;(eng)|(fra)|(deu)&quot;.r
+
+
+    // in contract to the previous PathSet this consists of the one path which has the name (eng)|(fra)|(deu)
+    // notice that the argument is NOT a regular expression so it is interpretted as a glob expression
+    val engfradeu = Path(&quot;.&quot;) * &quot;(eng)|(fra)|(deu)&quot;
+
+    // finds all strings.xml files in sub directories of eng fra or deu
+    val strings = Path(&quot;.&quot;) * &quot;(eng)|(fra)|(deu)&quot;.r ** &quot;strings.xml&quot;
+  </pre></div>
+    <span></span>
+  </span>

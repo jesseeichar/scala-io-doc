@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    // list roots of defaultFileSystem
+    import scalax.file.{Path, FileSystem}
+    val roots1: Set[Path] = Path.roots
+    // This method delegates to the defaultFileSystem as follows
+    val roots2: Set[Path] = FileSystem.default.roots
+  </pre></div>
+    <span></span>
+  </span>

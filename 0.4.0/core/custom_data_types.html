@@ -1,0 +1,49 @@
+<span>
+    <div class="example_summary"><span><span> Declaring custom converters.  <p>Naturally being able to write objects other than those defined by Scala IO can be beneficial and it is a simple process.  All that is needed is a new implementation of a OutputConverter which is imported into scopoe.  </p><p>The examples below show two design patterns.</p> </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Resource._
+    import OutputConverter._
+    val out = fromFile(&quot;out&quot;)
+    // Simplest design pattern is to create a new implicit object in scope
+    implicit object DateConverter extends OutputConverter[Date] {
+      def sizeInBytes = 8
+      def toBytes(data: Date) = LongConverter.toBytes(data.getTime)
+    }
+
+    out.write(java.util.Calendar.getInstance().getTime())
+
+    // write, append, patch and insert all follow the same pattern
+    out.append(3)
+
+    // The second (an more reusable design pattern) is to create an object
+    // that contains the converters that you want to use and then they can be
+    // reused through out the code base.
+    object CustomConverters {
+      case class User(name:String,id:Int)
+      // first you need converter for a collection of your type
+      implicit object UserTraversableConverter extends OutputConverter[TraversableOnce[User]] {
+        def sizeInBytes = 2
+
+        def toBytes(users: TraversableOnce[User]):TraversableOnce[Byte] = {
+          // Create a single instance of a buffer for encoding the id value.
+          val idBuffer = new OutputConverter.Buffer[Int](4,(byteBuffer,data) =&gt; {byteBuffer.putInt(data)})
+          users.toIterator.flatMap{
+            user =&gt;
+              user.name.getBytes(&quot;ASCII&quot;).toIterator ++ idBuffer.put(user.id)
+          }
+        }
+      }
+      // next you need converters for the basic type and arrays
+      implicit object UserConverter extends NonTraversableAdapter(UserTraversableConverter)
+      implicit object UserArrayConverter extends ArrayAdapter(UserTraversableConverter)
+    }
+
+    // finally you can import the definitions into scope and write away
+    import CustomConverters._
+
+    out.write(User(&quot;Jesse Eichar&quot;,888888))
+    out.insert(2,User(&quot;Jesse&quot;,23421))
+  </pre></div>
+    <span></span>
+  </span>

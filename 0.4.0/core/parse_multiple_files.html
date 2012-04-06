@@ -1,0 +1,26 @@
+<span>
+    <div class="example_summary"><span><span> Combine multiple LongTraversable objects into one by combining them through several transformers.  Consider a hypothetical csv like format where the attributes are split between two files.  The first file has 3 columns.  |title|id| Each Id must be unique in this file the second file also has 2 columns |id|data| the second file can have multiple rows with the same id but they must be adjacent to the other rows with the same ids.  This example combines the two files into a single LongTraversable[Record] </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.{Resource,Codec,LongTraversable}
+    
+    case class Record(id:Int, title:String, attributes:Iterable[String])
+
+    val recordTransformer = for{
+        titles &lt;- Resource.fromFile(&quot;file.titles.csv&quot;).lines().processor
+        atts &lt;- Resource.fromFile(&quot;file.atts.csv&quot;).lines().processor
+        _ &lt;- titles.repeatUntilEmpty()
+        titleLine &lt;- titles.next
+        // assuming &quot;,&quot; is separator
+        Array(title,id) = titleLine.split(&quot;,&quot;)
+        attributes &lt;- atts.takeWhile(_.split(&quot;,&quot;).head == id)
+      } yield {
+        Record(id.toInt, title, attributes.toSeq)
+      }
+      
+    val records: LongTraversable[Record] = recordTransformer.traversable
+    
+    // now do something with the records.  remember the files have not
+    // yet been opened and won't be until the LongTraversable is used
+  </pre></div>
+    <span></span>
+  </span>
