@@ -77,7 +77,21 @@ about the filesystem.
     </li></ol>
             </div>
 
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scalax.file.FileSystem#PathType" data-isabs="true">
+      <a id="PathType:PathType"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">PathType</span>
         
+        <span class="result"> &lt;: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li></ol>
+            </div>
         
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
@@ -95,13 +109,13 @@ about the filesystem.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the associated ResourceContext
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#createTempDirectory" data-isabs="true">
-      <a id="createTempDirectory(String,String,String,Boolean):Path"></a>
+      <a id="createTempDirectory(String,String,String,Boolean):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createTempDirectory</span>
         
-        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="#randomPrefix:String">randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="#randomPrefix:String">randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates an empty directory in the provided directory with the provided prefix and suffixes, if the filesystem
@@ -123,13 +137,13 @@ not previously used by another process at time of creation.
          Default is true
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#createTempFile" data-isabs="true">
-      <a id="createTempFile(String,String,String,Boolean):Path"></a>
+      <a id="createTempFile(String,String,String,Boolean):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createTempFile</span>
         
-        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="#randomPrefix:String">randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="#randomPrefix:String">randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates an empty file in the provided directory with the provided prefix and suffixes,
@@ -147,19 +161,17 @@ not previously used by another process at time of creation.
          Default is null (system/user temp folder)</p></dd><dt class="param">deleteOnExit</dt><dd class="cmt"><p>
          If true then the file will be deleted when the JVM is shutdown
          Default is true</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="scalax.file.FileSystem#fromString" data-isabs="true">
-      <a id="fromString(String):Path"></a>
+    </li><li visbl="prt" name="scalax.file.FileSystem#doCreateFromSeq" data-isabs="true">
+      <a id="doCreateFromSeq(Seq[String]):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">fromString</span>
+        <span class="name">doCreateFromSeq</span>
         
-        <span class="params">(<span name="path">path: String</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="segments">segments: Seq[String]</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Create a path object for the filesystem
-</p><div class="fullcomment"><div class="comment cmt"><p>Create a path object for the filesystem
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected abstract </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#name" data-isabs="true">
       <a id="name:String"></a>
       <h4 class="signature">
@@ -172,13 +184,13 @@ not previously used by another process at time of creation.
       </h4>
       <p class="shortcomment cmt">A name identifying the filesystem</p><div class="fullcomment"><div class="comment cmt"><p>A name identifying the filesystem</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#roots" data-isabs="true">
-      <a id="roots:Set[Path]"></a>
+      <a id="roots:Set[PathType]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">roots</span>
         
-        <span class="result">: Set[<a name="scalax.file.Path" class="extype" href="Path.html">Path</a>]</span>
+        <span class="result">: Set[PathType]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns the list of roots for this filesystem
@@ -271,24 +283,24 @@ not previously used by another process at time of creation.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#apply" data-isabs="false">
-      <a id="apply(String,Char):Path"></a>
+      <a id="apply(String,Char):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="scalax.file.FileSystem#apply" data-isabs="false">
-      <a id="apply(String*):Path"></a>
+      <a id="apply(String*):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="segments">segments: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="segments">segments: String*</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       
@@ -368,16 +380,28 @@ is enabled for the filesystem's logger.
               
         </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.FileSystem#fromSeq" data-isabs="false">
-      <a id="fromSeq(Seq[String]):Path"></a>
+      <a id="fromSeq(Seq[String]):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">fromSeq</span>
         
-        <span class="params">(<span name="segments">segments: Seq[String]</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="segments">segments: Seq[String]</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a path object for the filesystem from the path segments
+</p>
+    </li><li visbl="pub" name="scalax.file.FileSystem#fromString" data-isabs="false">
+      <a id="fromString(String):PathType"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">fromString</span>
+        
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result">: PathType</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a path object for the filesystem
 </p>
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
@@ -465,7 +489,7 @@ pattern used to create the function.</p><p>If the syntax is glob then the follow
          the pattern of the match</p></dd><dt class="param">syntax</dt><dd class="cmt"><p>
          the identifier of the syntax that will be used to interpret the pattern
          Default is glob</p><p>@return
-         a function that matches paths agains the matching specification in syntax and Pattern
+         a function that matches paths against the matching specification in syntax and Pattern
 </p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>Path#contents
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
@@ -501,6 +525,17 @@ pattern used to create the function.</p><p>If the syntax is glob then the follow
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.FileSystem#presentWorkingDirectory" data-isabs="false">
+      <a id="presentWorkingDirectory:_10.fileSystem.PathType forSome { val _10: FileSystem.this.PathType }"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol"> 
+        <span class="name">presentWorkingDirectory</span>
+        
+        <span class="result">: _10.fileSystem.PathType forSome { val _10: FileSystem.this.PathType }</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scalax.file.FileSystem#randomPrefix" data-isabs="false">
       <a id="randomPrefix:String"></a>
       <h4 class="signature">

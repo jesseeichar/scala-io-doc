@@ -30,7 +30,9 @@
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An object that can be viewed as a Seekable object. For example
 a FileChannel.
-</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
+</p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>
+         the type of the underlying Resource
+</p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
 </p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[R], <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[R], <a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a>[R], <a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a>[R, <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]], <span name="resource.ManagedResourceOperations" class="extype">ManagedResourceOperations</span>[R], <span name="resource.ManagedResource" class="extype">ManagedResource</span>[R], <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a>, <a name="scalax.io.Output" class="extype" href="Output.html">Output</a>, <a name="scalax.io.Input" class="extype" href="Input.html">Input</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
@@ -103,8 +105,8 @@ a FileChannel.
         <span class="result">: <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[<span name="java.io.InputStream" class="extype">InputStream</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.InputStreamResource(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.InputStreamResource(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.InputStreamResource(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.Resource#open" data-isabs="true">
       <a id="open():OpenedResource[R]"></a>
@@ -156,8 +158,8 @@ val calculatedResult = resource.acquireAndGet {
         <span class="result">: <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[<span name="java.nio.channels.ReadableByteChannel" class="extype">ReadableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.ReadableByteChannelResource(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.ReadableByteChannelResource(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.ReadableByteChannelResource(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.InputResource#reader" data-isabs="true">
       <a id="reader(Codec):ReadCharsResource[Reader]"></a>
@@ -170,7 +172,8 @@ val calculatedResult = resource.acquireAndGet {
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.
+</p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="prt" name="scalax.io.InputResource#sizeFunc" data-isabs="true">
       <a id="sizeFunc:() ⇒ Option[Long]"></a>
@@ -221,8 +224,8 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="result">: <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.WritableByteChannel(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.WritableByteChannel(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.WritableByteChannel(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.OutputResource#writer" data-isabs="true">
       <a id="writer(Codec):WriteCharsResource[Writer]"></a>
@@ -235,7 +238,8 @@ it is not possible to determin size of resource before accessing the resource.</
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
+</p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a></dd></dl></div>
     </li></ol>
             </div>
@@ -359,7 +363,7 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
 </p></div><dl class="paramcmts block"><dt class="param">string</dt><dd class="cmt"><p>
          the data to write</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          the codec of the string to be written. The string will
-         be converted to the encoding of <code> codec</code>
+         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a>
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.Seekable#append" data-isabs="false">
       <a id="append[T](T)(OutputConverter[T]):Unit"></a>
@@ -425,7 +429,7 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
          It is not added to the before the first string
          or after the last.</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          The codec of the strings to be written. The strings will
-         be converted to the encoding of <code> codec</code>
+         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a>
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -538,7 +542,8 @@ desired codec.
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
-as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
+as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.OutputResource#doCopyFrom" data-isabs="false">
       <a id="doCopyFrom(Input):Unit"></a>
       <h4 class="signature">

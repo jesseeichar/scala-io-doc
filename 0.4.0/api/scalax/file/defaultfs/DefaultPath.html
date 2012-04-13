@@ -191,26 +191,26 @@ In these cases an exception will be thrown</p></div><dl class="paramcmts block">
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a> → <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a> → <a name="scalax.file.PathFinder" class="extype" href="../PathFinder.html">PathFinder</a></dd><dt>See also</dt><dd><span class="cmt"><p>#\(String)
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#/" data-isabs="false">
-      <a id="/(Path):Path"></a>
+      <a id="/(Path):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">/</span>
         
-        <span class="params">(<span name="child">child: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="child">child: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for /(child.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for /(child.name)
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>A new path with the specified path appended</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd><dt>See also</dt><dd><span class="cmt"><p>#/(String)
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#/" data-isabs="false">
-      <a id="/(String,Char):Path"></a>
+      <a id="/(String,Char):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">/</span>
         
-        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Add several children to this path.</p><div class="fullcomment"><div class="comment cmt"><p>Add several children to this path.  The sep character will be used to split the path string,
@@ -289,36 +289,36 @@ path / (&quot;//&quot;,'/') // returns same Path
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#\" data-isabs="false">
-      <a id="\(Path):Path"></a>
+      <a id="\(Path):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">\</span>
         
-        <span class="params">(<span name="child">child: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="child">child: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for /(Path)</p><div class="fullcomment"><div class="comment cmt"><p>Alias for /(Path)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd><dt>See also</dt><dd><span class="cmt"><p>#/(Path)
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#\" data-isabs="false">
-      <a id="\(String,Char):Path"></a>
+      <a id="\(String,Char):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">\</span>
         
-        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#\" data-isabs="false">
-      <a id="\(String):Path"></a>
+      <a id="\(String):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">\</span>
         
-        <span class="params">(<span name="child">child: String</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="child">child: String</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for /(String)
@@ -396,7 +396,7 @@ will be ignored
 </p></div><dl class="paramcmts block"><dt class="param">string</dt><dd class="cmt"><p>
          the data to write</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          the codec of the string to be written. The string will
-         be converted to the encoding of <code> codec</code>
+         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="../../io/Codec.html">Codec</a>
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="../../io/Seekable.html">Seekable</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.Seekable#append" data-isabs="false">
       <a id="append[T](T)(OutputConverter[T]):Unit"></a>
@@ -462,7 +462,7 @@ will be ignored
          It is not added to the before the first string
          or after the last.</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          The codec of the strings to be written. The strings will
-         be converted to the encoding of <code> codec</code>
+         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="../../io/Codec.html">Codec</a>
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="../../io/Seekable.html">Seekable</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -740,7 +740,8 @@ very large directories.</p></div><dl class="paramcmts block"><dt class="param">f
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
-as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a> → <a name="scalax.io.Input" class="extype" href="../../io/Input.html">Input</a></dd></dl></div>
+as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a> → <a name="scalax.io.Input" class="extype" href="../../io/Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#copyTo" data-isabs="false">
       <a id="copyTo[P&lt;:Path](P,Boolean,Boolean,Boolean,Int):P"></a>
       <h4 class="signature">
@@ -768,13 +769,13 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
           A depth of 1 means all children are copied as well, etc...
           default is entire tree</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#createDirectory" data-isabs="false">
-      <a id="createDirectory(Boolean,Boolean,Iterable[AccessMode],Iterable[scalax.file.attributes.FileAttribute[_]]):Path"></a>
+      <a id="createDirectory(Boolean,Boolean,Iterable[AccessMode],Iterable[scalax.file.attributes.FileAttribute[_]]):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createDirectory</span>
         
-        <span class="params">(<span name="createParents">createParents: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="failIfExists">failIfExists: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="accessModes">accessModes: Iterable[<a name="scalax.file.Path.AccessModes.AccessMode" class="extype" href="../Path$$AccessModes$$AccessMode.html">AccessMode</a>] = <span class="symbol"><span class="name"><a href="../Path$.html">List(Read,Write,Execute)</a></span></span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="createParents">createParents: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="failIfExists">failIfExists: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="accessModes">accessModes: Iterable[<a name="scalax.file.Path.AccessModes.AccessMode" class="extype" href="../Path$$AccessModes$$AccessMode.html">AccessMode</a>] = <span class="symbol"><span class="name"><a href="../Path$.html">List(Read,Write,Execute)</a></span></span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create the directory referenced by this path.</p><div class="fullcomment"><div class="comment cmt"><p>Create the directory referenced by this path.</p><p>If failIfExists then IOException is thrown if the file already exists.
@@ -795,13 +796,13 @@ permission
          Ignored unless on Java 7+ JVM
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#createFile" data-isabs="false">
-      <a id="createFile(Boolean,Boolean,Iterable[AccessMode],Iterable[scalax.file.attributes.FileAttribute[_]]):Path"></a>
+      <a id="createFile(Boolean,Boolean,Iterable[AccessMode],Iterable[scalax.file.attributes.FileAttribute[_]]):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createFile</span>
         
-        <span class="params">(<span name="createParents">createParents: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="failIfExists">failIfExists: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="accessModes">accessModes: Iterable[<a name="scalax.file.Path.AccessModes.AccessMode" class="extype" href="../Path$$AccessModes$$AccessMode.html">AccessMode</a>] = <span class="symbol"><span class="name"><a href="../Path$.html">List(Read,Write)</a></span></span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="createParents">createParents: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="failIfExists">failIfExists: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="accessModes">accessModes: Iterable[<a name="scalax.file.Path.AccessModes.AccessMode" class="extype" href="../Path$$AccessModes$$AccessMode.html">AccessMode</a>] = <span class="symbol"><span class="name"><a href="../Path$.html">List(Read,Write)</a></span></span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create the file referenced by this path.</p><div class="fullcomment"><div class="comment cmt"><p>Create the file referenced by this path.</p><p>If failIfExists then IOException is thrown if the file already exists.
@@ -821,13 +822,13 @@ permission
          Filesystem specific attributes to fromString to the file
          Ignored unless on Java 7+ JVM</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#delete" data-isabs="false">
-      <a id="delete(Boolean):Path"></a>
+      <a id="delete(Boolean):DefaultPath.this.type"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">delete</span>
         
-        <span class="params">(<span name="force">force: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="force">force: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: DefaultPath.this.type</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Deletes the file or throws an IOException on failure
@@ -1037,6 +1038,18 @@ extension (e.g. &quot;foo.jpg&quot;) returns the extension (&quot;jpg&quot;)
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DefaultFileOps</dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#fileOption" data-isabs="false">
+      <a id="fileOption:Option[File]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">fileOption</span>
+        
+        <span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="java.io.File" class="extype">File</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return a java.</p><div class="fullcomment"><div class="comment cmt"><p>Return a java.io.File if possible
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a> → <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#fileSystem" data-isabs="false">
       <a id="fileSystem:DefaultFileSystem"></a>
       <h4 class="signature">
@@ -1389,7 +1402,11 @@ desired codec.
       <p class="shortcomment cmt"> Move the underlying object if it exists to the target location.</p><div class="fullcomment"><div class="comment cmt"><p> Move the underlying object if it exists to the target location.</p><p> If copying of the file is required this will happen, as long as
  atomicMove = false.  If atomicMove = true and the move requires copy then
  deletion an exception will be thrown.  This is filesystem dependent</p></div><dl class="paramcmts block"><dt class="param">target</dt><dd class="cmt"><p>
-          the target path to move the filesystem object to.</p></dd><dt class="param">atomicMove</dt><dd class="cmt"><p>
+          the target path to move the filesystem object to.</p></dd><dt class="param">replace</dt><dd class="cmt"><p>
+          if true then replace any existing target object
+          unless it is a non-empty directory in which case
+          an IOException is thrown.
+          False by default</p></dd><dt class="param">atomicMove</dt><dd class="cmt"><p>
           it will guarantee atomicity of the move
           False by default
 </p></dd><dt>returns</dt><dd class="cmt"><p>true
@@ -1431,17 +1448,21 @@ desired codec.
 </p><div class="fullcomment"><div class="comment cmt"><p> False if the path does not exist in the file system
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>false if the path does not exist in the file system
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a> → <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#normalize" data-isabs="false">
-      <a id="normalize:DefaultPath"></a>
+    </li><li visbl="pub" name="scalax.file.Path#normalize" data-isabs="false">
+      <a id="normalize:PathType"></a>
       <h4 class="signature">
       <span class="kind">lazy val</span>
       <span class="symbol"> 
         <span class="name">normalize</span>
         
-        <span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a></span>
+        <span class="result">: PathType</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a> → <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns the related Path that starts at a root of the file system and is the direct
+path with all relative segments are resolved.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the related Path that starts at a root of the file system and is the direct
+path with all relative segments are resolved.</p><p>For example /home/user/../another is <em>not</em> a valid normalized path.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd><dt>See also</dt><dd><span class="cmt"><p>java.file.File#toCanonical
+</p></span>, <span class="cmt"><p>#toAbsolute</p></span></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">
@@ -1639,13 +1660,13 @@ paths have different roots the other path is returned.  If the two paths
 reference the same path then the other path is returned</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>relative path from the current path to the other path
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
-      <a id="resolve(String*):Path"></a>
+      <a id="resolve(String*):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">resolve</span>
         
-        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Constructs a path from other using the same file system as this
@@ -1658,13 +1679,13 @@ path resolve (&quot;//..//b//&quot;,'/') // result is Path / .. / b
 </pre></div><dl class="paramcmts block"><dt class="param">pathSegments</dt><dd class="cmt"><p>the path segments that make up the path</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of this
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
-      <a id="resolve(String,Char):Path"></a>
+      <a id="resolve(String,Char):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">resolve</span>
         
-        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Constructs a path from other using the same file system as this
@@ -1677,13 +1698,13 @@ path resolve (&quot;//..//b//&quot;,'/') // result is Path / .. / b
 </pre></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the string representation of the path with segment separators as indicated by separator</p></dd><dt class="param">separator</dt><dd class="cmt"><p>the separator character used in other</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of this
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#resolve" data-isabs="false">
-      <a id="resolve(Path):Path"></a>
+      <a id="resolve(Path):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">resolve</span>
         
-        <span class="params">(<span name="other">other: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="other">other: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Resolve this path with other.</p><div class="fullcomment"><div class="comment cmt"><p>Resolve this path with other.  In the simplest case
@@ -1693,13 +1714,13 @@ that means appending other to this.</p><p> Does the same thing as the / method
 @return
          the constructed/resolved path</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#root" data-isabs="false">
-      <a id="root:Option[Path]"></a>
+      <a id="root:Option[PathType]"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
+      <span class="kind">lazy val</span>
       <span class="symbol"> 
         <span class="name">root</span>
         
-        <span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="scalax.file.Path" class="extype" href="../Path.html">Path</a>]</span>
+        <span class="result">: <span name="scala.Option" class="extype">Option</span>[PathType]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The root of the file system of the path if it can be determined.</p><div class="fullcomment"><div class="comment cmt"><p>The root of the file system of the path if it can be determined.
@@ -1765,13 +1786,13 @@ the filesystem
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd><dt>See also</dt><dd><span class="cmt"><p>FileSystem#separator
 </p></span></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
-      <a id="sibling(String*):Path"></a>
+      <a id="sibling(String*):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">sibling</span>
         
-        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="pathSegments">pathSegments: String*</span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as sibling(Path)
@@ -1779,13 +1800,13 @@ the filesystem
 </p></div><dl class="paramcmts block"><dt class="param">pathSegments</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or other if there is no parent
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
-      <a id="sibling(String,Char):Path"></a>
+      <a id="sibling(String,Char):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">sibling</span>
         
-        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="other">other: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as sibling(Path)
@@ -1793,16 +1814,16 @@ the filesystem
 </p></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt class="param">separator</dt><dd class="cmt"><p>the separator character that is used in other</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or other if there is no parent
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#sibling" data-isabs="false">
-      <a id="sibling(Path):Path"></a>
+      <a id="sibling(Path):PathType"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">sibling</span>
         
-        <span class="params">(<span name="other">other: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="params">(<span name="other">other: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>)</span><span class="result">: PathType</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as in resolve(Path).</p><div class="fullcomment"><div class="comment cmt"><p>Resolves other against this path's parent in the same manner as in resolve(Path).</p><p>If parent does not exist other will be returned.  Otherwise parent.resolve(other) will be returned
+      <p class="shortcomment cmt">Resolves other against this path's parent in the same manner as in resolve(Path).</p><div class="fullcomment"><div class="comment cmt"><p>Resolves other against this path's parent in the same manner as in resolve(Path).</p><p>If parent does not exist fileSystem.fromSeq(other.segments) will be returned.  Otherwise parent.resolve(other) will be returned
 </p></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>the path from parent to the sibling.</p></dd><dt>returns</dt><dd class="cmt"><p>a path resolved as a child of parent or None if parent is None
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#simpleName" data-isabs="false">
@@ -1884,13 +1905,13 @@ be as efficient as possible to copy from the temporary file to this Seekable and
 vice-versa.  Can be overridden for performance
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.file.Path" class="extype" href="../Path.html">Path</a> → <a name="scalax.io.Seekable" class="extype" href="../../io/Seekable.html">Seekable</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#toAbsolute" data-isabs="false">
-      <a id="toAbsolute:Path"></a>
+      <a id="toAbsolute:DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">toAbsolute</span>
         
-        <span class="result">: <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></span>
+        <span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Modifies the Path so that it is absolute from a root of the file system.</p><div class="fullcomment"><div class="comment cmt"><p>Modifies the Path so that it is absolute from a root of the file system.
@@ -1910,18 +1931,6 @@ is a valid absolute path.
       </h4>
       <p class="shortcomment cmt">Open a seekableByteChannelResource to use for creating other long traversables like chars or bytes as its.</p><div class="fullcomment"><div class="comment cmt"><p>Open a seekableByteChannelResource to use for creating other long traversables like chars or bytes as its.</p><p>This method may throw an exception if the file does not exist</p><p>Main feature is it sets position to 0 each call so the resource will always read from 0
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.file.FileOps" class="extype" href="../FileOps.html">FileOps</a> → <a name="scalax.io.Seekable" class="extype" href="../../io/Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#toFile" data-isabs="false">
-      <a id="toFile:Option[File]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">toFile</span>
-        
-        <span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="java.io.File" class="extype">File</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Return a java.</p><div class="fullcomment"><div class="comment cmt"><p>Return a java.io.File if possible
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.file.defaultfs.DefaultPath" class="extype" href="">DefaultPath</a> → <a name="scalax.file.Path" class="extype" href="../Path.html">Path</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.defaultfs.DefaultPath#toRealPath" data-isabs="false">
       <a id="toRealPath(LinkOption*):DefaultPath"></a>
       <h4 class="signature">

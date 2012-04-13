@@ -147,17 +147,20 @@
       <p class="comment cmt">Enumeration of the Access modes possible for accessing files
 </p>
     </li><li visbl="pub" name="scalax.file.Path#apply" data-isabs="false">
-      <a id="apply(File):Path"></a>
+      <a id="apply(File):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="jfile">jfile: <span name="java.io.File" class="extype">File</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="jfile">jfile: <span name="java.io.File" class="extype">File</span></span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a Path on the default files system from a <code> java.file.File</code>
-</p>
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a Path on the default files system from a <code> java.file.File</code>
+</p></div><dl class="paramcmts block"><dt class="param">jfile</dt><dd class="cmt"><p>
+         the file to use for creating the Path
+</p></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#apply" data-isabs="false">
       <a id="apply(URI):Option[Path]"></a>
       <h4 class="signature">
@@ -177,24 +180,24 @@ from the uri.  For example:</p><ul><li><code>file://c:\dir</code> will create an
 @return
          A path object</p></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#apply" data-isabs="false">
-      <a id="apply(String,Char):Path"></a>
+      <a id="apply(String,Char):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="pathRepresentation">pathRepresentation: String</span>, <span name="separator">separator: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="scalax.file.Path#apply" data-isabs="false">
-      <a id="apply(String*):Path"></a>
+      <a id="apply(String*):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">apply</span>
         
-        <span class="params">(<span name="path">path: String*</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="path">path: String*</span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       
@@ -224,13 +227,13 @@ from the uri.  For example:</p><ul><li><code>file://c:\dir</code> will create an
               
         </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#createTempDirectory" data-isabs="false">
-      <a id="createTempDirectory(String,String,String,Boolean,Iterable[scalax.file.attributes.FileAttribute[_]]):Path"></a>
+      <a id="createTempDirectory(String,String,String,Boolean,Iterable[scalax.file.attributes.FileAttribute[_]]):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createTempDirectory</span>
         
-        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="FileSystem$.html">FileSystem.default.randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="FileSystem$.html">FileSystem.default.randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates an empty directory in the provided directory with the provided prefix and suffixes.</p><div class="fullcomment"><div class="comment cmt"><p>Creates an empty directory in the provided directory with the provided prefix and suffixes.
@@ -252,13 +255,13 @@ not previously used by another process at time of creation.
          Default is Nil(default system file attributes)
 </p></dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#createTempFile" data-isabs="false">
-      <a id="createTempFile(String,String,String,Boolean,Iterable[scalax.file.attributes.FileAttribute[_]]):Path"></a>
+      <a id="createTempFile(String,String,String,Boolean,Iterable[scalax.file.attributes.FileAttribute[_]]):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">createTempFile</span>
         
-        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="FileSystem$.html">FileSystem.default.randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="prefix">prefix: String = <span class="symbol"><span class="name"><a href="FileSystem$.html">FileSystem.default.randomPrefix</a></span></span></span>, <span name="suffix">suffix: String = <span class="symbol">null</span></span>, <span name="dir">dir: String = <span class="symbol">null</span></span>, <span name="deleteOnExit">deleteOnExit: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">true</span></span>, <span name="attributes">attributes: Iterable[scalax.file.attributes.FileAttribute[_]] = <span class="symbol">Nil</span></span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates an empty file in the provided directory with the provided prefix and suffixes.</p><div class="fullcomment"><div class="comment cmt"><p>Creates an empty file in the provided directory with the provided prefix and suffixes.
@@ -314,13 +317,13 @@ not previously used by another process at time of creation.</p></div><dl class="
               
         </dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#fromString" data-isabs="false">
-      <a id="fromString(String):Path"></a>
+      <a id="fromString(String):DefaultPath"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">fromString</span>
         
-        <span class="params">(<span name="path">path: String</span>)</span><span class="result">: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>
+        <span class="params">(<span name="path">path: String</span>)</span><span class="result">: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a Path from a string
@@ -395,13 +398,13 @@ not previously used by another process at time of creation.</p></div><dl class="
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scalax.file.Path#roots" data-isabs="false">
-      <a id="roots:Set[Path]"></a>
+      <a id="roots:Set[DefaultPath]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">roots</span>
         
-        <span class="result">: Set[<a name="scalax.file.Path" class="extype" href="Path.html">Path</a>]</span>
+        <span class="result">: Set[<a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Lists the roots of the default filesystem
@@ -428,24 +431,19 @@ not previously used by another process at time of creation.</p></div><dl class="
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.file.Path#unapply" data-isabs="false">
-      <a id="unapply(Path):Option[String]"></a>
+    </li><li visbl="pub" name="scalax.file.Path#unapplySeq" data-isabs="false">
+      <a id="unapplySeq(Path):Option[Seq[String]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">unapply</span>
+        <span class="name">unapplySeq</span>
         
-        <span class="params">(<span name="pathExpr">pathExpr: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[String]</span>
+        <span class="params">(<span name="pathExpr">pathExpr: <a name="scalax.file.Path" class="extype" href="Path.html">Path</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[Seq[String]]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Allows matching on the full path of a Path</p><div class="fullcomment"><div class="comment cmt"><p>Allows matching on the full path of a Path</p><p> The match must be exact and in the same case as
- the path but the / and \ are interchangeable</p><p><pre>
-<code>
-Path("c:/dir/file")
-Path("c:\\dir\\file")
-</code>
-</pre>
-both of the above examples will match the same path</p><p>For more on matching Paths see <code> Path.Matching</code>
+      <p class="shortcomment cmt">Allows matching on the path segments of a Path</p><div class="fullcomment"><div class="comment cmt"><p>Allows matching on the path segments of a Path</p><pre>
+Path(&quot;c:&quot;,&quot;dir&quot;, &quot;file&quot;)
+</pre><p>both of the above examples will match the same path</p><p>For more on matching Paths see <a name="scalax.file.PathMatcher" class="extype" href="PathMatcher.html">PathMatcher</a>
 </p></div></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>

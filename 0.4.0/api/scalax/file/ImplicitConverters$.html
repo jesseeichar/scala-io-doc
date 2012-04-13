@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.file.FileSystem</title>
+          <title>scalax.file.ImplicitConverters</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
@@ -14,23 +14,24 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a title="Go to companion" href="FileSystem.html"><img src="../../lib/object_to_class_big.png" /></a>
+        <img src="../../lib/object_big.png" />
         <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.file" class="extype" href="package.html">file</a></p>
-        <h1><a title="Go to companion" href="FileSystem.html">FileSystem</a></h1>
+        <h1>ImplicitConverters</h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">object</span>
       <span class="symbol"> 
-        <span class="name">FileSystem</span>
+        <span class="name">ImplicitConverters</span>
         
         <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Factory object for obtaining filesystem objects
-</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
-</p></dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains the implicit conversion methods for converting to Paths and related objects</p><p>User: jeichar
+Date: 3/24/12
+Time: 7:26 PM
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
@@ -48,7 +49,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="scalax.file.FileSystem" class="in"><span>FileSystem</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="scalax.file.ImplicitConverters" class="in"><span>ImplicitConverters</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -144,20 +145,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.file.FileSystem#default" data-isabs="false">
-      <a id="default:DefaultFileSystem"></a>
+    </li><li visbl="pub" name="scalax.file.ImplicitConverters#defaultPathAsJFile" data-isabs="false">
+      <a id="defaultPathAsJFile(DefaultPath):AnyRef { def asFile: java.io.File }"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
+      <span class="kind">implicit def</span>
       <span class="symbol"> 
-        <span class="name">default</span>
+        <span class="name">defaultPathAsJFile</span>
         
-        <span class="result">: <span name="scalax.file.defaultfs.DefaultFileSystem" class="extype">DefaultFileSystem</span></span>
+        <span class="params">(<span name="path">path: <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a></span>)</span><span class="result">: AnyRef { def asFile: java.io.File }</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"> The default filesystem</p><div class="fullcomment"><div class="comment cmt"><p> The default filesystem</p><p> In a typical system this is the main system drive
- and corresponds to the file system that is referenced by
- java.file.File objects
-</p></div></div>
+      <p class="shortcomment cmt">Implicitly convert a an asJFile method to <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a>
+</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly convert a an asJFile method to <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="defaultfs/DefaultPath.html">DefaultPath</a>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -227,6 +227,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.ImplicitConverters#jfileAsPath" data-isabs="false">
+      <a id="jfileAsPath(File):AnyRef { def asPath: scalax.file.FileSystem.default.PathType }"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">jfileAsPath</span>
+        
+        <span class="params">(<span name="jfile">jfile: <span name="java.io.File" class="extype">File</span></span>)</span><span class="result">: AnyRef { def asPath: scalax.file.FileSystem.default.PathType }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Method to implicitly convert add an asPath method to java.io.File
+</p><div class="fullcomment"><div class="comment cmt"><p>Method to implicitly convert add an asPath method to java.io.File
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -260,6 +273,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scalax.file.ImplicitConverters#stringAsPath" data-isabs="false">
+      <a id="stringAsPath(String):AnyRef { ... /* 2 definitions in type refinement */ }"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">stringAsPath</span>
+        
+        <span class="params">(<span name="s">s: String</span>)</span><span class="result">: AnyRef { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Method to implicitly add an asPath method to String
+</p><div class="fullcomment"><div class="comment cmt"><p>Method to implicitly add an asPath method to String
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">

@@ -319,7 +319,8 @@ desired codec.
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
-as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="../InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="../Input.html">Input</a></dd></dl></div>
+as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="../InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="../Input.html">Input</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -410,8 +411,8 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="result">: <a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a>[A]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.InputStreamResource(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.InputStreamResource(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.InputStreamResource(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a> → <a name="scalax.io.InputResource" class="extype" href="../InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -526,8 +527,8 @@ val calculatedResult = resource.acquireAndGet {
         <span class="result">: <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="ReadableByteChannelResource.html">ReadableByteChannelResource</a>[<span name="java.nio.channels.ReadableByteChannel" class="extype">ReadableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.ReadableByteChannelResource(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.ReadableByteChannelResource(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.ReadableByteChannelResource(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a> → <a name="scalax.io.InputResource" class="extype" href="../InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="pub" name="scalax.io.managed.InputStreamResource#reader" data-isabs="false">
       <a id="reader(Codec):ReaderResource[InputStreamReader with Adapter[A]]"></a>
@@ -540,7 +541,8 @@ val calculatedResult = resource.acquireAndGet {
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="../ReadCharsResource.html">ReadCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="../ReadCharsResource.html">ReadCharsResource</a> version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.ReadCharsResource" class="extype" href="../ReadCharsResource.html">ReadCharsResource</a> version of this object.
+</p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.ReadCharsResource" class="extype" href="../ReadCharsResource.html">ReadCharsResource</a> version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.managed.InputStreamResource" class="extype" href="">InputStreamResource</a> → <a name="scalax.io.InputResource" class="extype" href="../InputResource.html">InputResource</a></dd></dl></div>
     </li><li visbl="pub" name="resource.ManagedResourceOperations#reflect" data-isabs="false">
       <a id="reflect[B]:A @util.continuations.package.cps[Either[List[Throwable],B]]"></a>

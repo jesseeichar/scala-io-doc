@@ -29,8 +29,8 @@
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An Resource object that is a also an <a name="scalax.io.Output" class="extype" href="Output.html">Output</a>.  This trait adds methods
-for converting between common io types such as to a scalax.io.WriterResource or
-scalax.io.WritableByteChannelResource
+for converting between common io types such as to a <a name="scalax.io.managed.WriterResource" class="extype" href="managed/WriterResource.html">WriterResource</a> or
+<a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>
 </p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>
          the type of underlying resource that is created
 </p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
@@ -172,8 +172,8 @@ val calculatedResult = resource.acquireAndGet {
         <span class="result">: <a name="scalax.io.OutputResource" class="extype" href="">OutputResource</a>[<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the scalax.io.WritableByteChannel(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the scalax.io.WritableByteChannel(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scalax.io.WritableByteChannel(typically) version of this object.
+      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="scalax.io.OutputResource#writer" data-isabs="true">
       <a id="writer(Codec):WriteCharsResource[Writer]"></a>
@@ -186,7 +186,8 @@ val calculatedResult = resource.acquireAndGet {
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
+</p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li></ol>
             </div>
