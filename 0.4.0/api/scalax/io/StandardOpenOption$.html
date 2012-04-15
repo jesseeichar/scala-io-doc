@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
       <div id="definition">
         <img src="../../lib/object_big.png" />
         <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.io" class="extype" href="package.html">io</a></p>
@@ -20,46 +20,47 @@
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">object</span>
-      <span class="symbol"> 
-        <span class="name">StandardOpenOption</span>
-        
-        <span class="result"> extends <span name="scala.Enumeration" class="extype">Enumeration</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">StandardOpenOption</span><span class="result"> extends <span name="scala.Enumeration" class="extype">Enumeration</span></span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Several options that are supported by most filesystems.
+      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Several options that are supported by most filesystems.
 </p></div><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
 </p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span name="scala.Enumeration" class="extype">Enumeration</span>, <span name="scala.Serializable" class="extype">Serializable</span>, <span name="java.io.Serializable" class="extype">Serializable</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
-        
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="scalax.io.StandardOpenOption" class="in"><span>StandardOpenOption</span></li><li name="scala.Enumeration" class="in"><span>Enumeration</span></li><li name="scala.Serializable" class="in"><span>Serializable</span></li><li name="java.io.Serializable" class="in"><span>Serializable</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
 
       <div id="template">
-
-        <div id="mbrsel">
-          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
-          <div id="order">
-                <span class="filtertype">Ordering</span>
-                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
-              </div>
-          <div id="ancestors">
-                <span class="filtertype">Inherited</span>
-                <ol><li class="hideall out"><span>Hide All</span></li>
-                <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="scalax.io.StandardOpenOption" class="in"><span>StandardOpenOption</span></li><li name="scala.Enumeration" class="in"><span>Enumeration</span></li><li name="scala.Serializable" class="in"><span>Serializable</span></li><li name="java.io.Serializable" class="in"><span>Serializable</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-              </div>
-          <div id="visbl">
-              <span class="filtertype">Visibility</span>
-              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
-            </div>
-        </div>
-
+        <div id="allMembers">
         
 
         
-        
+
         
 
         <div class="values members" id="values">
@@ -67,66 +68,72 @@
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">!=</span>
-        
-        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">!=</span>
-        
-        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
       <a id="##():Int"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">##</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">==</span>
-        
-        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">==</span>
-        
-        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Append" data-isabs="false">
       <a id="Append:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Append</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Append</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Append to an existing file.</p><div class="fullcomment"><div class="comment cmt"><p>Append to an existing file.
@@ -135,11 +142,12 @@ A file will not be created if the file does not exist
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Create" data-isabs="false">
       <a id="Create:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Create</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Create</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creating a file if it does not exist, but parent directories will not be created
@@ -147,11 +155,12 @@ A file will not be created if the file does not exist
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#CreateFull" data-isabs="false">
       <a id="CreateFull:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">CreateFull</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CreateFull</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creating a new file and all parent directories
@@ -159,11 +168,12 @@ A file will not be created if the file does not exist
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#CreateNew" data-isabs="false">
       <a id="CreateNew:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">CreateNew</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CreateNew</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creating a new file and fail if the file already exists
@@ -171,11 +181,12 @@ A file will not be created if the file does not exist
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#DSync" data-isabs="false">
       <a id="DSync:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">DSync</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DSync</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Requires that every update to the file's content (but not metadata)
@@ -184,11 +195,12 @@ be written synchronously to the underlying storage device
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#DeleteOnClose" data-isabs="false">
       <a id="DeleteOnClose:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">DeleteOnClose</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DeleteOnClose</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Delete file on close.</p><div class="fullcomment"><div class="comment cmt"><p>Delete file on close.</p><p>If this option is used then the best effort will be made
@@ -197,22 +209,24 @@ then the file will be deleted on VM termination (if possible)</p></div></div>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#OpenOption" data-isabs="false">
       <a id="OpenOption:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">OpenOption</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OpenOption</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Read" data-isabs="false">
       <a id="Read:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Read</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Read</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Open a file for read access
@@ -220,24 +234,25 @@ then the file will be deleted on VM termination (if possible)</p></div></div>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#ReadWrite" data-isabs="false">
       <a id="ReadWrite:List[Val with OpenOption]"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">ReadWrite</span>
-        
-        <span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReadWrite</span><span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Collection of options: <code> #CreateFull</code>, <code> #Truncate</code>, <code> #Write</code>
-</p><div class="fullcomment"><div class="comment cmt"><p>Collection of options: <code> #CreateFull</code>, <code> #Truncate</code>, <code> #Write</code>
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd></dl></div>
+</p>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Sparse" data-isabs="false">
       <a id="Sparse:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Sparse</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Sparse</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">A hint to create a sparse file if used with <code> #CreateNew</code>
@@ -245,11 +260,12 @@ then the file will be deleted on VM termination (if possible)</p></div></div>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Sync" data-isabs="false">
       <a id="Sync:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Sync</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Sync</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Requires that every update to the file's content or metadata be
@@ -258,11 +274,12 @@ written synchronously to the underlying storage device
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Truncate" data-isabs="false">
       <a id="Truncate:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Truncate</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Truncate</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If file exists and is opened for Write access then truncate the file to
@@ -273,55 +290,60 @@ Append.
     </li><li visbl="prt" name="scala.Enumeration#Value" data-isabs="false">
       <a id="Value(Int,String):Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">Value</span>
-        
-        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="name">name: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Value</span><span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="name">name: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#Value" data-isabs="false">
       <a id="Value(String):Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">Value</span>
-        
-        <span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Value</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#Value" data-isabs="false">
       <a id="Value(Int):Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">Value</span>
-        
-        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Value</span><span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#Value" data-isabs="false">
       <a id="Value:Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">Value</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Value</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#Write" data-isabs="false">
       <a id="Write:Val with OpenOption"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">Write</span>
-        
-        <span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Write</span><span class="result">: <span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Open file for write access
@@ -329,59 +351,62 @@ Append.
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#WriteAppend" data-isabs="false">
       <a id="WriteAppend:List[Val with OpenOption]"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">WriteAppend</span>
-        
-        <span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WriteAppend</span><span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Collection of options: <code> #CreateFull</code>, <code> #Append</code>, <code> #Write</code>
-</p><div class="fullcomment"><div class="comment cmt"><p>Collection of options: <code> #CreateFull</code>, <code> #Append</code>, <code> #Write</code>
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd></dl></div>
+</p>
     </li><li visbl="pub" name="scalax.io.StandardOpenOption#WriteTruncate" data-isabs="false">
       <a id="WriteTruncate:List[Val with OpenOption]"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">WriteTruncate</span>
-        
-        <span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WriteTruncate</span><span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Enumeration.Val" class="extype">Val</span> with <a name="scalax.io.OpenOption" class="extype" href="OpenOption.html">OpenOption</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Collection of options: <code> #CreateFull</code>, <code> #Truncate</code>, <code> #Write</code>
-</p><div class="fullcomment"><div class="comment cmt"><p>Collection of options: <code> #CreateFull</code>, <code> #Truncate</code>, <code> #Write</code>
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd></dl></div>
+</p>
     </li><li visbl="pub" name="scala.Enumeration#apply" data-isabs="false">
       <a id="apply(Int):Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">apply</span>
-        
-        <span class="params">(<span name="x">x: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="x">x: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">asInstanceOf</span>
-        <span class="tparams">[<span name="T0">T0</span>]</span>
-        <span class="result">: T0</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">clone</span>
-        
-        <span class="params">()</span><span class="result">: AnyRef</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -391,33 +416,36 @@ Append.
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">eq</span>
-        
-        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">equals</span>
-        
-        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">finalize</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -427,204 +455,223 @@ Append.
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getClass</span>
-        
-        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">hashCode</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">isInstanceOf</span>
-        <span class="tparams">[<span name="T0">T0</span>]</span>
-        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="scala.Enumeration#maxId" data-isabs="false">
       <a id="maxId:Int"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">maxId</span>
-        
-        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxId</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">ne</span>
-        
-        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#nextId" data-isabs="false">
       <a id="nextId:Int"></a>
       <h4 class="signature">
-      <span class="kind">var</span>
-      <span class="symbol"> 
-        <span class="name">nextId</span>
-        
-        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextId</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#nextName" data-isabs="false">
       <a id="nextName:Iterator[String]"></a>
       <h4 class="signature">
-      <span class="kind">var</span>
-      <span class="symbol"> 
-        <span class="name">nextName</span>
-        
-        <span class="result">: <span name="scala.collection.Iterator" class="extype">Iterator</span>[String]</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextName</span><span class="result">: <span name="scala.collection.Iterator" class="extype">Iterator</span>[String]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">notify</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">notifyAll</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="prt" name="scala.Enumeration#readResolve" data-isabs="false">
       <a id="readResolve():AnyRef"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">readResolve</span>
-        
-        <span class="params">()</span><span class="result">: AnyRef</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readResolve</span><span class="params">()</span><span class="result">: AnyRef</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">synchronized</span>
-        <span class="tparams">[<span name="T0">T0</span>]</span>
-        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="scala.Enumeration#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">toString</span>
-        
-        <span class="params">()</span><span class="result">: String</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: String</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Enumeration → AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.Enumeration#values" data-isabs="false">
       <a id="values:ValueSet"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">values</span>
-        
-        <span class="result">: <span name="scala.Enumeration.ValueSet" class="extype">ValueSet</span></span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">values</span><span class="result">: <span name="scala.Enumeration.ValueSet" class="extype">ValueSet</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">wait</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">wait</span>
-        
-        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">wait</span>
-        
-        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li visbl="pub" name="scala.Enumeration#withName" data-isabs="false">
       <a id="withName(String):Value"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">withName</span>
-        
-        <span class="params">(<span name="s">s: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withName</span><span class="params">(<span name="s">s: String</span>)</span><span class="result">: <span name="scala.Enumeration.Value" class="extype">Value</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Enumeration</dd></dl></div>
     </li></ol>
             </div>
 
         
+        </div>
 
+        <div id="inheritedMembers">
         <div name="scala.Enumeration" class="parent">
               <h3>Inherited from <span name="scala.Enumeration" class="extype">Enumeration</span></h3>
             </div><div name="scala.Serializable" class="parent">
@@ -636,10 +683,14 @@ Append.
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
             </div>
+        </div>
 
       </div>
-      
+
       <div id="tooltip"></div>
-      
+
+      <div id="footer">  </div>
+
+
     </body>
       </html>
