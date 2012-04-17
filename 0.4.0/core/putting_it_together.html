@@ -12,7 +12,7 @@
      */
     in.bytes.drop(10).take(20).limitFold(10) {
       case (acc, next) if util.Random.nextBoolean =&gt; End(acc + next)
-      case (acc, next) =&gt; End(acc + next)
+      case (acc, next) =&gt; Continue(acc + next)
     }
   </pre></div>
     <span></span>
