@@ -5,7 +5,10 @@
     <ol>
       <li>Add core or file dependency to your build.sbt or project settings
           <pre>
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+
 libraryDependencies += "{{props.groupId}}" %% "scala-io-core" % "{{props.version}}"
+
 libraryDependencies += "{{props.groupId}}" %% "scala-io-file" % "{{props.version}}"
           </pre>
       </li>
