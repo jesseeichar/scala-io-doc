@@ -1,0 +1,9 @@
+<span>
+    <div class="example_summary"><span><span> Search the contents of a directory and perform operations on the objects encountered </span></span></div>
+    
+    <ul ng:class="sectionId" id="content-list">
+          <li ng:repeat="example in examples" ng:class="getClass(example)">
+            <a ng:class="selectedPartial(example)" tabindex="3" href="{{getUrl(example)}}"> <strong>{{example.shortName}}</strong> - <em>{{example.shortSummary}}</em></a>
+          </li>
+        </ul>
+  </span>

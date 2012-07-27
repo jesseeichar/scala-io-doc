@@ -1,0 +1,14 @@
+<span>
+    <div class="example_summary"><span><span> iterate over all character in file </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Resource._
+
+    // see codec examples in scala io core for details on why there is an implicit codec here
+    implicit val codec = scalax.io.Codec.UTF8
+
+    val url:Input = fromURL(&quot;file://someFile&quot;)
+    val doubled: Traversable[String] = for ( c &lt;- url.chars ) yield &quot;&quot; + c + c
+  </pre></div>
+    <span></span>
+  </span>

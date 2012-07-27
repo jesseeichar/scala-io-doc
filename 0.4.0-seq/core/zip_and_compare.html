@@ -1,0 +1,12 @@
+<span>
+    <div class="example_summary"><span><span> Zip the characters of two files together and find all that don't match </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+
+    val googleCom = Resource.fromURL(&quot;http://google.com&quot;).chars
+    val googleCH = Resource.fromURL(&quot;http://google.ch&quot;).chars
+
+    googleCom.zip(googleCH).filter{case (com,ch) =&gt; com != ch}
+  </pre></div>
+    <span></span>
+  </span>

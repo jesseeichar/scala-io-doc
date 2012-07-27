@@ -1,0 +1,26 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    // Note: Both createTempFile and createTempDirectory have the same parameters
+    import scalax.file.{Path, FileSystem}
+
+    // by default the filesystem is the defaultFileSystem (surprise :-) )
+    // using the default parameters will create a randomly named directory in
+    // the system temp directory which will be deleted when the JVM exists
+    val tmpFile1: Path = Path.createTempDirectory()
+
+    // fully declare the temporary directory parameters
+    // all parameters have defaults so there are many option
+    // Note that not all filesystems support creating temporary
+    // files/directories.
+    // The default filesystem does
+    val tmpFile2: Path = Path.createTempDirectory(prefix = &quot;tmpFile&quot;,
+      suffix = &quot;tmp&quot;,
+      dir = &quot;/tmp&quot;,
+      deleteOnExit = false)
+
+    // a file system can also be used to create temporary files/directories
+    FileSystem.default.createTempFile()
+  </pre></div>
+    <span></span>
+  </span>

@@ -1,0 +1,14 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{ Path, PathMatcher }
+    import scalax.file.PathMatcher._
+
+    val path: Path = Path(&quot;/tmp/&quot;)
+    val matcher: PathMatcher[Path] = path.matcher(&quot;S*&quot;)
+    path.children(matcher).foreach(println _)
+
+    path.children(IsFile).foreach(println _)
+  </pre></div>
+    <span></span>
+  </span>

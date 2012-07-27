@@ -1,0 +1,14 @@
+<span>
+    <div class="example_summary"><span><span> Examples of using the implicit converters to convert to and from java.io.File and scalax.file.Path objects </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import java.io.File
+    import scalax.file.defaultfs.DefaultPath
+    import scalax.file.Path
+    import scalax.file.ImplicitConverters._
+
+    val path: DefaultPath = new File(&quot;/tmp/file&quot;).asPath
+    val fileAgain: File = path.asFile
+    val pathFromString: Path = &quot;hi&quot;.asPath
+  </pre></div>
+    <span></span>
+  </span>

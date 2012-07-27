@@ -1,0 +1,30 @@
+<strong>Scala IO Core</strong>
+<p>Scala IO Core will be completed before much more work is done on the FS API so that the library
+won't be forever being developed.  In addition to the major items listed below the common task of
+improving API and removing inconsistency will always be a focus.  As will performance.</p>
+<ol>
+    <li><strong>Implement Java 7 Implementations</strong>
+        <div>We need a Java 7 implementation to make sure that various aspects of the Scala-io API integrate nicely.
+        Especially Async API and Seekable channels.</div>
+    </li>
+    <li><strong>Deepen the Async APIs</strong>
+        <div>The Java 7 implementation will no doubt show some shortcomings of the current API.  Scala-io needs
+        to be able to use the Java 7 APIs so that the underlying OS async io capabilities can be used instead of
+        blocking threads.</div>
+    </li>
+</ol>
+<strong>Scala IO File</strong>
+<ol>
+    <li><strong>Watch Functionality</strong>
+        <div>
+            Add functionality that monitors filesystem for changes
+        </div>
+    </li>
+    <li><strong>Plugin system</strong>
+        <div>
+            Filesystem plugin system. Will be compatible with Java 7 API and hopefully scala-io can be Java 7 plugins
+            and scala-io should be able to use Java 7 plugins as well.
+        </div>
+    </li>
+    <li><strong>Implement based on Java 7</strong></li>
+</ol>

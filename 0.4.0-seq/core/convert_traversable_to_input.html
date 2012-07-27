@@ -1,0 +1,22 @@
+<span>
+    <div class="example_summary"><span><span> Sometimes is can be handy to treat a List or Array of Bytes as an Input object.  This example demonstrates how to do that </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import JavaConverters.asInputConverter
+
+    // any Traversable[Int] can be implicitly converted
+    // to an Input by the implicit conversions in the
+    // Input object
+    val input1:Input = List[Int](1,2,3).asInput
+
+    // needed for the chars call below
+    implicit val codec = Codec.UTF8
+
+    // all normal Input ops can be used on the list
+    val chars = input1.chars mkString &quot;,&quot;
+
+    // Traversable[Byte] can also be converted to an Input
+    val input2:Input = List[Byte](1,2,3).asInput
+  </pre></div>
+    <span></span>
+  </span>

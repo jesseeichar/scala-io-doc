@@ -1,0 +1,73 @@
+<span>
+  <p>
+    <em>{{props.SNAPSHOT_BLURB}}</em>
+    <h3>SBT Example</h3>
+    <ol>
+      <li>Add core or file dependency to your build.sbt or project settings
+          <pre>
+libraryDependencies += "{{props.groupId}}" %% "scala-io-core" % "{{props.version}}"
+libraryDependencies += "{{props.groupId}}" %% "scala-io-file" % "{{props.version}}"
+          </pre>
+      </li>
+      <li>build project if you are ready
+        <pre>sbt compile</pre>
+      </li>
+    </ol>
+
+    There is an example SBT project prepackaged at <a href="http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-sbt-project.zip">example-sbt-project.zip</a>.
+    <pre>
+> curl -L http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-sbt-project.zip > \
+    tmp.zip &amp;&amp; unzip tmp.zip &amp;&amp; rm tmp.zip
+> cd example-sbt-project
+> sbt run</pre>
+  </p>
+  <p>
+    <h3>Maven Example</h3>
+     <p>Add core or file dependency to you project definition
+<div><pre>
+&lt;!-- Core -->
+&lt;dependency>
+ &lt;groupId>{{props.groupId}}&lt;/groupId>
+ &lt;artifactId>scala-io-core_{{props.scalaVersion}}&lt;/artifactId>
+ &lt;version>{{props.version}}&lt;/version>
+&lt;/dependency>
+
+&lt;!-- File -->
+&lt;dependency>
+ &lt;groupId>{{props.groupId}}&lt;/groupId>
+ &lt;artifactId>scala-io-file_{{props.scalaVersion}}&lt;/artifactId>
+ &lt;version>{{props.version}}&lt;/version>
+&lt;/dependency>
+</pre></div>
+       Note that the scala version (_{{props.scalaVersion}}) needs to be kept up to date manually unlike the sbt version
+    </p>
+
+    There is an example maven project prepackaged at <a href="http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-maven-project.zip">example-maven-project.zip</a>.
+    <pre>
+> curl -L http://jesseeichar.github.com/scala-io-doc/{{props.version}}/example_projects/example-maven-project.zip > \
+    tmp.zip &amp;&amp; unzip tmp.zip &amp;&amp; rm tmp.zip
+> cd example-maven-project
+# if a SNAPSHOT version edit pom.xml and uncomment the snapshot repository section
+> mvn compile exec:java -Dexec.mainClass="Main"
+    </pre>
+  </p>
+  Any questions you may have can be asked on the mailing list: <a href="http://groups.google.com/group/scala-incubator">http://groups.google.com/group/scala-incubator</a>
+  <p>
+    <h3>Manual Download Example</h3>
+    Naturally a manual download option is also available.  The dependencies are fairly simple:
+    <ul>
+      <li>
+          <a href="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/{{props.akkaVersion}}/akka-actor-{{props.akkaVersion}}.jar">Akka Actors</a>
+      </li>
+      <li>
+          <a href="https://oss.sonatype.org/content/repositories/releases/com/github/jsuereth/scala-arm/scala-arm_{{props.armScalaVersion}}/{{props.armVersion}}/scala-arm_{{props.armScalaVersion}}-{{props.armVersion}}.jar">Scala Arm</a>
+      </li>
+      <li>
+        <a href="{{props.SNAPSHOT_DOWNLOAD_URL}}{{props.ioMavenPath}}/scala-io-core_{{props.scalaVersion}}/{{props.version}}/scala-io-core_{{props.scalaVersion}}-{{props.version}}.jar">Scala Core</a>
+      </li>
+      <li>
+        <a href="{{props.SNAPSHOT_DOWNLOAD_URL}}{{props.ioMavenPath}}/scala-io-file_{{props.scalaVersion}}/{{props.version}}/scala-io-file_{{props.scalaVersion}}-{{props.version}}.jar">Scala File (Optional)</a>
+      </li>
+    </ul>
+  </p>
+</span>

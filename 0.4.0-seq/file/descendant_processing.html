@@ -1,0 +1,22 @@
+<span>
+    <div class="example_summary"><span><span> All operations/filters that can be also performed on all descendants of a path.  Calling the descendants method instead of children will visit all descendants of the Path rather than just the children.  </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path(&quot;/tmp/&quot;)
+
+    // by default only the files contained in the current path are returned but if depth
+    // is set (&lt;0 will traverse entire tree) then the stream will visit subdirectories in
+    // pre-order traversal
+
+    // search for a .gitignore file down to a depth of 4
+    val gitIgnoreRestrictedTree: Option[Path] = path.descendants(depth = 4).find(_.name == &quot;.gitignore&quot;)
+
+    // search for a .gitignore in the entire subtree
+    val gitIgnoreFullTree: Option[Path] = path.descendants().find(_.name == &quot;.gitignore&quot;)
+
+    // A (slightly) more efficient version.
+    val gitIgnoreFullTreeUsingFilter: Option[Path] = path.descendants((_:Path).name == &quot;.gitignore&quot;).headOption
+  </pre></div>
+    <span></span>
+  </span>
