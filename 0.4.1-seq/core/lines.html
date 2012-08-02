@@ -1,0 +1,9 @@
+<span>
+    <div class="example_summary"><span><span> Traversing lines in Input or ReadChars.  <p> Both Input and ReadChars objects have a method traversing the object one line at a time.  The terminator can be autodetected (which assumes the ending is one of \n, \r\n, \r) or it can be explicitely declared, or it can be a custom separator such as <em>';'</em>.  </p><p> Note: The <em>lines()</em> method is lazily evaluated so calling the method without processing will not result in any processing of the resource</p> </span></span></div>
+    
+    <ul ng:class="sectionId" id="content-list">
+          <li ng:repeat="example in examples" ng:class="getClass(example)">
+            <a ng:class="selectedPartial(example)" tabindex="3" href="{{getUrl(example)}}"> <strong>{{example.shortName}}</strong> - <em>{{example.shortSummary}}</em></a>
+          </li>
+        </ul>
+  </span>

@@ -1,0 +1,25 @@
+<span>
+    <div class="example_summary"><span><span> The first state.  If the state is Empty then the next element is the record length which we need to record and skip to the desired record with a Continue / case object Empty extends State / The second state.  Indicates we have the record length and have jumped to the desired record.  / case class Searcher(recordLength:Int) extends State / The final state.  Indicates that we are reading the record bytes when recordLength == value.size we are done and can End the process / case class Value(recordLength:Int, override val value:Seq[Byte]) extends State // we could perform the fold on bytes but we will be smart and perform it // on the AsyncLongTraversable instead so that the process won't block val desiredRecord = bytes.async.limitFold(Empty:State) { case (Empty, recordLength) =&gt; Continue(Searcher(recordLength), recordLength 5) case (Searcher(recordLength),byte) =&gt; Continue(Value(recordLength, Vector(byte))) case (Value(recordLength, sofar),next) if recordLength &gt; sofar.size - 1 =&gt; Continue(Value(recordLength, sofar :+ next)) case (Value(recordLength, sofar),next) =&gt; End(Value(recordLength, sofar :+ next)) } // Last step is to handle the result from the process desiredRecord.onComplete{ case Right(Value(_, record)) =&gt; () // do something case Left(error) =&gt; () // uh oh need to handle error } } / Process a subsection of a file asychronously.  </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+
+    val lines = Resource.fromFile(&quot;/tmp/file&quot;).lines()
+
+    // Many of the methods in LongTraversable are nonblocking
+    // by nature.  All the mutation type function for example
+    // because LongTraversable is a non-string collection.
+    // IE it performs transformations as late as possible
+    //
+    // For example map, filter, zip, slice, etc... are all transforms that
+    // have no effect until the data is requested at which point the data will
+    // be transformed
+    val linesOfInterest = lines.drop(10).take(4).filter(_ startsWith &quot;A - &quot;)
+
+    // Execute foreach asynchronously.  The function will be executed
+    // in a separate thread from the calling thread but the lines
+    // will be passed to the function in the order they are read
+    // from the input source
+    linesOfInterest.async.foreach{line =&gt; println(line)}
+  </pre></div>
+    <span></span>
+  </span>

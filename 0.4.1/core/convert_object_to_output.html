@@ -1,0 +1,18 @@
+<span>
+    <div class="example_summary"><span><span> In addition to Resource.fromFoo methods to create Resources (which are often Output objects) There is a second option for converting certain objects directly to an Output object.  This example shows how to convert a File to an output object </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import java.io.File
+    import JavaConverters.asOutputConverter
+
+    // By default files can be converted to an Output Object by importing
+    // Output.asOutputConverter and calling asOutput on the file
+    val output:Output = new File(&quot;aFile&quot;).asOutput
+
+    // needed for the write call below
+    implicit val codec = Codec.UTF8
+
+    output.write(&quot;data is being written to file&quot;)
+  </pre></div>
+    <span></span>
+  </span>

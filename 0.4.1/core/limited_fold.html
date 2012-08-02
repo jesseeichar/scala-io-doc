@@ -1,0 +1,20 @@
+<span>
+    <div class="example_summary"><span><span> Demonstrate the limited/controlled fold of LongTraversable.  <p> The limitFold method allows one to fold over a LongTraversable but terminate the traversal at any arbitrary point.  This is not as powerful as the Iteree pattern but is easy to get into if one is familiar with fold </p> </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+
+    import scalax.io._
+
+    val in:Input = Resource.fromURL(&quot;file://someFile&quot;)
+
+    // add bytes until the fifth encounter of a 5 occurs
+    val (fives, sum) = in.bytes.limitFold((0,0)) {
+      // By returning End the traversal will stop and the resource closed
+      case ((5,sum), 5) =&gt; End((5, sum))
+      // by returning Continue the traversal will continue
+      case ((fives,sum), 5) =&gt; Continue((fives + 1, sum + 5))
+      // by returning Continue the traversal will continue
+      case ((fives,sum), next) =&gt; Continue((fives, sum + next))
+    }
+  </pre></div>
+    <span></span>
+  </span>
