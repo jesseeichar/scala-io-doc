@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.file.ramfs</title>
+          <title>ramfs - Scala IO - scalax.file.ramfs</title>
+          <meta name="description" content="ramfs - Scala IO - scalax.file.ramfs" />
+          <meta name="keywords" content="ramfs Scala IO scalax.file.ramfs" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalax.file.ramfs.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../../package.html">scalax</a>.<a name="scalax.file" class="extype" href="../package.html">file</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="scalax">scalax</a>.<a href="../package.html" class="extype" name="scalax.file">file</a></p>
         <h1>ramfs</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.file.ramfs.Handler" data-isabs="false">
+              <ol><li name="scalax.file.ramfs.Handler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HandlerextendsURLStreamHandler"></a>
       <a id="Handler:Handler"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Handler.html"><span class="name">Handler</span></a><span class="result"> extends URLStreamHandler</span>
+        <a href="Handler.html"><span class="name">Handler</span></a><span class="result"> extends <span class="extype" name="java.net.URLStreamHandler">URLStreamHandler</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.ramfs.RamFileSystem" data-isabs="false">
+    </li><li name="scalax.file.ramfs.RamFileSystem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RamFileSystemextendsFileSystem"></a>
       <a id="RamFileSystem:RamFileSystem"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RamFileSystem.html"><span class="name">RamFileSystem</span></a><span class="result"> extends FileSystem</span>
+        <a href="RamFileSystem.html"><span class="name">RamFileSystem</span></a><span class="result"> extends <a href="../FileSystem.html" class="extype" name="scalax.file.FileSystem">FileSystem</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.ramfs.RamPath" data-isabs="false">
+    </li><li name="scalax.file.ramfs.RamPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RamPathextendsPathwithRamFileOps"></a>
       <a id="RamPath:RamPath"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RamPath.html"><span class="name">RamPath</span></a><span class="result"> extends Path with RamFileOps</span>
+        <a href="RamPath.html"><span class="name">RamPath</span></a><span class="result"> extends <a href="../Path.html" class="extype" name="scalax.file.Path">Path</a> with <span class="extype" name="scalax.file.ramfs.RamFileOps">RamFileOps</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.ramfs.RamURLConnection" data-isabs="false">
+    </li><li name="scalax.file.ramfs.RamURLConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RamURLConnectionextendsURLConnection"></a>
       <a id="RamURLConnection:RamURLConnection"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,7 +111,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RamURLConnection.html"><span class="name">RamURLConnection</span></a><span class="result"> extends URLConnection</span>
+        <a href="RamURLConnection.html"><span class="name">RamURLConnection</span></a><span class="result"> extends <span class="extype" name="java.net.URLConnection">URLConnection</span></span>
       </span>
       </h4>
       
@@ -101,9 +120,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scalax.file.ramfs.Handler" data-isabs="false">
+              <ol><li name="scalax.file.ramfs.Handler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Handler"></a>
       <a id="Handler:Handler"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -111,11 +131,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Handler$.html"><span class="name">Handler</span></a><span class="result"> extends Handler</span>
+        <a href="Handler$.html"><span class="name">Handler</span></a><span class="result"> extends <a href="Handler.html" class="extype" name="scalax.file.ramfs.Handler">Handler</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.ramfs.RamFileSystem" data-isabs="false">
+    </li><li name="scalax.file.ramfs.RamFileSystem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RamFileSystem"></a>
       <a id="RamFileSystem:RamFileSystem"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -123,7 +144,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="RamFileSystem$.html"><span class="name">RamFileSystem</span></a><span class="result"> extends AnyRef</span>
+        <a href="RamFileSystem$.html"><span class="name">RamFileSystem</span></a>
       </span>
       </h4>
       
@@ -131,10 +152,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

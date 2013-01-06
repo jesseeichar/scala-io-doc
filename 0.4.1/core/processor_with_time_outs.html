@@ -2,7 +2,7 @@
     <div class="example_summary"><span><span> Perform a copy of a file with timeouts the read and write actions and execute the processor handling timeout errors.  <p> Processors can also have timeouts associated with each Processor which is useful both async and blocking modes.  </p> </span></span></div>
     <div class="example_code"><pre class="brush: scala">
     import scalax.io.Resource
-    import akka.util.duration._
+    import scala.concurrent.duration._
 
     val in = Resource.fromFile(&quot;/tmp/in&quot;)
     val out = Resource.fromFile(&quot;/tmp/out&quot;)
@@ -25,6 +25,7 @@
         None
     }.execute()
 
+    implicit val context = scalax.io.executionContext
     // timeouts work on normal processors
     processor.future.onFailure {
       case e:TimeoutException =&gt;

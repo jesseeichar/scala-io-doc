@@ -4,8 +4,9 @@
     import scalax.io._
     import Line.Terminators.Custom
 
-    val readChars:ReadChars = Resource.fromFile(&quot;file&quot;).reader
-    val lines = readChars.lines(Custom(&quot;**&quot;))
+    val resource = Resource.fromFile(&quot;file&quot;)
+    // read each segment ending in ** but do not include **
+    val lines = resource.lines(terminator=Custom(&quot;**&quot;), includeTerminator=false)
     println(lines.size)
   </pre></div>
     <span></span>

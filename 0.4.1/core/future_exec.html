@@ -2,6 +2,7 @@
     <div class="example_summary"><span><span> Several ways to use the Processor API to copy data from one file to another.  </span></span></div>
     <div class="example_code"><pre class="brush: scala">
     import scalax.io.Resource
+    import scala.util.{Success, Failure}
 
     val in = Resource.fromFile(&quot;/tmp/in&quot;)
     val out = Resource.fromFile(&quot;/tmp/out&quot;)
@@ -23,14 +24,15 @@
     // is not executed as a for loop
     } yield ()
 
+    implicit val context = scalax.io.executionContext
     // call future to execute the processor asynchonously
     // Note that because processor is a
     // LongTraversable (method repeatUntilEmpty is the cause of this)
     // future will only return the LongTraversable.  To
     // perform the writes we need the traversable to be traversed
     processor.futureExec.onComplete {
-      case Right(_) =&gt; println(&quot;Yay done :)&quot;)
-      case Left(_) =&gt; println(&quot;Uh oh failure :(&quot;)
+      case Success(_) =&gt; println(&quot;Yay done :)&quot;)
+      case Failure(_) =&gt; println(&quot;Uh oh failure :(&quot;)
     }
 
     // A processor that performs the same task is as follows and

@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.file.attributes</title>
+          <title>attributes - Scala IO - scalax.file.attributes</title>
+          <meta name="description" content="attributes - Scala IO - scalax.file.attributes" />
+          <meta name="keywords" content="attributes Scala IO scalax.file.attributes" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalax.file.attributes.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../../package.html">scalax</a>.<a name="scalax.file" class="extype" href="../package.html">file</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="scalax">scalax</a>.<a href="../package.html" class="extype" name="scalax.file">file</a></p>
         <h1>attributes</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.file.attributes.ExecuteAccessAttribute" data-isabs="false">
+              <ol><li name="scalax.file.attributes.ExecuteAccessAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExecuteAccessAttributeextendsFileAttribute[Boolean]withProductwithSerializable"></a>
       <a id="ExecuteAccessAttribute:ExecuteAccessAttribute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,36 +72,39 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ExecuteAccessAttribute.html"><span class="name">ExecuteAccessAttribute</span></a><span class="params">(<span name="executable">executable: Boolean</span>)</span><span class="result"> extends FileAttribute[Boolean] with Product with Serializable</span>
+        <a href="ExecuteAccessAttribute.html"><span class="name">ExecuteAccessAttribute</span></a><span class="params">(<span name="executable">executable: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="FileAttribute.html" class="extype" name="scalax.file.attributes.FileAttribute">FileAttribute</a>[<span class="extype" name="scala.Boolean">Boolean</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.attributes.FileAttribute" data-isabs="true">
-      <a id="FileAttribute:FileAttribute[T]"></a>
+    </li><li name="scalax.file.attributes.FileAttribute" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FileAttribute[T]extendsObject"></a>
+      <a id="FileAttribute[T]:FileAttribute[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FileAttribute.html"><span class="name">FileAttribute</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="FileAttribute.html"><span class="name">FileAttribute</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Represents a implementation specific attribute
 of a file or directory.</p>
-    </li><li visbl="pub" name="scalax.file.attributes.GenericFileAttribute" data-isabs="false">
-      <a id="GenericFileAttribute:GenericFileAttribute[T]"></a>
+    </li><li name="scalax.file.attributes.GenericFileAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenericFileAttribute[T]extendsFileAttribute[T]withProductwithSerializable"></a>
+      <a id="GenericFileAttribute[T]:GenericFileAttribute[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GenericFileAttribute.html"><span class="name">GenericFileAttribute</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="value">value: T</span>)</span><span class="result"> extends FileAttribute[T] with Product with Serializable</span>
+        <a href="GenericFileAttribute.html"><span class="name">GenericFileAttribute</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scalax.file.attributes.GenericFileAttribute.T">T</span></span>)</span><span class="result"> extends <a href="FileAttribute.html" class="extype" name="scalax.file.attributes.FileAttribute">FileAttribute</a>[<span class="extype" name="scalax.file.attributes.GenericFileAttribute.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.attributes.LastModifiedAttribute" data-isabs="false">
+    </li><li name="scalax.file.attributes.LastModifiedAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LastModifiedAttributeextendsFileAttribute[Long]withProductwithSerializable"></a>
       <a id="LastModifiedAttribute:LastModifiedAttribute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,11 +112,12 @@ of a file or directory.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="LastModifiedAttribute.html"><span class="name">LastModifiedAttribute</span></a><span class="params">(<span name="value">value: Long</span>)</span><span class="result"> extends FileAttribute[Long] with Product with Serializable</span>
+        <a href="LastModifiedAttribute.html"><span class="name">LastModifiedAttribute</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="FileAttribute.html" class="extype" name="scalax.file.attributes.FileAttribute">FileAttribute</a>[<span class="extype" name="scala.Long">Long</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.attributes.ReadAccessAttribute" data-isabs="false">
+    </li><li name="scalax.file.attributes.ReadAccessAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadAccessAttributeextendsFileAttribute[Boolean]withProductwithSerializable"></a>
       <a id="ReadAccessAttribute:ReadAccessAttribute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -105,11 +125,12 @@ of a file or directory.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ReadAccessAttribute.html"><span class="name">ReadAccessAttribute</span></a><span class="params">(<span name="readable">readable: Boolean</span>)</span><span class="result"> extends FileAttribute[Boolean] with Product with Serializable</span>
+        <a href="ReadAccessAttribute.html"><span class="name">ReadAccessAttribute</span></a><span class="params">(<span name="readable">readable: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="FileAttribute.html" class="extype" name="scalax.file.attributes.FileAttribute">FileAttribute</a>[<span class="extype" name="scala.Boolean">Boolean</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.file.attributes.WriteAccessAttribute" data-isabs="false">
+    </li><li name="scalax.file.attributes.WriteAccessAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WriteAccessAttributeextendsFileAttribute[Boolean]withProductwithSerializable"></a>
       <a id="WriteAccessAttribute:WriteAccessAttribute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -117,7 +138,7 @@ of a file or directory.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="WriteAccessAttribute.html"><span class="name">WriteAccessAttribute</span></a><span class="params">(<span name="writable">writable: Boolean</span>)</span><span class="result"> extends FileAttribute[Boolean] with Product with Serializable</span>
+        <a href="WriteAccessAttribute.html"><span class="name">WriteAccessAttribute</span></a><span class="params">(<span name="writable">writable: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="FileAttribute.html" class="extype" name="scalax.file.attributes.FileAttribute">FileAttribute</a>[<span class="extype" name="scala.Boolean">Boolean</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -129,10 +150,20 @@ of a file or directory.</p>
         
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

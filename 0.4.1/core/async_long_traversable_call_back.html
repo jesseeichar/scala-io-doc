@@ -11,6 +11,7 @@
     // have started in a seperate thread
     val headFuture = lines.async.head
 
+    implicit val context = scalax.io.executionContext
     // When the data has been read from the file the result will be passed to the
     // function registered with onSuccess
     headFuture.onSuccess{

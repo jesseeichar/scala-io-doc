@@ -2,59 +2,86 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.io.SeekableResource</title>
+          <title>SeekableResource - Scala IO - scalax.io.SeekableResource</title>
+          <meta name="description" content="SeekableResource - Scala IO - scalax.io.SeekableResource" />
+          <meta name="keywords" content="SeekableResource Scala IO scalax.io.SeekableResource" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
-      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalax.io.SeekableResource';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../lib/trait_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.io" class="extype" href="package.html">io</a></p>
+        <p id="owner"><a href="../package.html" class="extype" name="scalax">scalax</a>.<a href="package.html" class="extype" name="scalax.io">io</a></p>
         <h1>SeekableResource</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">SeekableResource</span><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> with <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[R] with <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[R] with <a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a>[R, <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]]</span>
+        <span class="name">SeekableResource</span><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> with <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>] with <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>] with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]]</span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An object that can be viewed as a Seekable object. For example
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An object that can be viewed as a Seekable object. For example
 a FileChannel.
 </p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>
          the type of the underlying Resource
 </p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
 </p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[R], <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[R], <a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a>[R], <a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a>[R, <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]], <span name="resource.ManagedResourceOperations" class="extype">ManagedResourceOperations</span>[R], <span name="resource.ManagedResource" class="extype">ManagedResource</span>[R], <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a>, <a name="scalax.io.Output" class="extype" href="Output.html">Output</a>, <a name="scalax.io.Input" class="extype" href="Input.html">Input</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>], <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>], <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>], <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]], <span class="extype" name="resource.ManagedResourceOperations">ManagedResourceOperations</span>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>], <span class="extype" name="resource.ManagedResource">ManagedResource</span>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>], <a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a>, <a href="Output.html" class="extype" name="scalax.io.Output">Output</a>, <a href="Input.html" class="extype" name="scalax.io.Input">Input</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="scalax.io.managed.SeekableByteChannelResource" class="extype" href="managed/SeekableByteChannelResource.html">SeekableByteChannelResource</a></div>
+          <div class="subClasses hiddenContent"><a href="managed/SeekableByteChannelResource.html" class="extype" name="scalax.io.managed.SeekableByteChannelResource">SeekableByteChannelResource</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="scalax.io.SeekableResource" class="in"><span>SeekableResource</span></li><li name="scalax.io.OutputResource" class="in"><span>OutputResource</span></li><li name="scalax.io.InputResource" class="in"><span>InputResource</span></li><li name="scalax.io.Resource" class="in"><span>Resource</span></li><li name="scalax.io.ResourceOps" class="in"><span>ResourceOps</span></li><li name="resource.ManagedResourceOperations" class="in"><span>ManagedResourceOperations</span></li><li name="resource.ManagedResource" class="in"><span>ManagedResource</span></li><li name="scalax.io.Seekable" class="in"><span>Seekable</span></li><li name="scalax.io.Output" class="in"><span>Output</span></li><li name="scalax.io.Input" class="in"><span>Input</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalax.io.SeekableResource"><span>SeekableResource</span></li><li class="in" name="scalax.io.OutputResource"><span>OutputResource</span></li><li class="in" name="scalax.io.InputResource"><span>InputResource</span></li><li class="in" name="scalax.io.Resource"><span>Resource</span></li><li class="in" name="scalax.io.ResourceOps"><span>ResourceOps</span></li><li class="in" name="resource.ManagedResourceOperations"><span>ManagedResourceOperations</span></li><li class="in" name="resource.ManagedResource"><span>ManagedResource</span></li><li class="in" name="scalax.io.Seekable"><span>Seekable</span></li><li class="in" name="scalax.io.Output"><span>Output</span></li><li class="in" name="scalax.io.Input"><span>Input</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -67,9 +94,10 @@ a FileChannel.
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="scalax.io.ResourceOps#addCloseAction" data-isabs="true">
+              <ol><li name="scalax.io.ResourceOps#addCloseAction" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="addCloseAction(newCloseAction:scalax.io.CloseAction[R]):Repr"></a>
       <a id="addCloseAction(CloseAction[R]):SeekableResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -77,14 +105,15 @@ a FileChannel.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addCloseAction</span><span class="params">(<span name="newCloseAction">newCloseAction: <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>[R]</span>)</span><span class="result">: <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]</span>
+        <span class="name">addCloseAction</span><span class="params">(<span name="newCloseAction">newCloseAction: <a href="CloseAction.html" class="extype" name="scalax.io.CloseAction">CloseAction</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</span>)</span><span class="result">: <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Add a CloseAction that will be executed each time the resource is closed.</p><div class="fullcomment"><div class="comment cmt"><p>Add a CloseAction that will be executed each time the resource is closed.
 </p></div><dl class="paramcmts block"><dt class="param">newCloseAction</dt><dd class="cmt"><p>the action to add
 </p></dd><dt>returns</dt><dd class="cmt"><p>a new resource instance with the close action added
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.ResourceOps#context" data-isabs="true">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a></dd></dl></div>
+    </li><li name="scalax.io.ResourceOps#context" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="context:scalax.io.ResourceContext"></a>
       <a id="context:ResourceContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,15 +121,16 @@ a FileChannel.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">context</span><span class="result">: <a name="scalax.io.ResourceContext" class="extype" href="ResourceContext.html">ResourceContext</a></span>
+        <span class="name">context</span><span class="result">: <a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the Resource context associated with this Resource instance.</p><div class="fullcomment"><div class="comment cmt"><p>Get the Resource context associated with this Resource instance.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the associated ResourceContext
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a></dd><dt>Note</dt><dd><span class="cmt"><p>as Resources are immutable objects a given Resource instance will always be associated with
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a></dd><dt>Note</dt><dd><span class="cmt"><p>as Resources are immutable objects a given Resource instance will always be associated with
 the same ResourceContext
 </p></span></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.InputResource#inputStream" data-isabs="true">
+    </li><li name="scalax.io.InputResource#inputStream" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="inputStream:scalax.io.InputResource[java.io.InputStream]"></a>
       <a id="inputStream:InputResource[InputStream]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -108,13 +138,14 @@ the same ResourceContext
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">inputStream</span><span class="result">: <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[<span name="java.io.InputStream" class="extype">InputStream</span>]</span>
+        <span class="name">inputStream</span><span class="result">: <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="java.io.InputStream">InputStream</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>(typically) version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Resource#open" data-isabs="true">
+      <p class="shortcomment cmt">Obtain the <a href="managed/InputStreamResource.html" class="extype" name="scalax.io.managed.InputStreamResource">scalax.io.managed.InputStreamResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="managed/InputStreamResource.html" class="extype" name="scalax.io.managed.InputStreamResource">scalax.io.managed.InputStreamResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a href="managed/InputStreamResource.html" class="extype" name="scalax.io.managed.InputStreamResource">scalax.io.managed.InputStreamResource</a>(typically) version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a></dd></dl></div>
+    </li><li name="scalax.io.Resource#open" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="open():scalax.io.OpenedResource[R]"></a>
       <a id="open():OpenedResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -122,7 +153,7 @@ the same ResourceContext
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">open</span><span class="params">()</span><span class="result">: <a name="scalax.io.OpenedResource" class="extype" href="OpenedResource.html">OpenedResource</a>[R]</span>
+        <span class="name">open</span><span class="params">()</span><span class="result">: <a href="OpenedResource.html" class="extype" name="scalax.io.OpenedResource">OpenedResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates a new instance of the underlying resource (or opens it).</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new instance of the underlying resource (or opens it).
@@ -132,19 +163,16 @@ the resource to the resource so that the resource can be reused.  Of course this
 is not always possible</p><p>This method should only be used with care in cases when Automatic
 Resource Management cannot be used because the
 <code> InputStream</code> must be closed manually.</p><p>This is public only to permit interoperability with certain Java APIs.
-A better pattern of use should be:</p><pre>
-resource.acquireFor {
-  <span class="cmt">// call java API</span>
-}
-</pre><p>or</p><pre>
-<span class="kw">val</span> calculatedResult = resource.acquireAndGet {
-  <span class="cmt">// cal java API that returns a result</span>
-}
-</pre></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the actual resource that has been opened
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a></dd><dt>Note</dt><dd><span class="cmt"><p>normally the error handler registered with the associated ResourceContext
+A better pattern of use should be:</p><pre>resource.acquireFor {
+<span class="cmt">// call java API</span>
+}</pre><p>or</p><pre><span class="kw">val</span> calculatedResult = resource.acquireAndGet {
+<span class="cmt">// cal java API that returns a result</span>
+}</pre></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the actual resource that has been opened
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a></dd><dt>Note</dt><dd><span class="cmt"><p>normally the error handler registered with the associated ResourceContext
        will handle any errors opening the resource, but when calling this method
        the caller must handle any possible errors that are raised.</p></span></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OutputResource#outputStream" data-isabs="true">
+    </li><li name="scalax.io.OutputResource#outputStream" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="outputStream:scalax.io.OutputResource[java.io.OutputStream]"></a>
       <a id="outputStream:OutputResource[OutputStream]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -152,13 +180,14 @@ resource.acquireFor {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">outputStream</span><span class="result">: <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[<span name="java.io.OutputStream" class="extype">OutputStream</span>]</span>
+        <span class="name">outputStream</span><span class="result">: <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="java.io.OutputStream">OutputStream</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>(typically) version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.InputResource#readableByteChannel" data-isabs="true">
+      <p class="shortcomment cmt">Obtain the <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">scalax.io.OutputResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">scalax.io.OutputResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">scalax.io.OutputResource</a>(typically) version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a></dd></dl></div>
+    </li><li name="scalax.io.InputResource#readableByteChannel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="readableByteChannel:scalax.io.InputResource[java.nio.channels.ReadableByteChannel]"></a>
       <a id="readableByteChannel:InputResource[ReadableByteChannel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -166,13 +195,14 @@ resource.acquireFor {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">readableByteChannel</span><span class="result">: <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[<span name="java.nio.channels.ReadableByteChannel" class="extype">ReadableByteChannel</span>]</span>
+        <span class="name">readableByteChannel</span><span class="result">: <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="java.nio.channels.ReadableByteChannel">ReadableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>(typically) version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.InputResource#reader" data-isabs="true">
+      <p class="shortcomment cmt">Obtain the <a href="managed/ReadableByteChannelResource.html" class="extype" name="scalax.io.managed.ReadableByteChannelResource">scalax.io.managed.ReadableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="managed/ReadableByteChannelResource.html" class="extype" name="scalax.io.managed.ReadableByteChannelResource">scalax.io.managed.ReadableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a href="managed/ReadableByteChannelResource.html" class="extype" name="scalax.io.managed.ReadableByteChannelResource">scalax.io.managed.ReadableByteChannelResource</a>(typically) version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a></dd></dl></div>
+    </li><li name="scalax.io.InputResource#reader" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="reader(implicitsourceCodec:scalax.io.Codec):scalax.io.ReadCharsResource[java.io.Reader]"></a>
       <a id="reader(Codec):ReadCharsResource[Reader]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -180,28 +210,30 @@ resource.acquireFor {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reader</span><span class="params">(<span class="implicit">implicit </span><span name="sourceCodec">sourceCodec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a>[<span name="java.io.Reader" class="extype">Reader</span>]</span>
+        <span class="name">reader</span><span class="params">(<span class="implicit">implicit </span><span name="sourceCodec">sourceCodec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a href="ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">ReadCharsResource</a>[<span class="extype" name="java.io.Reader">Reader</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.
+      <p class="shortcomment cmt">Obtain the <a href="ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">scalax.io.ReadCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">scalax.io.ReadCharsResource</a> version of this object.
 </p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
-</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.ReadCharsResource" class="extype" href="ReadCharsResource.html">ReadCharsResource</a> version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.InputResource#sizeFunc" data-isabs="true">
-      <a id="sizeFunc:() ⇒ Option[Long]"></a>
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a href="ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">scalax.io.ReadCharsResource</a> version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a></dd></dl></div>
+    </li><li name="scalax.io.InputResource#sizeFunc" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="sizeFunc:()=&gt;Option[Long]"></a>
+      <a id="sizeFunc:()⇒Option[Long]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sizeFunc</span><span class="result">: () ⇒ <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>
+        <span class="name">sizeFunc</span><span class="result">: () ⇒ <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Safely calculation the size of the resource or return None in case of failure or if
 it is not possible to determin size of resource before accessing the resource.</p><div class="fullcomment"><div class="comment cmt"><p>Safely calculation the size of the resource or return None in case of failure or if
-it is not possible to determin size of resource before accessing the resource.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#underlyingChannel" data-isabs="true">
+it is not possible to determin size of resource before accessing the resource.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#underlyingChannel" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="underlyingChannel(append:Boolean):scalax.io.OpenedResource[scalax.io.SeekableByteChannel]"></a>
       <a id="underlyingChannel(Boolean):OpenedResource[SeekableByteChannel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -209,11 +241,12 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">underlyingChannel</span><span class="params">(<span name="append">append: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="scalax.io.OpenedResource" class="extype" href="OpenedResource.html">OpenedResource</a>[<a name="scalax.io.SeekableByteChannel" class="extype" href="SeekableByteChannel.html">SeekableByteChannel</a>]</span>
+        <span class="name">underlyingChannel</span><span class="params">(<span name="append">append: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="OpenedResource.html" class="extype" name="scalax.io.OpenedResource">OpenedResource</a>[<a href="SeekableByteChannel.html" class="extype" name="scalax.io.SeekableByteChannel">SeekableByteChannel</a>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.ResourceOps#updateContext" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.ResourceOps#updateContext" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="updateContext(newContext:scalax.io.ResourceContext):Repr"></a>
       <a id="updateContext(ResourceContext):SeekableResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -221,15 +254,16 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updateContext</span><span class="params">(<span name="newContext">newContext: <a name="scalax.io.ResourceContext" class="extype" href="ResourceContext.html">ResourceContext</a></span>)</span><span class="result">: <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]</span>
+        <span class="name">updateContext</span><span class="params">(<span name="newContext">newContext: <a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a></span>)</span><span class="result">: <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a Resource instance that is configured with the new ResourceContext
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a Resource instance that is configured with the new ResourceContext
 </p></div><dl class="paramcmts block"><dt class="param">newContext</dt><dd class="cmt"><p>A new ResourceContext
 </p></dd><dt>returns</dt><dd class="cmt"><p>a new instance configured with the new context
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OutputResource#writableByteChannel" data-isabs="true">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a></dd></dl></div>
+    </li><li name="scalax.io.OutputResource#writableByteChannel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="writableByteChannel:scalax.io.OutputResource[java.nio.channels.WritableByteChannel]"></a>
       <a id="writableByteChannel:OutputResource[WritableByteChannel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -237,13 +271,14 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writableByteChannel</span><span class="result">: <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>]</span>
+        <span class="name">writableByteChannel</span><span class="result">: <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="java.nio.channels.WritableByteChannel">WritableByteChannel</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.managed.WritableByteChannelResource" class="extype" href="managed/WritableByteChannelResource.html">WritableByteChannelResource</a>(typically) version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OutputResource#writer" data-isabs="true">
+      <p class="shortcomment cmt">Obtain the <a href="managed/WritableByteChannelResource.html" class="extype" name="scalax.io.managed.WritableByteChannelResource">scalax.io.managed.WritableByteChannelResource</a>(typically) version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="managed/WritableByteChannelResource.html" class="extype" name="scalax.io.managed.WritableByteChannelResource">scalax.io.managed.WritableByteChannelResource</a>(typically) version of this object.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the <a href="managed/WritableByteChannelResource.html" class="extype" name="scalax.io.managed.WritableByteChannelResource">scalax.io.managed.WritableByteChannelResource</a>(typically) version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a></dd></dl></div>
+    </li><li name="scalax.io.OutputResource#writer" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="writer(implicitsourceCodec:scalax.io.Codec):scalax.io.WriteCharsResource[java.io.Writer]"></a>
       <a id="writer(Codec):WriteCharsResource[Writer]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -251,31 +286,33 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writer</span><span class="params">(<span class="implicit">implicit </span><span name="sourceCodec">sourceCodec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a>[<span name="java.io.Writer" class="extype">Writer</span>]</span>
+        <span class="name">writer</span><span class="params">(<span class="implicit">implicit </span><span name="sourceCodec">sourceCodec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a href="WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">WriteCharsResource</a>[<span class="extype" name="java.io.Writer">Writer</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
+      <p class="shortcomment cmt">Obtain the <a href="WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">scalax.io.WriteCharsResource</a> version of this object.</p><div class="fullcomment"><div class="comment cmt"><p>Obtain the <a href="WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">scalax.io.WriteCharsResource</a> version of this object.
 </p></div><dl class="paramcmts block"><dt class="param">sourceCodec</dt><dd class="cmt"><p>the codec used to convert from bytes to characters
-</p></dd><dt>returns</dt><dd class="cmt"><p>the <a name="scalax.io.WriteCharsResource" class="extype" href="WriteCharsResource.html">WriteCharsResource</a> version of this object.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a></dd></dl></div>
+</p></dd><dt>returns</dt><dd class="cmt"><p>the <a href="WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">scalax.io.WriteCharsResource</a> version of this object.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="resource.ManagedResourceOperations#!" data-isabs="false">
-      <a id="!:R @scala.util.continuations.cpsParam[Unit,Unit]"></a>
+              <ol><li name="resource.ManagedResourceOperations#!" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!:R@scala.util.continuations.cpsParam[Unit,Unit]"></a>
+      <a id="!:R@scala.util.continuations.cpsParam[Unit,Unit]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang">!</span><span class="result">: R @scala.util.continuations.cpsParam[Unit,Unit]</span>
+        <span title="gt4s: $bang" class="name">!</span><span class="result">: R @scala.util.continuations.cpsParam[Unit,Unit]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+    </li><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -283,11 +320,12 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -295,11 +333,12 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -307,11 +346,12 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -319,11 +359,12 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -331,51 +372,55 @@ it is not possible to determin size of resource before accessing the resource.</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#acquireAndGet" data-isabs="false">
-      <a id="acquireAndGet[B]((R) ⇒ B):B"></a>
+    </li><li name="resource.ManagedResourceOperations#acquireAndGet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="acquireAndGet[B](f:R=&gt;B):B"></a>
+      <a id="acquireAndGet[B]((R)⇒B):B"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">acquireAndGet</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (R) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">acquireAndGet</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scalax.io.SeekableResource.R">R</span>) ⇒ <span class="extype" name="resource.ManagedResourceOperations.acquireAndGet.B">B</span></span>)</span><span class="result">: <span class="extype" name="resource.ManagedResourceOperations.acquireAndGet.B">B</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Resource#acquireFor" data-isabs="false">
-      <a id="acquireFor[B]((R) ⇒ B):Either[List[Throwable], B]"></a>
+    </li><li name="scalax.io.Resource#acquireFor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="acquireFor[B](f:R=&gt;B):Either[List[Throwable],B]"></a>
+      <a id="acquireFor[B]((R)⇒B):Either[List[Throwable],B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">acquireFor</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (R) ⇒ B</span>)</span><span class="result">: <span name="scala.Either" class="extype">Either</span>[List[Throwable], B]</span>
+        <span class="name">acquireFor</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scalax.io.SeekableResource.R">R</span>) ⇒ <span class="extype" name="scalax.io.Resource.acquireFor.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Throwable">Throwable</span>], <span class="extype" name="scalax.io.Resource.acquireFor.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Open the resource execute the function and either return all errors as a list or the result of the
 function execution.</p><div class="fullcomment"><div class="comment cmt"><p>Open the resource execute the function and either return all errors as a list or the result of the
 function execution.</p><p>On open and close error handlers in ResourceContext are called.  If they then raise errors
 the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps the worst method I have ever written :-(
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a> → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#and" data-isabs="false">
-      <a id="and[B](ManagedResource[B]):ManagedResource[(R, B)]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a> → ManagedResource</dd></dl></div>
+    </li><li name="resource.ManagedResourceOperations#and" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="and[B](that:resource.ManagedResource[B]):resource.ManagedResource[(R,B)]"></a>
+      <a id="and[B](ManagedResource[B]):ManagedResource[(R,B)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">and</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <span name="resource.ManagedResource" class="extype">ManagedResource</span>[B]</span>)</span><span class="result">: <span name="resource.ManagedResource" class="extype">ManagedResource</span>[(R, B)]</span>
+        <span class="name">and</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <span class="extype" name="resource.ManagedResource">ManagedResource</span>[<span class="extype" name="resource.ManagedResourceOperations.and.B">B</span>]</span>)</span><span class="result">: <span class="extype" name="resource.ManagedResource">ManagedResource</span>[(<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <span class="extype" name="resource.ManagedResourceOperations.and.B">B</span>)]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#append" data-isabs="false">
+    </li><li name="scalax.io.Seekable#append" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="append(string:String)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="append(String)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -383,16 +428,17 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">append</span><span class="params">(<span name="string">string: String</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">append</span><span class="params">(<span name="string">string: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Append a string to the end of the Seekable object.</p><div class="fullcomment"><div class="comment cmt"><p>Append a string to the end of the Seekable object.
 </p></div><dl class="paramcmts block"><dt class="param">string</dt><dd class="cmt"><p>
          the data to write</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          the codec of the string to be written. The string will
-         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#append" data-isabs="false">
+         be converted to the encoding of <a href="Codec.html" class="extype" name="scalax.io.Codec">scalax.io.Codec</a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#append" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="append[T](data:T)(implicitconverter:scalax.io.OutputConverter[T]):Unit"></a>
       <a id="append[T](T)(OutputConverter[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -400,31 +446,33 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">append</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[T]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">append</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: <span class="extype" name="scalax.io.Seekable.append.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">OutputConverter</a>[<span class="extype" name="scalax.io.Seekable.append.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Append bytes to the end of a file</p><div class="fullcomment"><div class="comment cmt"><p>Append bytes to the end of a file</p><p><b>Important:</b> The use of an Array is highly recommended
  because normally arrays can be more efficiently written using
  the underlying APIs
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>
-         The data to write.  This can be any type that has a <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> associated
+         The data to write.  This can be any type that has a <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> associated
          with it.  There are predefined $outputConverters for several types.  See the
-         <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object for the predefined types and for objects to simplify implementing
-         custom <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a></p><p>$converterParam
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#appendChannel" data-isabs="false">
-      <a id="appendChannel[U]((SeekableByteChannel) ⇒ U):U"></a>
+         <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object for the predefined types and for objects to simplify implementing
+         custom <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a></p><p>$converterParam
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#appendChannel" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendChannel[U](f:scalax.io.SeekableByteChannel=&gt;U):U"></a>
+      <a id="appendChannel[U]((SeekableByteChannel)⇒U):U"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">appendChannel</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<a name="scalax.io.SeekableByteChannel" class="extype" href="SeekableByteChannel.html">SeekableByteChannel</a>) ⇒ U</span>)</span><span class="result">: U</span>
+        <span class="name">appendChannel</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<a href="SeekableByteChannel.html" class="extype" name="scalax.io.SeekableByteChannel">SeekableByteChannel</a>) ⇒ <span class="extype" name="scalax.io.Seekable.appendChannel.U">U</span></span>)</span><span class="result">: <span class="extype" name="scalax.io.Seekable.appendChannel.U">U</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#appendIntsAsBytes" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#appendIntsAsBytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendIntsAsBytes(data:Int*):Unit"></a>
       <a id="appendIntsAsBytes(Int*):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -432,17 +480,16 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">appendIntsAsBytes</span><span class="params">(<span name="data">data: <span name="scala.Int" class="extype">Int</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">appendIntsAsBytes</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Int">Int</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
- is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+      <p class="shortcomment cmt">Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+ is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
  is provided to simply write an array of Ints as if they are Bytes.  In other words just taking the first
- byte.  This is pretty common in Java.io style IO.  IE</p><pre>
- outputStream.write(<span class="num">1</span>) 
-</pre><p> 1 is written as a single byte.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#appendStrings" data-isabs="false">
+ byte.  This is pretty common in Java.io style IO.  IE</p><pre>outputStream.write(<span class="num">1</span>)</pre><p> 1 is written as a single byte.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#appendStrings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendStrings(strings:Traversable[String],separator:String)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="appendStrings(Traversable[String],String)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -450,7 +497,7 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">appendStrings</span><span class="params">(<span name="strings">strings: <span name="scala.collection.Traversable" class="extype">Traversable</span>[String]</span>, <span name="separator">separator: String = <span class="symbol">&quot;&quot;</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">appendStrings</span><span class="params">(<span name="strings">strings: <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="separator">separator: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Append several strings to the end of the Seekable object.</p><div class="fullcomment"><div class="comment cmt"><p>Append several strings to the end of the Seekable object.
@@ -460,9 +507,10 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
          It is not added to the before the first string
          or after the last.</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          The codec of the strings to be written. The strings will
-         be converted to the encoding of <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+         be converted to the encoding of <a href="Codec.html" class="extype" name="scalax.io.Codec">scalax.io.Codec</a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -470,11 +518,12 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#blocks" data-isabs="false">
+    </li><li name="scalax.io.Seekable#blocks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="blocks(blockSize:Option[Int]):scalax.io.LongTraversable[scalax.io.ByteBlock]"></a>
       <a id="blocks(Option[Int]):LongTraversable[ByteBlock]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -482,7 +531,7 @@ the errors are captured and returned as a Right[List[Throwable]]</p><p>Perhaps t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">blocks</span><span class="params">(<span name="blockSize">blockSize: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Int" class="extype">Int</span>] = <span class="symbol"><span class="name"><a href="../../scala/package.html">None</a></span></span></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>]</span>
+        <span class="name">blocks</span><span class="params">(<span name="blockSize">blockSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<a href="ByteBlock.html" class="extype" name="scalax.io.ByteBlock">ByteBlock</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Read the input as blocks of bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Read the input as blocks of bytes.  This method should be avoided unless the maximum performance is
@@ -490,8 +539,9 @@ absolutely required because bytes provides very good performance and is a better
 blocks is slightly more performance than bytes and therefore
 can be used when performance is the most important consideration.
 </p></div><dl class="paramcmts block"><dt class="param">blockSize</dt><dd class="cmt"><p>block size can optionally be specified but the default is normally acceptable.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#byteArray" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.Input#byteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="byteArray:Array[Byte]"></a>
       <a id="byteArray:Array[Byte]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -499,14 +549,15 @@ can be used when performance is the most important consideration.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">byteArray</span><span class="result">: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Byte" class="extype">Byte</span>]</span>
+        <span class="name">byteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">This method aspires to be the fastest way to read
 a stream of known length into memory.</p><div class="fullcomment"><div class="comment cmt"><p>This method aspires to be the fastest way to read
 a stream of known length into memory.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#bytes" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#bytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bytes:scalax.io.LongTraversable[Byte]"></a>
       <a id="bytes:LongTraversable[Byte]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -514,13 +565,14 @@ a stream of known length into memory.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bytes</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Byte" class="extype">Byte</span>]</span>
+        <span class="name">bytes</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtains a Traversable for conveniently processing the resource as bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a Traversable for conveniently processing the resource as bytes.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an non-strict traversable over all the bytes
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#bytesAsInts" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#bytesAsInts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bytesAsInts:scalax.io.LongTraversable[Int]"></a>
       <a id="bytesAsInts:LongTraversable[Int]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -528,13 +580,14 @@ a stream of known length into memory.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bytesAsInts</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Int" class="extype">Int</span>]</span>
+        <span class="name">bytesAsInts</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtains a Traversable for conveniently processing the file as Ints.</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a Traversable for conveniently processing the file as Ints.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an non-strict traversable over all the bytes with the bytes being represented as Ints
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#chars" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#chars" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="chars(implicitcodec:scalax.io.Codec):scalax.io.LongTraversable[Char]"></a>
       <a id="chars(Codec):LongTraversable[Char]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -542,18 +595,18 @@ a stream of known length into memory.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">chars</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+        <span class="name">chars</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.</p><p>If the codec is not the same as the source codec (the codec of
 the underlying data) then the characters will converted to the
 desired codec.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
-         The codec representing the desired encoding of the characters
-@return
+         The codec representing the desired encoding of the characters</p></dd><dt>returns</dt><dd class="cmt"><p>
          an traversable of all the characters
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -561,14 +614,15 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.InputResource#copyDataTo" data-isabs="false">
+    </li><li name="scalax.io.InputResource#copyDataTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyDataTo(output:scalax.io.Output):Unit"></a>
       <a id="copyDataTo(Output):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -576,14 +630,15 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyDataTo</span><span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">copyDataTo</span><span class="params">(<span name="output">output: <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
 as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.OutputResource#doCopyFrom" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.OutputResource#doCopyFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doCopyFrom(input:scalax.io.Input):Unit"></a>
       <a id="doCopyFrom(Input):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -591,13 +646,14 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doCopyFrom</span><span class="params">(<span name="input">input: <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">doCopyFrom</span><span class="params">(<span name="input">input: <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If possible efficiently copy data from input.</p><div class="fullcomment"><div class="comment cmt"><p>If possible efficiently copy data from input.  It MUST NOT forward request to
 input's copyTo method because that could trigger an infinate loop
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a> → <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a> → <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -605,11 +661,12 @@ input's copyTo method because that could trigger an infinate loop
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -617,11 +674,12 @@ input's copyTo method because that could trigger an infinate loop
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -629,50 +687,54 @@ input's copyTo method because that could trigger an infinate loop
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#flatMap" data-isabs="false">
-      <a id="flatMap[B]((R) ⇒ ManagedResource[B]):ManagedResource[B]"></a>
+    </li><li name="resource.ManagedResourceOperations#flatMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="flatMap[B](f:R=&gt;resource.ManagedResource[B]):resource.ManagedResource[B]"></a>
+      <a id="flatMap[B]((R)⇒ManagedResource[B]):ManagedResource[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (R) ⇒ <span name="resource.ManagedResource" class="extype">ManagedResource</span>[B]</span>)</span><span class="result">: <span name="resource.ManagedResource" class="extype">ManagedResource</span>[B]</span>
+        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scalax.io.SeekableResource.R">R</span>) ⇒ <span class="extype" name="resource.ManagedResource">ManagedResource</span>[<span class="extype" name="resource.ManagedResourceOperations.flatMap.B">B</span>]</span>)</span><span class="result">: <span class="extype" name="resource.ManagedResource">ManagedResource</span>[<span class="extype" name="resource.ManagedResourceOperations.flatMap.B">B</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#foreach" data-isabs="false">
-      <a id="foreach((R) ⇒ Unit):Unit"></a>
+    </li><li name="resource.ManagedResourceOperations#foreach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="foreach(f:R=&gt;Unit):Unit"></a>
+      <a id="foreach((R)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="params">(<span name="f">f: (R) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">foreach</span><span class="params">(<span name="f">f: (<span class="extype" name="scalax.io.SeekableResource.R">R</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -680,11 +742,12 @@ input's copyTo method because that could trigger an infinate loop
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#insert" data-isabs="false">
+    </li><li name="scalax.io.Seekable#insert" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insert[T](position:Long,data:T)(implicitconverter:scalax.io.OutputConverter[T]):Any"></a>
       <a id="insert[T](Long,T)(OutputConverter[T]):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -692,7 +755,7 @@ input's copyTo method because that could trigger an infinate loop
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">insert</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="data">data: T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[T]</span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">insert</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="data">data: <span class="extype" name="scalax.io.Seekable.insert.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">OutputConverter</a>[<span class="extype" name="scalax.io.Seekable.insert.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Inserts data at a position in the Seekable.</p><div class="fullcomment"><div class="comment cmt"><p>Inserts data at a position in the Seekable.  The actual position in the Seekable where the data is inserted depends on
@@ -703,12 +766,13 @@ the type of data being written.  For example if Longs are being written then pos
 where the data is inserted depends on the type of data being written.  For example if
 Longs are being written then position calculated as position * 8
 </p></dd><dt class="param">data</dt><dd class="cmt"><p>
-         The data to write.  This can be any type that has a <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> associated
+         The data to write.  This can be any type that has a <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> associated
          with it.  There are predefined $outputConverters for several types.  See the
-         <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object for the predefined types and for objects to simplify implementing
-         custom <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a></p><p>$converterParam
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#insert" data-isabs="false">
+         <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object for the predefined types and for objects to simplify implementing
+         custom <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a></p><p>$converterParam
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#insert" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insert(position:Long,string:String)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="insert(Long,String)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -716,7 +780,7 @@ Longs are being written then position calculated as position * 8
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">insert</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="string">string: String</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">insert</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="string">string: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Inserts a string at a position in the Seekable.</p><div class="fullcomment"><div class="comment cmt"><p>Inserts a string at a position in the Seekable. This is a potentially inefficient because of the need to
@@ -725,8 +789,9 @@ converted in the file up to the point of insertion.
 </p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>The position in the file to perform the insert.  A position of 2 will insert the character after
              the second character (not byte).</p></dd><dt class="param">string</dt><dd class="cmt"><p>The string that will be inserted into the Seekable</p></dd><dt class="param">codec</dt><dd class="cmt"><p>The codec to use for determining the location for inserting the string and for encoding the
              string as bytes
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#insertIntsAsBytes" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#insertIntsAsBytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insertIntsAsBytes(position:Long,data:Int*):Any"></a>
       <a id="insertIntsAsBytes(Long,Int*):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -734,17 +799,16 @@ converted in the file up to the point of insertion.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">insertIntsAsBytes</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="data">data: <span name="scala.Int" class="extype">Int</span>*</span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">insertIntsAsBytes</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="data">data: <span class="extype" name="scala.Int">Int</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
- is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+      <p class="shortcomment cmt">Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+ is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
  is provided to simply write an array of Ints as if they are Bytes.  In other words just taking the first
- byte.  This is pretty common in Java.io style IO.  IE</p><pre>
- outputStream.write(<span class="num">1</span>) 
-</pre><p> 1 is written as a single byte.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+ byte.  This is pretty common in Java.io style IO.  IE</p><pre>outputStream.write(<span class="num">1</span>)</pre><p> 1 is written as a single byte.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -752,11 +816,12 @@ converted in the file up to the point of insertion.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#lines" data-isabs="false">
+    </li><li name="scalax.io.Input#lines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lines(terminator:scalax.io.Line.Terminators.Terminator,includeTerminator:Boolean)(implicitcodec:scalax.io.Codec):scalax.io.LongTraversable[String]"></a>
       <a id="lines(Terminator,Boolean)(Codec):LongTraversable[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -764,7 +829,7 @@ converted in the file up to the point of insertion.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lines</span><span class="params">(<span name="terminator">terminator: <a name="scalax.io.Line.Terminators.Terminator" class="extype" href="Line$$Terminators$$Terminator.html">Terminator</a> = <span class="symbol"><span class="name"><a href="Line$.html">Terminators.Auto</a></span></span></span>, <span name="includeTerminator">includeTerminator: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[String]</span>
+        <span class="name">lines</span><span class="params">(<span name="terminator">terminator: <a href="Line$$Terminators$$Terminator.html" class="extype" name="scalax.io.Line.Terminators.Terminator">Terminator</a> = <span class="symbol"><span class="name"><a href="Line$.html">Terminators.Auto</a></span></span></span>, <span name="includeTerminator">includeTerminator: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain an non-strict traversable for iterating through the lines in the object</p><div class="fullcomment"><div class="comment cmt"><p>Obtain an non-strict traversable for iterating through the lines in the object</p><p>If the codec is not the same as the source codec (the codec of
@@ -774,23 +839,26 @@ desired codec.
          The strategy for determining the end of line
          Default is to auto-detect the EOL</p></dd><dt class="param">includeTerminator</dt><dd class="cmt"><p>
          if true then the line will end with the line terminator
-         Default is false</p><p>@return
-         a non-strict traversable for iterating through all the lines
+         Default is false
 </p></dd><dt class="param">codec</dt><dd class="cmt"><p>
-         The codec representing the desired encoding of the characters</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#map" data-isabs="false">
-      <a id="map[B]((R) ⇒ B):ExtractableManagedResource[B]"></a>
+         The codec representing the desired encoding of the characters</p></dd><dt>returns</dt><dd class="cmt"><p>
+         a non-strict traversable for iterating through all the lines
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="resource.ManagedResourceOperations#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map[B](f:R=&gt;B):resource.ExtractableManagedResource[B]"></a>
+      <a id="map[B]((R)⇒B):ExtractableManagedResource[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (R) ⇒ B</span>)</span><span class="result">: <span name="resource.ExtractableManagedResource" class="extype">ExtractableManagedResource</span>[B]</span>
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scalax.io.SeekableResource.R">R</span>) ⇒ <span class="extype" name="resource.ManagedResourceOperations.map.B">B</span></span>)</span><span class="result">: <span class="extype" name="resource.ExtractableManagedResource">ExtractableManagedResource</span>[<span class="extype" name="resource.ManagedResourceOperations.map.B">B</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -798,11 +866,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -810,11 +879,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -822,11 +892,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#outputProcessor" data-isabs="false">
+    </li><li name="scalax.io.Output#outputProcessor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="outputProcessor:scalax.io.processing.OutputProcessor"></a>
       <a id="outputProcessor:OutputProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -834,7 +905,7 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">outputProcessor</span><span class="result">: <a name="scalax.io.processing.OutputProcessor" class="extype" href="processing/OutputProcessor.html">OutputProcessor</a></span>
+        <span class="name">outputProcessor</span><span class="result">: <a href="processing/OutputProcessor.html" class="extype" name="scalax.io.processing.OutputProcessor">OutputProcessor</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Execute the function 'f' passing an Output instance that performs all operations
@@ -845,8 +916,9 @@ OutputStream truncates the file each time the connection is made then calling wr
 two times will result in the contents of the second write overwriting the second write.</p><p>Even if the underlying resource is an appending, using open will be more efficient since
 the connection only needs to be made a single time.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the result of the function
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#patch" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#patch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patch[T](position:Long,data:T,overwrite:scalax.io.Overwrite)(implicitconverter:scalax.io.OutputConverter[T]):Unit"></a>
       <a id="patch[T](Long,T,Overwrite)(OutputConverter[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -854,7 +926,7 @@ the connection only needs to be made a single time.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">patch</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="data">data: T</span>, <span name="overwrite">overwrite: <a name="scalax.io.Overwrite" class="extype" href="Overwrite.html">Overwrite</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[T]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">patch</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="data">data: <span class="extype" name="scalax.io.Seekable.patch.T">T</span></span>, <span name="overwrite">overwrite: <a href="Overwrite.html" class="extype" name="scalax.io.Overwrite">Overwrite</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="converter">converter: <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">OutputConverter</a>[<span class="extype" name="scalax.io.Seekable.patch.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Update a portion of the file content at
@@ -873,13 +945,14 @@ then the write will begin at the first byte of the file.
 </p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>
          The start position of the update starting at 0.
          The position must be within the file or == size (for appending)</p></dd><dt class="param">data</dt><dd class="cmt"><p>
-         The data to write.  This can be any type that has a <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> associated
+         The data to write.  This can be any type that has a <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> associated
          with it.  There are predefined $outputConverters for several types.  See the
-         <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object for the predefined types and for objects to simplify implementing
-         custom <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a></p></dd><dt class="param">overwrite</dt><dd class="cmt"><p>The strategy that dictates how many characters/bytes/units are overwritten
+         <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object for the predefined types and for objects to simplify implementing
+         custom <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a></p></dd><dt class="param">overwrite</dt><dd class="cmt"><p>The strategy that dictates how many characters/bytes/units are overwritten
 $converterParam
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#patch" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#patch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patch(position:Long,string:String,overwrite:scalax.io.Overwrite)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="patch(Long,String,Overwrite)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -887,7 +960,7 @@ $converterParam
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">patch</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="string">string: String</span>, <span name="overwrite">overwrite: <a name="scalax.io.Overwrite" class="extype" href="Overwrite.html">Overwrite</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">patch</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="string">string: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="overwrite">overwrite: <a href="Overwrite.html" class="extype" name="scalax.io.Overwrite">Overwrite</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Update a portion of the file content at
@@ -910,8 +983,9 @@ then the write will begin at the first byte of the file.
          The string to write to the file starting at
          position.</p></dd><dt class="param">overwrite</dt><dd class="cmt"><p>The strategy that dictates how many characters/bytes/units are overwritten</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          The codec to use for decoding the underlying data into characters
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#patchIntsAsBytes" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#patchIntsAsBytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patchIntsAsBytes(position:Long,overwrite:scalax.io.Overwrite,data:Int*):Unit"></a>
       <a id="patchIntsAsBytes(Long,Overwrite,Int*):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -919,41 +993,42 @@ then the write will begin at the first byte of the file.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">patchIntsAsBytes</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>, <span name="overwrite">overwrite: <a name="scalax.io.Overwrite" class="extype" href="Overwrite.html">Overwrite</a></span>, <span name="data">data: <span name="scala.Int" class="extype">Int</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">patchIntsAsBytes</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>, <span name="overwrite">overwrite: <a href="Overwrite.html" class="extype" name="scalax.io.Overwrite">Overwrite</a></span>, <span name="data">data: <span class="extype" name="scala.Int">Int</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
- is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+      <p class="shortcomment cmt">Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+ is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
  is provided to simply write an array of Ints as if they are Bytes.  In other words just taking the first
- byte.  This is pretty common in Java.io style IO.  IE</p><pre>
- outputStream.write(<span class="num">1</span>) 
-</pre><p> 1 is written as a single byte.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#readWriteChannel" data-isabs="false">
-      <a id="readWriteChannel[U]((SeekableByteChannel) ⇒ U):U"></a>
+ byte.  This is pretty common in Java.io style IO.  IE</p><pre>outputStream.write(<span class="num">1</span>)</pre><p> 1 is written as a single byte.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#readWriteChannel" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readWriteChannel[U](f:scalax.io.SeekableByteChannel=&gt;U):U"></a>
+      <a id="readWriteChannel[U]((SeekableByteChannel)⇒U):U"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">readWriteChannel</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<a name="scalax.io.SeekableByteChannel" class="extype" href="SeekableByteChannel.html">SeekableByteChannel</a>) ⇒ U</span>)</span><span class="result">: U</span>
+        <span class="name">readWriteChannel</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<a href="SeekableByteChannel.html" class="extype" name="scalax.io.SeekableByteChannel">SeekableByteChannel</a>) ⇒ <span class="extype" name="scalax.io.Seekable.readWriteChannel.U">U</span></span>)</span><span class="result">: <span class="extype" name="scalax.io.Seekable.readWriteChannel.U">U</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#reflect" data-isabs="false">
-      <a id="reflect[B]:R @util.continuations.package.cps[Either[List[Throwable],B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="resource.ManagedResourceOperations#reflect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reflect[B]:R@util.continuations.cps[Either[List[Throwable],B]]"></a>
+      <a id="reflect[B]:R@util.continuations.cps[Either[List[Throwable],B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reflect</span><span class="tparams">[<span name="B">B</span>]</span><span class="result">: R @util.continuations.package.cps[Either[List[Throwable],B]]</span>
+        <span class="name">reflect</span><span class="tparams">[<span name="B">B</span>]</span><span class="result">: R @util.continuations.cps[Either[List[Throwable],B]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#seekableProcessor" data-isabs="false">
+    </li><li name="scalax.io.Seekable#seekableProcessor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seekableProcessor:scalax.io.processing.SeekableProcessor"></a>
       <a id="seekableProcessor:SeekableProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -961,11 +1036,12 @@ then the write will begin at the first byte of the file.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">seekableProcessor</span><span class="result">: <a name="scalax.io.processing.SeekableProcessor" class="extype" href="processing/SeekableProcessor.html">SeekableProcessor</a></span>
+        <span class="name">seekableProcessor</span><span class="result">: <a href="processing/SeekableProcessor.html" class="extype" name="scalax.io.processing.SeekableProcessor">SeekableProcessor</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.InputResource#size" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.InputResource#size" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="size:Option[Long]"></a>
       <a id="size:Option[Long]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -973,13 +1049,14 @@ then the write will begin at the first byte of the file.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">size</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>
+        <span class="name">size</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The number of bytes that can be read from the underlying resource.</p><div class="fullcomment"><div class="comment cmt"><p>The number of bytes that can be read from the underlying resource.</p><p>if length == None then it is not possible to determine the
 number of bytes in advance.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a> → <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#string" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a> → <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scalax.io.Input#string" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="string(implicitcodec:scalax.io.Codec):String"></a>
       <a id="string(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -987,55 +1064,59 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">string</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">string</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads all the characters into memory.</p><div class="fullcomment"><div class="comment cmt"><p>Loads all the characters into memory. There is no protection against
 loading very large files/amounts of data.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
          The codec representing the desired encoding of the characters
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Input" class="extype" href="Input.html">Input</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Input.html" class="extype" name="scalax.io.Input">Input</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#tempFile" data-isabs="false">
-      <a id="tempFile():Input with Output"></a>
+    </li><li name="scalax.io.Seekable#tempFile" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tempFile():scalax.io.Inputwithscalax.io.Output"></a>
+      <a id="tempFile():InputwithOutput"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tempFile</span><span class="params">()</span><span class="result">: <a name="scalax.io.Input" class="extype" href="Input.html">Input</a> with <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></span>
+        <span class="name">tempFile</span><span class="params">()</span><span class="result">: <a href="Input.html" class="extype" name="scalax.io.Input">Input</a> with <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a temporary file to use for performing certain operations.</p><div class="fullcomment"><div class="comment cmt"><p>Create a temporary file to use for performing certain operations.  It should
 be as efficient as possible to copy from the temporary file to this Seekable and
 vice-versa.  Can be overridden for performance
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#toByteChannelResource" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#toByteChannelResource" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toByteChannelResource:scalax.io.InputResource[_]"></a>
+      <a id="toByteChannelResource:InputResource[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toByteChannelResource</span><span class="result">: scalax.io.InputResource[_]</span>
+        <span class="name">toByteChannelResource</span><span class="result">: <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[_]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Open a seekableByteChannelResource to use for creating other long traversables like chars or bytes as its.</p><div class="fullcomment"><div class="comment cmt"><p>Open a seekableByteChannelResource to use for creating other long traversables like chars or bytes as its.</p><p>This method may throw an exception if the file does not exist</p><p>Main feature is it sets position to 0 each call so the resource will always read from 0
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1043,23 +1124,25 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="resource.ManagedResourceOperations#toTraversable" data-isabs="false">
-      <a id="toTraversable[B](&lt;:&lt;[R, TraversableOnce[B]]):Traversable[B]"></a>
+    </li><li name="resource.ManagedResourceOperations#toTraversable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toTraversable[B](implicitev:&lt;:&lt;[R,scala.collection.TraversableOnce[B]]):Traversable[B]"></a>
+      <a id="toTraversable[B](&lt;:&lt;[R,TraversableOnce[B]]):Traversable[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toTraversable</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span name="scala.Predef.&lt;:&lt;" class="extype">&lt;:&lt;</span>[R, <span name="scala.collection.TraversableOnce" class="extype">TraversableOnce</span>[B]]</span>)</span><span class="result">: <span name="scala.collection.Traversable" class="extype">Traversable</span>[B]</span>
+        <span class="name">toTraversable</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[<span class="extype" name="resource.ManagedResourceOperations.toTraversable.B">B</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="resource.ManagedResourceOperations.toTraversable.B">B</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ManagedResourceOperations → ManagedResource</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#truncate" data-isabs="false">
+    </li><li name="scalax.io.Seekable#truncate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncate(position:Long):Unit"></a>
       <a id="truncate(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1067,13 +1150,14 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">truncate</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">truncate</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Truncate/Chop the Seekable to the number of bytes declared by the position param
 </p><div class="fullcomment"><div class="comment cmt"><p>Truncate/Chop the Seekable to the number of bytes declared by the position param
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Seekable#truncateString" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#truncateString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateString(position:Long)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="truncateString(Long)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1081,11 +1165,12 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">truncateString</span><span class="params">(<span name="position">position: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">truncateString</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.Seekable#underlyingOutput" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></dd></dl></div>
+    </li><li name="scalax.io.Seekable#underlyingOutput" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="underlyingOutput:scalax.io.OutputResource[java.nio.channels.WritableByteChannel]"></a>
       <a id="underlyingOutput:OutputResource[WritableByteChannel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1093,27 +1178,29 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">underlyingOutput</span><span class="result">: <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[<span name="java.nio.channels.WritableByteChannel" class="extype">WritableByteChannel</span>]</span>
+        <span class="name">underlyingOutput</span><span class="result">: <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="java.nio.channels.WritableByteChannel">WritableByteChannel</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a> → <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.ResourceOps#updateContext" data-isabs="false">
-      <a id="updateContext((ResourceContext) ⇒ ResourceContext):SeekableResource[R]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> → <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scalax.io.ResourceOps#updateContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateContext(f:scalax.io.ResourceContext=&gt;scalax.io.ResourceContext):Repr"></a>
+      <a id="updateContext((ResourceContext)⇒ResourceContext):SeekableResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updateContext</span><span class="params">(<span name="f">f: (<a name="scalax.io.ResourceContext" class="extype" href="ResourceContext.html">ResourceContext</a>) ⇒ <a name="scalax.io.ResourceContext" class="extype" href="ResourceContext.html">ResourceContext</a></span>)</span><span class="result">: <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]</span>
+        <span class="name">updateContext</span><span class="params">(<span name="f">f: (<a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a>) ⇒ <a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a></span>)</span><span class="result">: <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Update the current ResourceContext and return a new Resource instance with the updated context
 </p><div class="fullcomment"><div class="comment cmt"><p>Update the current ResourceContext and return a new Resource instance with the updated context
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>A function for transforming the current context to a new context with new values.
 </p></dd><dt>returns</dt><dd class="cmt"><p>a new instance configured with the new context
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1121,14 +1208,15 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1136,14 +1224,15 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1151,14 +1240,15 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#write" data-isabs="false">
+    </li><li name="scalax.io.Output#write" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="write(string:String)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="write(String)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1166,7 +1256,7 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">write</span><span class="params">(<span name="string">string: String</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">write</span><span class="params">(<span name="string">string: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Writes a string.</p><div class="fullcomment"><div class="comment cmt"><p>Writes a string.
@@ -1175,8 +1265,9 @@ vice-versa.  Can be overridden for performance
          the codec of the string to be written. The string will
          be converted to the encoding of <code> sourceCodec</code>
          Default is sourceCodec
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#write" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scalax.io.Output#write" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="write[T](data:T)(implicitwriter:scalax.io.OutputConverter[T]):Unit"></a>
       <a id="write[T](T)(OutputConverter[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1184,7 +1275,7 @@ vice-versa.  Can be overridden for performance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">write</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="writer">writer: <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>[T]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">write</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: <span class="extype" name="scalax.io.Output.write.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="writer">writer: <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">OutputConverter</a>[<span class="extype" name="scalax.io.Output.write.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Write data to the underlying object.</p><div class="fullcomment"><div class="comment cmt"><p>Write data to the underlying object.  Each time write is called the resource is reopened, in the case of a
@@ -1193,14 +1284,15 @@ recommended to write arrays of data since normally the underlying object can wri
 of bytes or integers most efficiently.</p><p>Since Characters require a codec to write to an OutputStream characters cannot be written with this method
 unless a OutputWriterFunction.CharFunction object is provided as the writer.
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>
-         The data to write to underlying object.  Any data that has a resolvable <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> can
-         be written.  See the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object for the defined <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a>
+         The data to write to underlying object.  Any data that has a resolvable <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> can
+         be written.  See the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object for the defined <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a>
          implementations and classes to assist implementing more.</p></dd><dt class="param">writer</dt><dd class="cmt"><p>
          The strategy used to write the data to the underlying object.  Many standard data-types are implicitly
          resolved and do not need to be supplied
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd><dt>See also</dt><dd><span class="cmt"><p>#writeChars for more on writing characters
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd><dt>See also</dt><dd><span class="cmt"><p>#writeChars for more on writing characters
 </p></span></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#writeChars" data-isabs="false">
+    </li><li name="scalax.io.Output#writeChars" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeChars(characters:TraversableOnce[Char])(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="writeChars(TraversableOnce[Char])(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1208,11 +1300,12 @@ unless a OutputWriterFunction.CharFunction object is provided as the writer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writeChars</span><span class="params">(<span name="characters">characters: TraversableOnce[<span name="scala.Char" class="extype">Char</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">writeChars</span><span class="params">(<span name="characters">characters: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Char">Char</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#writeIntsAsBytes" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scalax.io.Output#writeIntsAsBytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeIntsAsBytes(data:Int*):Unit"></a>
       <a id="writeIntsAsBytes(Int*):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1220,17 +1313,16 @@ unless a OutputWriterFunction.CharFunction object is provided as the writer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writeIntsAsBytes</span><span class="params">(<span name="data">data: <span name="scala.Int" class="extype">Int</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">writeIntsAsBytes</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Int">Int</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
-is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a name="scalax.io.OutputConverter" class="extype" href="OutputConverter.html">OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+      <p class="shortcomment cmt">Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
+is provided to simply write an array of Ints as if they are Bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Since the <a href="OutputConverter.html" class="extype" name="scalax.io.OutputConverter">scalax.io.OutputConverter</a> object defined for writing Ints encodes Ints using 4 bytes this method
 is provided to simply write an array of Ints as if they are Bytes.  In other words just taking the first
-byte.  This is pretty common in Java.io style IO.  IE</p><pre>
- outputStream.write(<span class="num">1</span>) 
-</pre><p>1 is written as a single byte.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Output#writeStrings" data-isabs="false">
+byte.  This is pretty common in Java.io style IO.  IE</p><pre>outputStream.write(<span class="num">1</span>)</pre><p>1 is written as a single byte.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
+    </li><li name="scalax.io.Output#writeStrings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeStrings(strings:Traversable[String],separator:String)(implicitcodec:scalax.io.Codec):Unit"></a>
       <a id="writeStrings(Traversable[String],String)(Codec):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1238,7 +1330,7 @@ byte.  This is pretty common in Java.io style IO.  IE</p><pre>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writeStrings</span><span class="params">(<span name="strings">strings: <span name="scala.collection.Traversable" class="extype">Traversable</span>[String]</span>, <span name="separator">separator: String = <span class="symbol">&quot;&quot;</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">writeStrings</span><span class="params">(<span name="strings">strings: <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="separator">separator: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Write several strings.</p><div class="fullcomment"><div class="comment cmt"><p>Write several strings.
@@ -1249,36 +1341,46 @@ byte.  This is pretty common in Java.io style IO.  IE</p><pre>
          or after the last.</p></dd><dt class="param">codec</dt><dd class="cmt"><p>
          The codec of the strings to be written. The strings will
          be converted to the encoding of <code> sourceCodec</code>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Output.html" class="extype" name="scalax.io.Output">Output</a></dd></dl></div>
     </li></ol>
             </div>
+
+        
 
         
         </div>
 
         <div id="inheritedMembers">
-        <div name="scalax.io.OutputResource" class="parent">
-              <h3>Inherited from <a name="scalax.io.OutputResource" class="extype" href="OutputResource.html">OutputResource</a>[R]</h3>
-            </div><div name="scalax.io.InputResource" class="parent">
-              <h3>Inherited from <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>[R]</h3>
-            </div><div name="scalax.io.Resource" class="parent">
-              <h3>Inherited from <a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a>[R]</h3>
-            </div><div name="scalax.io.ResourceOps" class="parent">
-              <h3>Inherited from <a name="scalax.io.ResourceOps" class="extype" href="ResourceOps.html">ResourceOps</a>[R, <a name="scalax.io.SeekableResource" class="extype" href="">SeekableResource</a>[R]]</h3>
-            </div><div name="resource.ManagedResourceOperations" class="parent">
-              <h3>Inherited from <span name="resource.ManagedResourceOperations" class="extype">ManagedResourceOperations</span>[R]</h3>
-            </div><div name="resource.ManagedResource" class="parent">
-              <h3>Inherited from <span name="resource.ManagedResource" class="extype">ManagedResource</span>[R]</h3>
-            </div><div name="scalax.io.Seekable" class="parent">
-              <h3>Inherited from <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a></h3>
-            </div><div name="scalax.io.Output" class="parent">
-              <h3>Inherited from <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></h3>
-            </div><div name="scalax.io.Input" class="parent">
-              <h3>Inherited from <a name="scalax.io.Input" class="extype" href="Input.html">Input</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="scalax.io.OutputResource">
+              <h3>Inherited from <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</h3>
+            </div><div class="parent" name="scalax.io.InputResource">
+              <h3>Inherited from <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</h3>
+            </div><div class="parent" name="scalax.io.Resource">
+              <h3>Inherited from <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</h3>
+            </div><div class="parent" name="scalax.io.ResourceOps">
+              <h3>Inherited from <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <a href="" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]]</h3>
+            </div><div class="parent" name="resource.ManagedResourceOperations">
+              <h3>Inherited from <span class="extype" name="resource.ManagedResourceOperations">ManagedResourceOperations</span>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</h3>
+            </div><div class="parent" name="resource.ManagedResource">
+              <h3>Inherited from <span class="extype" name="resource.ManagedResource">ManagedResource</span>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]</h3>
+            </div><div class="parent" name="scalax.io.Seekable">
+              <h3>Inherited from <a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a></h3>
+            </div><div class="parent" name="scalax.io.Output">
+              <h3>Inherited from <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></h3>
+            </div><div class="parent" name="scalax.io.Input">
+              <h3>Inherited from <a href="Input.html" class="extype" name="scalax.io.Input">Input</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

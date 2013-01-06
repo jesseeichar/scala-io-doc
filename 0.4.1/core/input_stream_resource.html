@@ -1,0 +1,35 @@
+<span>
+    <div class="example_summary"><span><span> Create Resource from an Input Stream.  Perform some conversions to obtain other types of Resources </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import scalax.io.managed._
+    import java.io._
+    import java.nio.channels.{FileChannel, ReadableByteChannel, WritableByteChannel, Channels}
+    import java.net.URL
+
+    val inputStream: InputStream = new URL(&quot;http://someurl.com&quot;).openStream
+
+    // create a Resource object from an input stream.  It extends the Input Trait
+    val in: InputStreamResource[InputStream] = Resource.fromInputStream(inputStream)
+    // read a byte from input stream (although it is easier to use the Input API)
+    val value = in acquireFor { _.read }
+
+    // create a Resource object based on a ReadableByteChannel from the InputStreamResource
+    // This extends Input Trait.
+    // Why do this?  Some time one needs to send a ReadableByteChannel to a Java API
+    // This way one can make the API call in a managed way.
+    val readableChannel: Resource[ReadableByteChannel] = in.readableByteChannel
+    // call a Legacy API in a managed way:
+    object X {
+      def toString(channel:ReadableByteChannel) = channel.toString
+    }
+    println(readableChannel acquireFor X.toString)
+
+    // Similarly an InputStreamResource can be converted to a ReadCharsResource with an
+    // underlying Reader object as the resource.  It should be noted that ReadCharsResource
+    // extends the ReadChars Trait for reading lines, strings and characters
+    val reader: ReadCharsResource [Reader] = in.reader
+    // do something with reader like above
+  </pre></div>
+    <span></span>
+  </span>

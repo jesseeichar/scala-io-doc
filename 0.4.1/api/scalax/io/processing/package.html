@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.io.processing</title>
+          <title>processing - Scala IO - scalax.io.processing</title>
+          <meta name="description" content="processing - Scala IO - scalax.io.processing" />
+          <meta name="keywords" content="processing Scala IO scalax.io.processing" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalax.io.processing.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../../package.html">scalax</a>.<a name="scalax.io" class="extype" href="../package.html">io</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="scalax">scalax</a>.<a href="../package.html" class="extype" name="scalax.io">io</a></p>
         <h1>processing</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.io.processing.ByteProcessor" data-isabs="false">
+              <ol><li name="scalax.io.processing.ByteProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteProcessorextendsSpecificApiFactory[Byte,scalax.io.processing.ByteProcessorAPI]withProductwithSerializable"></a>
       <a id="ByteProcessor:ByteProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ByteProcessor.html"><span class="name">ByteProcessor</span></a><span class="params">(<span name="base">base: CloseableIteratorProcessor[Byte]</span>)</span><span class="result"> extends SpecificApiFactory[Byte, ByteProcessorAPI] with Product with Serializable</span>
+        <a href="ByteProcessor.html"><span class="name">ByteProcessor</span></a><span class="params">(<span name="base">base: <span class="extype" name="scalax.io.processing.CloseableIteratorProcessor">CloseableIteratorProcessor</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result"> extends <a href="SpecificApiFactory.html" class="extype" name="scalax.io.processing.SpecificApiFactory">SpecificApiFactory</a>[<span class="extype" name="scala.Byte">Byte</span>, <a href="ByteProcessorAPI.html" class="extype" name="scalax.io.processing.ByteProcessorAPI">ByteProcessorAPI</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">ProcessorAPI for processing Byte input sources.</p>
-    </li><li visbl="pub" name="scalax.io.processing.ByteProcessorAPI" data-isabs="false">
+    </li><li name="scalax.io.processing.ByteProcessorAPI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteProcessorAPIextendsProcessorAPI[Byte]"></a>
       <a id="ByteProcessorAPI:ByteProcessorAPI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ByteProcessorAPI.html"><span class="name">ByteProcessorAPI</span></a><span class="result"> extends ProcessorAPI[Byte]</span>
+        <a href="ByteProcessorAPI.html"><span class="name">ByteProcessorAPI</span></a><span class="result"> extends <a href="ProcessorAPI.html" class="extype" name="scalax.io.processing.ProcessorAPI">ProcessorAPI</a>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">An api for reading data from the a Byte input source.</p>
-    </li><li visbl="pub" name="scalax.io.processing.CharProcessor" data-isabs="false">
+    </li><li name="scalax.io.processing.CharProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CharProcessorextendsSpecificApiFactory[Char,scalax.io.processing.CharProcessorAPI]withProductwithSerializable"></a>
       <a id="CharProcessor:CharProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,12 +98,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="CharProcessor.html"><span class="name">CharProcessor</span></a><span class="params">(<span name="base">base: CloseableIteratorProcessor[Char]</span>)</span><span class="result"> extends SpecificApiFactory[Char, CharProcessorAPI] with Product with Serializable</span>
+        <a href="CharProcessor.html"><span class="name">CharProcessor</span></a><span class="params">(<span name="base">base: <span class="extype" name="scalax.io.processing.CloseableIteratorProcessor">CloseableIteratorProcessor</span>[<span class="extype" name="scala.Char">Char</span>]</span>)</span><span class="result"> extends <a href="SpecificApiFactory.html" class="extype" name="scalax.io.processing.SpecificApiFactory">SpecificApiFactory</a>[<span class="extype" name="scala.Char">Char</span>, <a href="CharProcessorAPI.html" class="extype" name="scalax.io.processing.CharProcessorAPI">CharProcessorAPI</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">ProcessorAPI for processing char input sources
 </p>
-    </li><li visbl="pub" name="scalax.io.processing.CharProcessorAPI" data-isabs="false">
+    </li><li name="scalax.io.processing.CharProcessorAPI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CharProcessorAPIextendsProcessorAPI[Char]"></a>
       <a id="CharProcessorAPI:CharProcessorAPI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,11 +112,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="CharProcessorAPI.html"><span class="name">CharProcessorAPI</span></a><span class="result"> extends ProcessorAPI[Char]</span>
+        <a href="CharProcessorAPI.html"><span class="name">CharProcessorAPI</span></a><span class="result"> extends <a href="ProcessorAPI.html" class="extype" name="scalax.io.processing.ProcessorAPI">ProcessorAPI</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.processing.LittleEndianAPI" data-isabs="false">
+    </li><li name="scalax.io.processing.LittleEndianAPI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LittleEndianAPIextendsObject"></a>
       <a id="LittleEndianAPI:LittleEndianAPI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -105,13 +125,14 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LittleEndianAPI.html"><span class="name">LittleEndianAPI</span></a><span class="result"> extends AnyRef</span>
+        <a href="LittleEndianAPI.html"><span class="name">LittleEndianAPI</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The same API as ByteProcessor except that the methods returning bytes return bytes interpreted
 little-endian
 </p>
-    </li><li visbl="pub" name="scalax.io.processing.OpenOutput" data-isabs="false">
+    </li><li name="scalax.io.processing.OpenOutput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OpenOutputextendsObject"></a>
       <a id="OpenOutput:OpenOutput"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -119,11 +140,12 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OpenOutput.html"><span class="name">OpenOutput</span></a><span class="result"> extends AnyRef</span>
+        <a href="OpenOutput.html"><span class="name">OpenOutput</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The Processor API object for performing basic output operations within a processing pipeline.</p>
-    </li><li visbl="pub" name="scalax.io.processing.OpenSeekable" data-isabs="false">
+    </li><li name="scalax.io.processing.OpenSeekable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OpenSeekableextendsOpenOutput"></a>
       <a id="OpenSeekable:OpenSeekable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -131,11 +153,12 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OpenSeekable.html"><span class="name">OpenSeekable</span></a><span class="result"> extends OpenOutput</span>
+        <a href="OpenSeekable.html"><span class="name">OpenSeekable</span></a><span class="result"> extends <a href="OpenOutput.html" class="extype" name="scalax.io.processing.OpenOutput">OpenOutput</a></span>
       </span>
       </h4>
       <p class="comment cmt">The Processor API object for performing seekable operations within a processing pipeline.</p>
-    </li><li visbl="pub" name="scalax.io.processing.OpenWriteChars" data-isabs="false">
+    </li><li name="scalax.io.processing.OpenWriteChars" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OpenWriteCharsextendsObject"></a>
       <a id="OpenWriteChars:OpenWriteChars"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -143,11 +166,12 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OpenWriteChars.html"><span class="name">OpenWriteChars</span></a><span class="result"> extends AnyRef</span>
+        <a href="OpenWriteChars.html"><span class="name">OpenWriteChars</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The Processor API object for performing basic output operations within a processing pipeline.</p>
-    </li><li visbl="pub" name="scalax.io.processing.OutputProcessor" data-isabs="false">
+    </li><li name="scalax.io.processing.OutputProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OutputProcessorextendsProcessor[scalax.io.processing.OpenOutput]"></a>
       <a id="OutputProcessor:OutputProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -155,35 +179,38 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OutputProcessor.html"><span class="name">OutputProcessor</span></a><span class="result"> extends Processor[OpenOutput]</span>
+        <a href="OutputProcessor.html"><span class="name">OutputProcessor</span></a><span class="result"> extends <a href="Processor.html" class="extype" name="scalax.io.processing.Processor">Processor</a>[<a href="OpenOutput.html" class="extype" name="scalax.io.processing.OpenOutput">OpenOutput</a>]</span>
       </span>
       </h4>
       <p class="comment cmt">A processor that opens an Output Resource allowing for batch processing.</p>
-    </li><li visbl="pub" name="scalax.io.processing.Processor" data-isabs="true">
-      <a id="Processor:Processor[A]"></a>
+    </li><li name="scalax.io.processing.Processor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Processor[+A]extendsObject"></a>
+      <a id="Processor[+A]:Processor[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Processor.html"><span class="name">Processor</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="Processor.html"><span class="name">Processor</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A point or step in a IO process workflow.</p>
-    </li><li visbl="pub" name="scalax.io.processing.ProcessorAPI" data-isabs="false">
-      <a id="ProcessorAPI:ProcessorAPI[A]"></a>
+    </li><li name="scalax.io.processing.ProcessorAPI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ProcessorAPI[+A]extendsObject"></a>
+      <a id="ProcessorAPI[+A]:ProcessorAPI[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ProcessorAPI.html"><span class="name">ProcessorAPI</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="ProcessorAPI.html"><span class="name">ProcessorAPI</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The Common API for declaring a process workflow on an Input object.</p>
-    </li><li visbl="pub" name="scalax.io.processing.ProcessorFactory" data-isabs="false">
+    </li><li name="scalax.io.processing.ProcessorFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ProcessorFactoryextendsObject"></a>
       <a id="ProcessorFactory:ProcessorFactory"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -191,12 +218,13 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ProcessorFactory.html"><span class="name">ProcessorFactory</span></a><span class="result"> extends AnyRef</span>
+        <a href="ProcessorFactory.html"><span class="name">ProcessorFactory</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Factory methods for creating Processor objects
 </p>
-    </li><li visbl="pub" name="scalax.io.processing.SeekableProcessor" data-isabs="false">
+    </li><li name="scalax.io.processing.SeekableProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeekableProcessorextendsProcessor[scalax.io.processing.OpenSeekable]"></a>
       <a id="SeekableProcessor:SeekableProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -204,24 +232,26 @@ little-endian
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SeekableProcessor.html"><span class="name">SeekableProcessor</span></a><span class="result"> extends Processor[OpenSeekable]</span>
+        <a href="SeekableProcessor.html"><span class="name">SeekableProcessor</span></a><span class="result"> extends <a href="Processor.html" class="extype" name="scalax.io.processing.Processor">Processor</a>[<a href="OpenSeekable.html" class="extype" name="scalax.io.processing.OpenSeekable">OpenSeekable</a>]</span>
       </span>
       </h4>
       <p class="comment cmt">A processor that opens an Output Resource allowing for batch processing.</p>
-    </li><li visbl="pub" name="scalax.io.processing.SpecificApiFactory" data-isabs="true">
-      <a id="SpecificApiFactory:SpecificApiFactory[A, API]"></a>
+    </li><li name="scalax.io.processing.SpecificApiFactory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SpecificApiFactory[A,API&lt;:scalax.io.processing.ProcessorAPI[A]]extendsProcessor[API]"></a>
+      <a id="SpecificApiFactory[A,API&lt;:ProcessorAPI[A]]:SpecificApiFactory[A,API]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SpecificApiFactory.html"><span class="name">SpecificApiFactory</span></a><span class="tparams">[<span name="A">A</span>, <span name="API">API &lt;: ProcessorAPI[A]</span>]</span><span class="result"> extends Processor[API]</span>
+        <a href="SpecificApiFactory.html"><span class="name">SpecificApiFactory</span></a><span class="tparams">[<span name="A">A</span>, <span name="API">API &lt;: <a href="ProcessorAPI.html" class="extype" name="scalax.io.processing.ProcessorAPI">ProcessorAPI</a>[<span class="extype" name="scalax.io.processing.SpecificApiFactory.A">A</span>]</span>]</span><span class="result"> extends <a href="Processor.html" class="extype" name="scalax.io.processing.Processor">Processor</a>[<span class="extype" name="scalax.io.processing.SpecificApiFactory.API">API</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Wraps a CloseableIteratorProcessor, which normally produces a ProcessorAPI object, to a new Processor that
 returns a ProcessorAPI subclass specific to a data type.</p>
-    </li><li visbl="pub" name="scalax.io.processing.WriteCharsProcessor" data-isabs="false">
+    </li><li name="scalax.io.processing.WriteCharsProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WriteCharsProcessorextendsProcessor[scalax.io.processing.OpenWriteChars]"></a>
       <a id="WriteCharsProcessor:WriteCharsProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -229,7 +259,7 @@ returns a ProcessorAPI subclass specific to a data type.</p>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="WriteCharsProcessor.html"><span class="name">WriteCharsProcessor</span></a><span class="result"> extends Processor[OpenWriteChars]</span>
+        <a href="WriteCharsProcessor.html"><span class="name">WriteCharsProcessor</span></a><span class="result"> extends <a href="Processor.html" class="extype" name="scalax.io.processing.Processor">Processor</a>[<a href="OpenWriteChars.html" class="extype" name="scalax.io.processing.OpenWriteChars">OpenWriteChars</a>]</span>
       </span>
       </h4>
       <p class="comment cmt">A processor that opens an Output Resource allowing for batch processing.</p>
@@ -241,10 +271,20 @@ returns a ProcessorAPI subclass specific to a data type.</p>
         
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

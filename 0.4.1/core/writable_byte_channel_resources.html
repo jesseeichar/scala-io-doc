@@ -1,0 +1,16 @@
+<span>
+    <div class="example_summary"><span><span> Several examples of creating Resources </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import scalax.io.managed._
+    import java.io._
+    import java.nio.channels.{FileChannel, ReadableByteChannel, WritableByteChannel, Channels}
+    import java.net.URL
+
+    val writableByteChannel = Channels.newChannel(new FileOutputStream(&quot;file&quot;))
+    val writeChannel : WritableByteChannelResource[WritableByteChannel] =
+              Resource.fromWritableByteChannel(writableByteChannel)
+    val out2:Output = writeChannel
+  </pre></div>
+    <span></span>
+  </span>

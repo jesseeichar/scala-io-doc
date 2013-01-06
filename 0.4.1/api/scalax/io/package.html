@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.io</title>
+          <title>io - Scala IO - scalax.io</title>
+          <meta name="description" content="io - Scala IO - scalax.io" />
+          <meta name="keywords" content="io Scala IO scalax.io" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
-      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalax.io.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../lib/package_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a></p>
+        <p id="owner"><a href="../package.html" class="extype" name="scalax">scalax</a></p>
         <h1>io</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,14 +44,37 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Scala IO core classes
-</p></div></div>
-    
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Scala IO core classes
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
-        
-        
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalax.io"><span>io</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -47,33 +85,36 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="scalax.io.AbstractLazyIteratorBasedBuilder" data-isabs="true">
-      <a id="AbstractLazyIteratorBasedBuilder:AbstractLazyIteratorBasedBuilder[A, Repr]"></a>
+              <ol><li name="scalax.io.AbstractLazyIteratorBasedBuilder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractLazyIteratorBasedBuilder[A,+Repr]extendsBuilder[A,Repr]"></a>
+      <a id="AbstractLazyIteratorBasedBuilder[A,+Repr]:AbstractLazyIteratorBasedBuilder[A,Repr]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="AbstractLazyIteratorBasedBuilder.html"><span class="name">AbstractLazyIteratorBasedBuilder</span></a><span class="tparams">[<span name="A">A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends Builder[A, Repr]</span>
+        <a href="AbstractLazyIteratorBasedBuilder.html"><span class="name">AbstractLazyIteratorBasedBuilder</span></a><span class="tparams">[<span name="A">A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[<span class="extype" name="scalax.io.AbstractLazyIteratorBasedBuilder.A">A</span>, <span class="extype" name="scalax.io.AbstractLazyIteratorBasedBuilder.Repr">Repr</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Adapter" data-isabs="true">
-      <a id="Adapter:Adapter[S]"></a>
+    </li><li name="scalax.io.Adapter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Adapter[+S]extendsObject"></a>
+      <a id="Adapter[+S]:Adapter[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Adapter.html"><span class="name">Adapter</span></a><span class="tparams">[<span name="S">+S</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="Adapter.html"><span class="name">Adapter</span></a><span class="tparams">[<span name="S">+S</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Supporting classes for converting between resource types.</p>
-    </li><li visbl="pub" name="scalax.io.ArrayBufferSeekableChannel" data-isabs="false">
+    </li><li name="scalax.io.ArrayBufferSeekableChannel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ArrayBufferSeekableChannelextendsSeekableByteChannel"></a>
       <a id="ArrayBufferSeekableChannel:ArrayBufferSeekableChannel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -81,24 +122,26 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ArrayBufferSeekableChannel.html"><span class="name">ArrayBufferSeekableChannel</span></a><span class="result"> extends SeekableByteChannel</span>
+        <a href="ArrayBufferSeekableChannel.html"><span class="name">ArrayBufferSeekableChannel</span></a><span class="result"> extends <a href="SeekableByteChannel.html" class="extype" name="scalax.io.SeekableByteChannel">SeekableByteChannel</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.AsyncLongTraversable" data-isabs="false">
-      <a id="AsyncLongTraversable:AsyncLongTraversable[A]"></a>
+    </li><li name="scalax.io.AsyncLongTraversable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AsyncLongTraversable[+A]extendsObject"></a>
+      <a id="AsyncLongTraversable[+A]:AsyncLongTraversable[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="AsyncLongTraversable.html"><span class="name">AsyncLongTraversable</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="AsyncLongTraversable.html"><span class="name">AsyncLongTraversable</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">An additional API for LongTraversable for asynchronous interaction
 with the LongTraversable object.</p>
-    </li><li visbl="pub" name="scalax.io.ByteBlock" data-isabs="true">
+    </li><li name="scalax.io.ByteBlock" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ByteBlockextendsObject"></a>
       <a id="ByteBlock:ByteBlock"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -106,47 +149,51 @@ with the LongTraversable object.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ByteBlock.html"><span class="name">ByteBlock</span></a><span class="result"> extends AnyRef</span>
+        <a href="ByteBlock.html"><span class="name">ByteBlock</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.CloseAction" data-isabs="true">
-      <a id="CloseAction:CloseAction[A]"></a>
+    </li><li name="scalax.io.CloseAction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CloseAction[-A]extendsObject"></a>
+      <a id="CloseAction[-A]:CloseAction[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="CloseAction.html"><span class="name">CloseAction</span></a><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="CloseAction.html"><span class="name">CloseAction</span></a><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <p class="comment cmt">A strategy object representing an action to take upon closing a <a name="scalax.io.Resource" class="extype" href="Resource.html">Resource</a>.</p>
-    </li><li visbl="pub" name="scalax.io.CloseableIterator" data-isabs="true">
-      <a id="CloseableIterator:CloseableIterator[A]"></a>
+      <p class="comment cmt">A strategy object representing an action to take upon closing a <a href="Resource.html" class="extype" name="scalax.io.Resource">scalax.io.Resource</a>.</p>
+    </li><li name="scalax.io.CloseableIterator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CloseableIterator[+A]extendsIterator[A]"></a>
+      <a id="CloseableIterator[+A]:CloseableIterator[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="CloseableIterator.html"><span class="name">CloseableIterator</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterator[A]</span>
+        <a href="CloseableIterator.html"><span class="name">CloseableIterator</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scalax.io.CloseableIterator.A">A</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.CloseableOpenedResource" data-isabs="false">
-      <a id="CloseableOpenedResource:CloseableOpenedResource[R]"></a>
+    </li><li name="scalax.io.CloseableOpenedResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CloseableOpenedResource[+R&lt;:java.io.Closeable]extendsOpenedResource[R]"></a>
+      <a id="CloseableOpenedResource[+R&lt;:Closeable]:CloseableOpenedResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="CloseableOpenedResource.html"><span class="name">CloseableOpenedResource</span></a><span class="tparams">[<span name="R">+R &lt;: Closeable</span>]</span><span class="result"> extends OpenedResource[R]</span>
+        <a href="CloseableOpenedResource.html"><span class="name">CloseableOpenedResource</span></a><span class="tparams">[<span name="R">+R &lt;: <span class="extype" name="java.io.Closeable">Closeable</span></span>]</span><span class="result"> extends <a href="OpenedResource.html" class="extype" name="scalax.io.OpenedResource">OpenedResource</a>[<span class="extype" name="scalax.io.CloseableOpenedResource.R">R</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Codec" data-isabs="false">
+    </li><li name="scalax.io.Codec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CodecextendsObject"></a>
       <a id="Codec:Codec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -154,61 +201,66 @@ with the LongTraversable object.</p>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Codec.html"><span class="name">Codec</span></a><span class="result"> extends AnyRef</span>
+        <a href="Codec.html"><span class="name">Codec</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A class for character encoding/decoding preferences.</p>
-    </li><li visbl="pub" name="scalax.io.CompositeIterable" data-isabs="false">
-      <a id="CompositeIterable:CompositeIterable[A]"></a>
+    </li><li name="scalax.io.CompositeIterable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompositeIterable[A]extendsObject"></a>
+      <a id="CompositeIterable[A]:CompositeIterable[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="CompositeIterable.html"><span class="name">CompositeIterable</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="CompositeIterable.html"><span class="name">CompositeIterable</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Continue" data-isabs="false">
-      <a id="Continue:Continue[A]"></a>
+    </li><li name="scalax.io.Continue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Continue[+A]extendsFoldResult[A]withProductwithSerializable"></a>
+      <a id="Continue[+A]:Continue[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Continue.html"><span class="name">Continue</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: A</span>, <span name="skip">skip: Long</span>)</span><span class="result"> extends FoldResult[A] with Product with Serializable</span>
+        <a href="Continue.html"><span class="name">Continue</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="scalax.io.Continue.A">A</span></span>, <span name="skip">skip: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <a href="FoldResult.html" class="extype" name="scalax.io.FoldResult">FoldResult</a>[<span class="extype" name="scalax.io.Continue.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Signal indicating that the fold should continue to process another value
 </p>
-    </li><li visbl="pub" name="scalax.io.End" data-isabs="false">
-      <a id="End:End[A]"></a>
+    </li><li name="scalax.io.End" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="End[+A]extendsFoldResult[A]withProductwithSerializable"></a>
+      <a id="End[+A]:End[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="End.html"><span class="name">End</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: A</span>)</span><span class="result"> extends FoldResult[A] with Product with Serializable</span>
+        <a href="End.html"><span class="name">End</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="scalax.io.End.A">A</span></span>)</span><span class="result"> extends <a href="FoldResult.html" class="extype" name="scalax.io.FoldResult">FoldResult</a>[<span class="extype" name="scalax.io.End.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Signal indicating that the fold should stop and return the contained result
 </p>
-    </li><li visbl="pub" name="scalax.io.FoldResult" data-isabs="true">
-      <a id="FoldResult:FoldResult[A]"></a>
+    </li><li name="scalax.io.FoldResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FoldResult[+A]extendsObject"></a>
+      <a id="FoldResult[+A]:FoldResult[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">sealed </span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="FoldResult.html"><span class="name">FoldResult</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="FoldResult.html"><span class="name">FoldResult</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <p class="comment cmt">The control signals for the limitFold method in <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>.</p>
-    </li><li visbl="pub" name="scalax.io.Input" data-isabs="true">
+      <p class="comment cmt">The control signals for the limitFold method in <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">scalax.io.LongTraversable</a>.</p>
+    </li><li name="scalax.io.Input" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InputextendsObject"></a>
       <a id="Input:Input"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -216,23 +268,25 @@ with the LongTraversable object.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Input.html"><span class="name">Input</span></a><span class="result"> extends AnyRef</span>
+        <a href="Input.html"><span class="name">Input</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">An trait for objects that viewed as a sequence of bytes.</p>
-    </li><li visbl="pub" name="scalax.io.InputResource" data-isabs="true">
-      <a id="InputResource:InputResource[R]"></a>
+    </li><li name="scalax.io.InputResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InputResource[+R]extendsResource[R]withInputwithResourceOps[R,scalax.io.InputResource[R]]"></a>
+      <a id="InputResource[+R]:InputResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="InputResource.html"><span class="name">InputResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends Resource[R] with Input with ResourceOps[R, InputResource[R]]</span>
+        <a href="InputResource.html"><span class="name">InputResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.InputResource.R">R</span>] with <a href="Input.html" class="extype" name="scalax.io.Input">Input</a> with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.InputResource.R">R</span>, <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.InputResource.R">R</span>]]</span>
       </span>
       </h4>
-      <p class="comment cmt">An Resource object that is a also an <a name="scalax.io.Input" class="extype" href="Input.html">Input</a>.</p>
-    </li><li visbl="pub" name="scalax.io.KnownName" data-isabs="false">
+      <p class="comment cmt">An Resource object that is a also an <a href="Input.html" class="extype" name="scalax.io.Input">scalax.io.Input</a>.</p>
+    </li><li name="scalax.io.KnownName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="KnownNameextendsResourceDescNamewithProductwithSerializable"></a>
       <a id="KnownName:KnownName"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -240,11 +294,12 @@ with the LongTraversable object.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="KnownName.html"><span class="name">KnownName</span></a><span class="params">(<span name="name">name: String</span>)</span><span class="result"> extends ResourceDescName with Product with Serializable</span>
+        <a href="KnownName.html"><span class="name">KnownName</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="ResourceDescName.html" class="extype" name="scalax.io.ResourceDescName">ResourceDescName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.LineTraversable" data-isabs="false">
+    </li><li name="scalax.io.LineTraversable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LineTraversableextendsLongTraversable[String]"></a>
       <a id="LineTraversable:LineTraversable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -252,50 +307,54 @@ with the LongTraversable object.</p>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LineTraversable.html"><span class="name">LineTraversable</span></a><span class="result"> extends LongTraversable[String]</span>
+        <a href="LineTraversable.html"><span class="name">LineTraversable</span></a><span class="result"> extends <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Creates a Traversable[String] from a Traversable[Char] where each String is a line as indicated by the
-<a name="scalax.io.Line.Terminators.Terminator" class="extype" href="Line$$Terminators$$Terminator.html">Terminator</a>.</p>
-    </li><li visbl="pub" name="scalax.io.LongTraversable" data-isabs="true">
-      <a id="LongTraversable:LongTraversable[A]"></a>
+<a href="Line$$Terminators$$Terminator.html" class="extype" name="scalax.io.Line.Terminators.Terminator">scalax.io.Line.Terminators.Terminator</a>.</p>
+    </li><li name="scalax.io.LongTraversable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LongTraversable[+A]extendsTraversable[A]withGenericTraversableTemplate[A,scalax.io.LongTraversable]withLongTraversableLike[A,scalax.io.LongTraversable[A]]"></a>
+      <a id="LongTraversable[+A]:LongTraversable[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversable.html"><span class="name">LongTraversable</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Traversable[A] with GenericTraversableTemplate[A, LongTraversable] with LongTraversableLike[A, LongTraversable[A]]</span>
+        <a href="LongTraversable.html"><span class="name">LongTraversable</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="scalax.io.LongTraversable.A">A</span>] with <span class="extype" name="scala.collection.generic.GenericTraversableTemplate">GenericTraversableTemplate</span>[<span class="extype" name="scalax.io.LongTraversable.A">A</span>, <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>] with <a href="LongTraversableLike.html" class="extype" name="scalax.io.LongTraversableLike">LongTraversableLike</a>[<span class="extype" name="scalax.io.LongTraversable.A">A</span>, <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scalax.io.LongTraversable.A">A</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">A traversable for use on very large datasets which cannot be indexed with Ints but instead
 require Longs for indexing.</p>
-    </li><li visbl="pub" name="scalax.io.LongTraversableBuilder" data-isabs="true">
-      <a id="LongTraversableBuilder:LongTraversableBuilder[A, Repr]"></a>
+    </li><li name="scalax.io.LongTraversableBuilder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LongTraversableBuilder[-A,+Repr]extendsBuilder[A,Repr]"></a>
+      <a id="LongTraversableBuilder[-A,+Repr]:LongTraversableBuilder[A,Repr]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversableBuilder.html"><span class="name">LongTraversableBuilder</span></a><span class="tparams">[<span name="A">-A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends Builder[A, Repr]</span>
+        <a href="LongTraversableBuilder.html"><span class="name">LongTraversableBuilder</span></a><span class="tparams">[<span name="A">-A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[<span class="extype" name="scalax.io.LongTraversableBuilder.A">A</span>, <span class="extype" name="scalax.io.LongTraversableBuilder.Repr">Repr</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.LongTraversableLike" data-isabs="true">
-      <a id="LongTraversableLike:LongTraversableLike[A, Repr]"></a>
+    </li><li name="scalax.io.LongTraversableLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LongTraversableLike[+A,+Repr&lt;:scalax.io.LongTraversableLike[A,Repr]]extendsTraversableLike[A,Repr]"></a>
+      <a id="LongTraversableLike[+A,+Repr&lt;:LongTraversableLike[A,Repr]]:LongTraversableLike[A,Repr]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversableLike.html"><span class="name">LongTraversableLike</span></a><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: LongTraversableLike[A, Repr]</span>]</span><span class="result"> extends TraversableLike[A, Repr]</span>
+        <a href="LongTraversableLike.html"><span class="name">LongTraversableLike</span></a><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: <a href="LongTraversableLike.html" class="extype" name="scalax.io.LongTraversableLike">LongTraversableLike</a>[<span class="extype" name="scalax.io.LongTraversableLike.A">A</span>, <span class="extype" name="scalax.io.LongTraversableLike.Repr">Repr</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.TraversableLike">TraversableLike</span>[<span class="extype" name="scalax.io.LongTraversableLike.A">A</span>, <span class="extype" name="scalax.io.LongTraversableLike.Repr">Repr</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">A traversable for use on very large datasets which cannot be indexed with Ints but instead
 require Longs for indexing.</p>
-    </li><li visbl="pub" name="scalax.io.OpenOption" data-isabs="true">
+    </li><li name="scalax.io.OpenOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OpenOptionextendsObject"></a>
       <a id="OpenOption:OpenOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -303,25 +362,27 @@ require Longs for indexing.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="OpenOption.html"><span class="name">OpenOption</span></a><span class="result"> extends AnyRef</span>
+        <a href="OpenOption.html"><span class="name">OpenOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A flag interface for indicating that the object
 represents a filesystem dependent option for opening
 a file.</p>
-    </li><li visbl="pub" name="scalax.io.OpenedResource" data-isabs="true">
-      <a id="OpenedResource:OpenedResource[R]"></a>
+    </li><li name="scalax.io.OpenedResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OpenedResource[+R]extendsObject"></a>
+      <a id="OpenedResource[+R]:OpenedResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="OpenedResource.html"><span class="name">OpenedResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="OpenedResource.html"><span class="name">OpenedResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Output" data-isabs="true">
+    </li><li name="scalax.io.Output" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OutputextendsObject"></a>
       <a id="Output:Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -329,36 +390,39 @@ a file.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Output.html"><span class="name">Output</span></a><span class="result"> extends AnyRef</span>
+        <a href="Output.html"><span class="name">Output</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A trait for objects that can have data written to them.</p>
-    </li><li visbl="pub" name="scalax.io.OutputConverter" data-isabs="true">
-      <a id="OutputConverter:OutputConverter[T]"></a>
+    </li><li name="scalax.io.OutputConverter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OutputConverter[-T]extends(java.nio.channels.WritableByteChannel,T)=&gt;Unit"></a>
+      <a id="OutputConverter[-T]:OutputConverter[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="OutputConverter.html"><span class="name">OutputConverter</span></a><span class="tparams">[<span name="T">-T</span>]</span><span class="result"> extends (WritableByteChannel, T) ⇒ Unit</span>
+        <a href="OutputConverter.html"><span class="name">OutputConverter</span></a><span class="tparams">[<span name="T">-T</span>]</span><span class="result"> extends (<span class="extype" name="java.nio.channels.WritableByteChannel">WritableByteChannel</span>, <span class="extype" name="scalax.io.OutputConverter.T">T</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="comment cmt">Functions used by Seekable and Output to either convert data to bytes for writing
 or write directly to an output stream depending on the requirements of the caller.</p>
-    </li><li visbl="pub" name="scalax.io.OutputResource" data-isabs="true">
-      <a id="OutputResource:OutputResource[R]"></a>
+    </li><li name="scalax.io.OutputResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OutputResource[+R]extendsResource[R]withOutputwithResourceOps[R,scalax.io.OutputResource[R]]"></a>
+      <a id="OutputResource[+R]:OutputResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="OutputResource.html"><span class="name">OutputResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends Resource[R] with Output with ResourceOps[R, OutputResource[R]]</span>
+        <a href="OutputResource.html"><span class="name">OutputResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.OutputResource.R">R</span>] with <a href="Output.html" class="extype" name="scalax.io.Output">Output</a> with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.OutputResource.R">R</span>, <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.OutputResource.R">R</span>]]</span>
       </span>
       </h4>
-      <p class="comment cmt">An Resource object that is a also an <a name="scalax.io.Output" class="extype" href="Output.html">Output</a>.</p>
-    </li><li visbl="pub" name="scalax.io.Overwrite" data-isabs="true">
+      <p class="comment cmt">An Resource object that is a also an <a href="Output.html" class="extype" name="scalax.io.Output">scalax.io.Output</a>.</p>
+    </li><li name="scalax.io.Overwrite" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OverwriteextendsObject"></a>
       <a id="Overwrite:Overwrite"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -366,11 +430,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Overwrite.html"><span class="name">Overwrite</span></a><span class="result"> extends AnyRef</span>
+        <a href="Overwrite.html"><span class="name">Overwrite</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A strategy trait used with the Seekable.</p>
-    </li><li visbl="pub" name="scalax.io.OverwriteSome" data-isabs="false">
+    </li><li name="scalax.io.OverwriteSome" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OverwriteSomeextendsOverwritewithProductwithSerializable"></a>
       <a id="OverwriteSome:OverwriteSome"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -378,11 +443,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="OverwriteSome.html"><span class="name">OverwriteSome</span></a><span class="params">(<span name="replacementLength">replacementLength: Long</span>)</span><span class="result"> extends Overwrite with Product with Serializable</span>
+        <a href="OverwriteSome.html"><span class="name">OverwriteSome</span></a><span class="params">(<span name="replacementLength">replacementLength: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Overwrite.html" class="extype" name="scalax.io.Overwrite">Overwrite</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Strategy for (potentially) only overwriting a subset of the data.</p>
-    </li><li visbl="pub" name="scalax.io.PrefixedName" data-isabs="false">
+    </li><li name="scalax.io.PrefixedName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrefixedNameextendsResourceDescNamewithProductwithSerializable"></a>
       <a id="PrefixedName:PrefixedName"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -390,11 +456,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PrefixedName.html"><span class="name">PrefixedName</span></a><span class="params">(<span name="prefix">prefix: String</span>)</span><span class="result"> extends ResourceDescName with Product with Serializable</span>
+        <a href="PrefixedName.html"><span class="name">PrefixedName</span></a><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="ResourceDescName.html" class="extype" name="scalax.io.ResourceDescName">ResourceDescName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.ReadChars" data-isabs="true">
+    </li><li name="scalax.io.ReadChars" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ReadCharsextendsObject"></a>
       <a id="ReadChars:ReadChars"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -402,35 +469,38 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ReadChars.html"><span class="name">ReadChars</span></a><span class="result"> extends AnyRef</span>
+        <a href="ReadChars.html"><span class="name">ReadChars</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">An trait for objects that viewed as a sequence of characters.</p>
-    </li><li visbl="pub" name="scalax.io.ReadCharsResource" data-isabs="true">
-      <a id="ReadCharsResource:ReadCharsResource[R]"></a>
+    </li><li name="scalax.io.ReadCharsResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ReadCharsResource[+R]extendsResource[R]withReadCharswithResourceOps[R,scalax.io.ReadCharsResource[R]]"></a>
+      <a id="ReadCharsResource[+R]:ReadCharsResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ReadCharsResource.html"><span class="name">ReadCharsResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends Resource[R] with ReadChars with ResourceOps[R, ReadCharsResource[R]]</span>
+        <a href="ReadCharsResource.html"><span class="name">ReadCharsResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.ReadCharsResource.R">R</span>] with <a href="ReadChars.html" class="extype" name="scalax.io.ReadChars">ReadChars</a> with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.ReadCharsResource.R">R</span>, <a href="ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">ReadCharsResource</a>[<span class="extype" name="scalax.io.ReadCharsResource.R">R</span>]]</span>
       </span>
       </h4>
-      <p class="comment cmt">An object that in addition to being a resource is also a <a name="scalax.io.ReadChars" class="extype" href="ReadChars.html">ReadChars</a> Resource.</p>
-    </li><li visbl="pub" name="scalax.io.Resource" data-isabs="true">
-      <a id="Resource:Resource[R]"></a>
+      <p class="comment cmt">An object that in addition to being a resource is also a <a href="ReadChars.html" class="extype" name="scalax.io.ReadChars">scalax.io.ReadChars</a> Resource.</p>
+    </li><li name="scalax.io.Resource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Resource[+R]extendsManagedResourceOperations[R]withResourceOps[R,scalax.io.Resource[R]]"></a>
+      <a id="Resource[+R]:Resource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Resource.html"><span class="name">Resource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends ManagedResourceOperations[R] with ResourceOps[R, Resource[R]]</span>
+        <a href="Resource.html"><span class="name">Resource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <span class="extype" name="resource.ManagedResourceOperations">ManagedResourceOperations</span>[<span class="extype" name="scalax.io.Resource.R">R</span>] with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.Resource.R">R</span>, <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.Resource.R">R</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">A Resource that can be used to do IO.</p>
-    </li><li visbl="pub" name="scalax.io.ResourceContext" data-isabs="true">
+    </li><li name="scalax.io.ResourceContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResourceContextextendsObject"></a>
       <a id="ResourceContext:ResourceContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -438,11 +508,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ResourceContext.html"><span class="name">ResourceContext</span></a><span class="result"> extends AnyRef</span>
+        <a href="ResourceContext.html"><span class="name">ResourceContext</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The context a resource uses for obtaining configuration information.</p>
-    </li><li visbl="pub" name="scalax.io.ResourceDescName" data-isabs="true">
+    </li><li name="scalax.io.ResourceDescName" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResourceDescNameextendsObject"></a>
       <a id="ResourceDescName:ResourceDescName"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -450,23 +521,25 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ResourceDescName.html"><span class="name">ResourceDescName</span></a><span class="result"> extends AnyRef</span>
+        <a href="ResourceDescName.html"><span class="name">ResourceDescName</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.ResourceOps" data-isabs="true">
-      <a id="ResourceOps:ResourceOps[R, Repr]"></a>
+    </li><li name="scalax.io.ResourceOps" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResourceOps[+R,+Repr]extendsObject"></a>
+      <a id="ResourceOps[+R,+Repr]:ResourceOps[R,Repr]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ResourceOps.html"><span class="name">ResourceOps</span></a><span class="tparams">[<span name="R">+R</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="ResourceOps.html"><span class="name">ResourceOps</span></a><span class="tparams">[<span name="R">+R</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A trait allowing adding close actions to a Resource.</p>
-    </li><li visbl="pub" name="scalax.io.ScalaIOException" data-isabs="false">
+    </li><li name="scalax.io.ScalaIOException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScalaIOExceptionextendsIOExceptionwithProductwithSerializable"></a>
       <a id="ScalaIOException:ScalaIOException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -474,11 +547,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ScalaIOException.html"><span class="name">ScalaIOException</span></a><span class="params">(<span name="accessException">accessException: Option[Throwable]</span>, <span name="closeExceptions">closeExceptions: List[Throwable]</span>)</span><span class="result"> extends IOException with Product with Serializable</span>
+        <a href="ScalaIOException.html"><span class="name">ScalaIOException</span></a><span class="params">(<span name="accessException">accessException: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Throwable">Throwable</span>]</span>, <span name="closeExceptions">closeExceptions: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Throwable">Throwable</span>]</span>)</span><span class="result"> extends <span class="extype" name="java.io.IOException">IOException</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Seekable" data-isabs="true">
+    </li><li name="scalax.io.Seekable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SeekableextendsInputwithOutput"></a>
       <a id="Seekable:Seekable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -486,11 +560,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Seekable.html"><span class="name">Seekable</span></a><span class="result"> extends Input with Output</span>
+        <a href="Seekable.html"><span class="name">Seekable</span></a><span class="result"> extends <a href="Input.html" class="extype" name="scalax.io.Input">Input</a> with <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></span>
       </span>
       </h4>
       <p class="comment cmt">An object for reading and writing to Random Access IO objects such as Files.</p>
-    </li><li visbl="pub" name="scalax.io.SeekableByteChannel" data-isabs="true">
+    </li><li name="scalax.io.SeekableByteChannel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SeekableByteChannelextendsByteChannelwithChannelwithCloseablewithReadableByteChannelwithWritableByteChannel"></a>
       <a id="SeekableByteChannel:SeekableByteChannel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -498,48 +573,52 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SeekableByteChannel.html"><span class="name">SeekableByteChannel</span></a><span class="result"> extends ByteChannel with Channel with Closeable with ReadableByteChannel with WritableByteChannel</span>
+        <a href="SeekableByteChannel.html"><span class="name">SeekableByteChannel</span></a><span class="result"> extends <span class="extype" name="java.nio.channels.ByteChannel">ByteChannel</span> with <span class="extype" name="java.nio.channels.Channel">Channel</span> with <span class="extype" name="java.io.Closeable">Closeable</span> with <span class="extype" name="java.nio.channels.ReadableByteChannel">ReadableByteChannel</span> with <span class="extype" name="java.nio.channels.WritableByteChannel">WritableByteChannel</span></span>
       </span>
       </h4>
       <p class="comment cmt">An object for reading and writing to Random Access IO objects such as Files.</p>
-    </li><li visbl="pub" name="scalax.io.SeekableResource" data-isabs="true">
-      <a id="SeekableResource:SeekableResource[R]"></a>
+    </li><li name="scalax.io.SeekableResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SeekableResource[+R]extendsSeekablewithInputResource[R]withOutputResource[R]withResourceOps[R,scalax.io.SeekableResource[R]]"></a>
+      <a id="SeekableResource[+R]:SeekableResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SeekableResource.html"><span class="name">SeekableResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends Seekable with InputResource[R] with OutputResource[R] with ResourceOps[R, SeekableResource[R]]</span>
+        <a href="SeekableResource.html"><span class="name">SeekableResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a> with <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>] with <a href="OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>] with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>, <a href="SeekableResource.html" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.SeekableResource.R">R</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">An object that can be viewed as a Seekable object.</p>
-    </li><li visbl="prt" name="scalax.io.StreamIterator" data-isabs="false">
-      <a id="StreamIterator:StreamIterator[E]"></a>
+    </li><li name="scalax.io.StreamIterator" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StreamIterator[E]extendsIterator[E]"></a>
+      <a id="StreamIterator[E]:StreamIterator[E]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StreamIterator.html"><span class="name">StreamIterator</span></a><span class="tparams">[<span name="E">E</span>]</span><span class="result"> extends Iterator[E]</span>
+        <a href="StreamIterator.html"><span class="name">StreamIterator</span></a><span class="tparams">[<span name="E">E</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scalax.io.StreamIterator.E">E</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="scalax.io.TraversableSource" data-isabs="true">
-      <a id="TraversableSource:TraversableSource[In, A]"></a>
+    </li><li name="scalax.io.TraversableSource" visbl="prt" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TraversableSource[In&lt;:java.io.Closeable,A]extendsObject"></a>
+      <a id="TraversableSource[In&lt;:Closeable,A]:TraversableSource[In,A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TraversableSource.html"><span class="name">TraversableSource</span></a><span class="tparams">[<span name="In">In &lt;: Closeable</span>, <span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="TraversableSource.html"><span class="name">TraversableSource</span></a><span class="tparams">[<span name="In">In &lt;: <span class="extype" name="java.io.Closeable">Closeable</span></span>, <span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A way of abstracting over the source Resource's type
 </p>
-    </li><li visbl="pub" name="scalax.io.UnknownName" data-isabs="false">
+    </li><li name="scalax.io.UnknownName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnknownNameextendsResourceDescNamewithProductwithSerializable"></a>
       <a id="UnknownName:UnknownName"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -547,23 +626,25 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="UnknownName.html"><span class="name">UnknownName</span></a><span class="params">()</span><span class="result"> extends ResourceDescName with Product with Serializable</span>
+        <a href="UnknownName.html"><span class="name">UnknownName</span></a><span class="params">()</span><span class="result"> extends <a href="ResourceDescName.html" class="extype" name="scalax.io.ResourceDescName">ResourceDescName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.UnmanagedOpenedResource" data-isabs="false">
-      <a id="UnmanagedOpenedResource:UnmanagedOpenedResource[R]"></a>
+    </li><li name="scalax.io.UnmanagedOpenedResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnmanagedOpenedResource[+R]extendsOpenedResource[R]"></a>
+      <a id="UnmanagedOpenedResource[+R]:UnmanagedOpenedResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UnmanagedOpenedResource.html"><span class="name">UnmanagedOpenedResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends OpenedResource[R]</span>
+        <a href="UnmanagedOpenedResource.html"><span class="name">UnmanagedOpenedResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="OpenedResource.html" class="extype" name="scalax.io.OpenedResource">OpenedResource</a>[<span class="extype" name="scalax.io.UnmanagedOpenedResource.R">R</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.WriteChars" data-isabs="true">
+    </li><li name="scalax.io.WriteChars" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WriteCharsextendsObject"></a>
       <a id="WriteChars:WriteChars"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -571,30 +652,32 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="WriteChars.html"><span class="name">WriteChars</span></a><span class="result"> extends AnyRef</span>
+        <a href="WriteChars.html"><span class="name">WriteChars</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A trait for objects that can have expect to have characters written to them.</p>
-    </li><li visbl="pub" name="scalax.io.WriteCharsResource" data-isabs="true">
-      <a id="WriteCharsResource:WriteCharsResource[R]"></a>
+    </li><li name="scalax.io.WriteCharsResource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WriteCharsResource[+R]extendsResource[R]withWriteCharswithResourceOps[R,scalax.io.WriteCharsResource[R]]"></a>
+      <a id="WriteCharsResource[+R]:WriteCharsResource[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="WriteCharsResource.html"><span class="name">WriteCharsResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends Resource[R] with WriteChars with ResourceOps[R, WriteCharsResource[R]]</span>
+        <a href="WriteCharsResource.html"><span class="name">WriteCharsResource</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="Resource.html" class="extype" name="scalax.io.Resource">Resource</a>[<span class="extype" name="scalax.io.WriteCharsResource.R">R</span>] with <a href="WriteChars.html" class="extype" name="scalax.io.WriteChars">WriteChars</a> with <a href="ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.WriteCharsResource.R">R</span>, <a href="WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">WriteCharsResource</a>[<span class="extype" name="scalax.io.WriteCharsResource.R">R</span>]]</span>
       </span>
       </h4>
-      <p class="comment cmt">An object that in addition to being a resource is also a <a name="scalax.io.WriteChars" class="extype" href="WriteChars.html">WriteChars</a> Resource.</p>
+      <p class="comment cmt">An object that in addition to being a resource is also a <a href="WriteChars.html" class="extype" name="scalax.io.WriteChars">scalax.io.WriteChars</a> Resource.</p>
     </li></ol>
             </div>
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scalax.io.CloseAction" data-isabs="false">
+              <ol><li name="scalax.io.CloseAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CloseAction"></a>
       <a id="CloseAction:CloseAction"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -602,11 +685,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="CloseAction$.html"><span class="name">CloseAction</span></a><span class="result"> extends AnyRef</span>
+        <a href="CloseAction$.html"><span class="name">CloseAction</span></a>
       </span>
       </h4>
-      <p class="comment cmt">Factory for <a name="scalax.io.CloseAction" class="extype" href="CloseAction.html">CloseAction</a>.</p>
-    </li><li visbl="pub" name="scalax.io.CloseableIterator" data-isabs="false">
+      <p class="comment cmt">Factory for <a href="CloseAction.html" class="extype" name="scalax.io.CloseAction">scalax.io.CloseAction</a>.</p>
+    </li><li name="scalax.io.CloseableIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CloseableIterator"></a>
       <a id="CloseableIterator:CloseableIterator"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -614,11 +698,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="CloseableIterator$.html"><span class="name">CloseableIterator</span></a><span class="result"> extends AnyRef</span>
+        <a href="CloseableIterator$.html"><span class="name">CloseableIterator</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Codec" data-isabs="false">
+    </li><li name="scalax.io.Codec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Codec"></a>
       <a id="Codec:Codec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -626,11 +711,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Codec$.html"><span class="name">Codec</span></a><span class="result"> extends AnyRef</span>
+        <a href="Codec$.html"><span class="name">Codec</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.DefaultResourceContext" data-isabs="false">
+    </li><li name="scalax.io.DefaultResourceContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultResourceContext"></a>
       <a id="DefaultResourceContext:DefaultResourceContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -638,12 +724,13 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DefaultResourceContext$.html"><span class="name">DefaultResourceContext</span></a><span class="result"> extends ResourceContext</span>
+        <a href="DefaultResourceContext$.html"><span class="name">DefaultResourceContext</span></a><span class="result"> extends <a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a></span>
       </span>
       </h4>
       <p class="comment cmt">The default ResourceContext
 </p>
-    </li><li visbl="pub" name="scalax.io.JavaConverters" data-isabs="false">
+    </li><li name="scalax.io.JavaConverters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JavaConverters"></a>
       <a id="JavaConverters:JavaConverters"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -651,11 +738,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JavaConverters$.html"><span class="name">JavaConverters</span></a><span class="result"> extends AnyRef</span>
+        <a href="JavaConverters$.html"><span class="name">JavaConverters</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.Line" data-isabs="false">
+    </li><li name="scalax.io.Line" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Line"></a>
       <a id="Line:Line"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -663,12 +751,13 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Line$.html"><span class="name">Line</span></a><span class="result"> extends AnyRef</span>
+        <a href="Line$.html"><span class="name">Line</span></a>
       </span>
       </h4>
       <p class="comment cmt">A modularizing object for containing objects/classes related to reading lines
 </p>
-    </li><li visbl="pub" name="scalax.io.LongTraversable" data-isabs="false">
+    </li><li name="scalax.io.LongTraversable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongTraversable"></a>
       <a id="LongTraversable:LongTraversable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -676,11 +765,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversable$.html"><span class="name">LongTraversable</span></a><span class="result"> extends GenTraversableFactory[LongTraversable] with TraversableFactory[LongTraversable]</span>
+        <a href="LongTraversable$.html"><span class="name">LongTraversable</span></a><span class="result"> extends <span class="extype" name="scala.collection.generic.GenTraversableFactory">GenTraversableFactory</span>[<a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>] with <span class="extype" name="scala.collection.generic.TraversableFactory">TraversableFactory</span>[<a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>]</span>
       </span>
       </h4>
       <p class="comment cmt">This class is not interesting from an API point of view.</p>
-    </li><li visbl="pub" name="scalax.io.LongTraversableBuilder" data-isabs="false">
+    </li><li name="scalax.io.LongTraversableBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongTraversableBuilder"></a>
       <a id="LongTraversableBuilder:LongTraversableBuilder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -688,11 +778,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversableBuilder$.html"><span class="name">LongTraversableBuilder</span></a><span class="result"> extends AnyRef</span>
+        <a href="LongTraversableBuilder$.html"><span class="name">LongTraversableBuilder</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.LongTraversableLike" data-isabs="false">
+    </li><li name="scalax.io.LongTraversableLike" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongTraversableLike"></a>
       <a id="LongTraversableLike:LongTraversableLike"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -700,11 +791,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LongTraversableLike$.html"><span class="name">LongTraversableLike</span></a><span class="result"> extends AnyRef</span>
+        <a href="LongTraversableLike$.html"><span class="name">LongTraversableLike</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.OutputConverter" data-isabs="false">
+    </li><li name="scalax.io.OutputConverter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OutputConverter"></a>
       <a id="OutputConverter:OutputConverter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -712,12 +804,13 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="OutputConverter$.html"><span class="name">OutputConverter</span></a><span class="result"> extends AnyRef</span>
+        <a href="OutputConverter$.html"><span class="name">OutputConverter</span></a>
       </span>
       </h4>
       <p class="comment cmt">Contains implicit Converter objects for the compiler to resolve the converters for write operations
 </p>
-    </li><li visbl="pub" name="scalax.io.OverwriteAll" data-isabs="false">
+    </li><li name="scalax.io.OverwriteAll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OverwriteAll"></a>
       <a id="OverwriteAll:OverwriteAll"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -725,11 +818,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="OverwriteAll$.html"><span class="name">OverwriteAll</span></a><span class="result"> extends Overwrite with Product with Serializable</span>
+        <a href="OverwriteAll$.html"><span class="name">OverwriteAll</span></a><span class="result"> extends <a href="Overwrite.html" class="extype" name="scalax.io.Overwrite">Overwrite</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Strategy to overwrite as much data as possible.</p>
-    </li><li visbl="pub" name="scalax.io.Resource" data-isabs="false">
+    </li><li name="scalax.io.Resource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Resource"></a>
       <a id="Resource:Resource"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -737,11 +831,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Resource$.html"><span class="name">Resource</span></a><span class="result"> extends AnyRef</span>
+        <a href="Resource$.html"><span class="name">Resource</span></a>
       </span>
       </h4>
       <p class="comment cmt">Defines several factory methods for creating instances of Resource.</p>
-    </li><li visbl="prt" name="scalax.io.ResourceAdapting" data-isabs="false">
+    </li><li name="scalax.io.ResourceAdapting" visbl="prt" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResourceAdapting"></a>
       <a id="ResourceAdapting:ResourceAdapting"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -749,11 +844,25 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="ResourceAdapting$.html"><span class="name">ResourceAdapting</span></a><span class="result"> extends AnyRef</span>
+        <a href="ResourceAdapting$.html"><span class="name">ResourceAdapting</span></a>
       </span>
       </h4>
       <p class="comment cmt">Contains a method</p>
-    </li><li visbl="pub" name="scalax.io.SeekableByteChannel" data-isabs="false">
+    </li><li name="scalax.io.ScalaIOException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScalaIOException"></a>
+      <a id="ScalaIOException:ScalaIOException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ScalaIOException$.html"><span class="name">ScalaIOException</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="scalax.io.SeekableByteChannel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeekableByteChannel"></a>
       <a id="SeekableByteChannel:SeekableByteChannel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -761,11 +870,12 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SeekableByteChannel$.html"><span class="name">SeekableByteChannel</span></a><span class="result"> extends AnyRef</span>
+        <a href="SeekableByteChannel$.html"><span class="name">SeekableByteChannel</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.StandardOpenOption" data-isabs="false">
+    </li><li name="scalax.io.StandardOpenOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StandardOpenOption"></a>
       <a id="StandardOpenOption:StandardOpenOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -773,23 +883,25 @@ or write directly to an output stream depending on the requirements of the calle
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="StandardOpenOption$.html"><span class="name">StandardOpenOption</span></a><span class="result"> extends Enumeration</span>
+        <a href="StandardOpenOption$.html"><span class="name">StandardOpenOption</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
       </span>
       </h4>
       <p class="comment cmt">Several options that are supported by most filesystems.</p>
-    </li><li visbl="prt" name="scalax.io.package#executionContext" data-isabs="false">
-      <a id="executionContext:ExecutionContext"></a>
+    </li><li name="scalax.io.package#executionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="executionContext:scala.concurrent.ExecutionContextExecutor"></a>
+      <a id="executionContext:ExecutionContextExecutor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">executionContext</span><span class="result">: <span name="akka.dispatch.ExecutionContext" class="extype">ExecutionContext</span></span>
+        <span class="name">executionContext</span><span class="result">: <span class="extype" name="scala.concurrent.ExecutionContextExecutor">ExecutionContextExecutor</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="scalax.io.package" class="extype" href="package$.html">package</a></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.extractor" data-isabs="false">
+      
+    </li><li name="scalax.io.extractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extractor"></a>
       <a id="extractor:extractor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -801,7 +913,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.managed" data-isabs="false">
+    </li><li name="scalax.io.managed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="managed"></a>
       <a id="managed:managed"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -813,7 +926,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.nio" data-isabs="false">
+    </li><li name="scalax.io.nio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nio"></a>
       <a id="nio:nio"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -825,7 +939,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.processing" data-isabs="false">
+    </li><li name="scalax.io.processing" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="processing"></a>
       <a id="processing:processing"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -837,7 +952,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.support" data-isabs="false">
+    </li><li name="scalax.io.support" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="support"></a>
       <a id="support:support"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -849,7 +965,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.traversable" data-isabs="false">
+    </li><li name="scalax.io.traversable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="traversable"></a>
       <a id="traversable:traversable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -861,7 +978,8 @@ or write directly to an output stream depending on the requirements of the calle
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scalax.io.unmanaged" data-isabs="false">
+    </li><li name="scalax.io.unmanaged" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="unmanaged"></a>
       <a id="unmanaged:unmanaged"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -877,10 +995,24 @@ or write directly to an output stream depending on the requirements of the calle
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
         
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

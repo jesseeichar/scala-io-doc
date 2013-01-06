@@ -2,34 +2,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>scalax.io.Input</title>
+          <title>Input - Scala IO - scalax.io.Input</title>
+          <meta name="description" content="Input - Scala IO - scalax.io.Input" />
+          <meta name="keywords" content="Input Scala IO scalax.io.Input" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
-      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalax.io.Input';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../lib/trait_big.png" />
-        <p id="owner"><a name="scalax" class="extype" href="../package.html">scalax</a>.<a name="scalax.io" class="extype" href="package.html">io</a></p>
+        <p id="owner"><a href="../package.html" class="extype" name="scalax">scalax</a>.<a href="package.html" class="extype" name="scalax.io">io</a></p>
         <h1>Input</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Input</span><span class="result"> extends AnyRef</span>
+        <span class="name">Input</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An trait for objects that viewed as a sequence of bytes. For example InputStream
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An trait for objects that viewed as a sequence of bytes. For example InputStream
 and ReadableByteChannel could be an Input object.</p><p>Note: All collections returned are non-strict collections and each
 invocation of a method will typically open a new stream or channel.
 That behaviour can be overriden by the implementation but
@@ -37,28 +52,40 @@ it is the default behaviour.</p><p>Default implementation is based on providing 
 bytesAsInts and all other methods are implemented using
 that method.
 </p></div><dl class="attributes block"> <dt>Since</dt><dd><p>1.0
-</p></dd><dt>See also</dt><dd><span class="cmt"><p><a name="scalax.io.WriteChars" class="extype" href="WriteChars.html">WriteChars</a>
-</p></span>, <span class="cmt"><p><a name="scalax.io.ReadChars" class="extype" href="ReadChars.html">ReadChars</a></p></span>, <span class="cmt"><p><a name="scalax.io.Output" class="extype" href="Output.html">Output</a></p></span></dd></dl><div class="toggleContainer block">
+</p></dd><dt>See also</dt><dd><span class="cmt"><p><a href="WriteChars.html" class="extype" name="scalax.io.WriteChars">scalax.io.WriteChars</a>
+</p></span><span class="cmt"><p><a href="ReadChars.html" class="extype" name="scalax.io.ReadChars">scalax.io.ReadChars</a></p></span><span class="cmt"><p><a href="Output.html" class="extype" name="scalax.io.Output">scalax.io.Output</a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="scalax.io.managed.ByteChannelResource" class="extype" href="managed/ByteChannelResource.html">ByteChannelResource</a>, <a name="scalax.file.defaultfs.DefaultPath" class="extype" href="../file/defaultfs/DefaultPath.html">DefaultPath</a>, <a name="scalax.file.FileOps" class="extype" href="../file/FileOps.html">FileOps</a>, <a name="scalax.io.InputResource" class="extype" href="InputResource.html">InputResource</a>, <a name="scalax.io.managed.InputStreamResource" class="extype" href="managed/InputStreamResource.html">InputStreamResource</a>, <a name="scalax.file.Path" class="extype" href="../file/Path.html">Path</a>, <a name="scalax.file.ramfs.RamPath" class="extype" href="../file/ramfs/RamPath.html">RamPath</a>, <a name="scalax.io.unmanaged.ReadableByteChannelResource" class="extype" href="unmanaged/ReadableByteChannelResource.html">ReadableByteChannelResource</a>, <a name="scalax.io.managed.ReadableByteChannelResource" class="extype" href="managed/ReadableByteChannelResource.html">ReadableByteChannelResource</a>, <a name="scalax.io.Seekable" class="extype" href="Seekable.html">Seekable</a>, <a name="scalax.io.managed.SeekableByteChannelResource" class="extype" href="managed/SeekableByteChannelResource.html">SeekableByteChannelResource</a>, <a name="scalax.io.SeekableResource" class="extype" href="SeekableResource.html">SeekableResource</a></div>
+          <div class="subClasses hiddenContent"><a href="managed/ByteChannelResource.html" class="extype" name="scalax.io.managed.ByteChannelResource">ByteChannelResource</a>, <a href="../file/defaultfs/DefaultPath.html" class="extype" name="scalax.file.defaultfs.DefaultPath">DefaultPath</a>, <a href="../file/FileOps.html" class="extype" name="scalax.file.FileOps">FileOps</a>, <a href="InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>, <a href="managed/InputStreamResource.html" class="extype" name="scalax.io.managed.InputStreamResource">InputStreamResource</a>, <a href="../file/Path.html" class="extype" name="scalax.file.Path">Path</a>, <a href="../file/ramfs/RamPath.html" class="extype" name="scalax.file.ramfs.RamPath">RamPath</a>, <a href="unmanaged/ReadableByteChannelResource.html" class="extype" name="scalax.io.unmanaged.ReadableByteChannelResource">ReadableByteChannelResource</a>, <a href="managed/ReadableByteChannelResource.html" class="extype" name="scalax.io.managed.ReadableByteChannelResource">ReadableByteChannelResource</a>, <a href="Seekable.html" class="extype" name="scalax.io.Seekable">Seekable</a>, <a href="managed/SeekableByteChannelResource.html" class="extype" name="scalax.io.managed.SeekableByteChannelResource">SeekableByteChannelResource</a>, <a href="SeekableResource.html" class="extype" name="scalax.io.SeekableResource">SeekableResource</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="scalax.io.Input" class="in"><span>Input</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalax.io.Input"><span>Input</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -71,9 +98,10 @@ that method.
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="scalax.io.Input#blocks" data-isabs="true">
+              <ol><li name="scalax.io.Input#blocks" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="blocks(blockSize:Option[Int]):scalax.io.LongTraversable[scalax.io.ByteBlock]"></a>
       <a id="blocks(Option[Int]):LongTraversable[ByteBlock]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -81,7 +109,7 @@ that method.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">blocks</span><span class="params">(<span name="blockSize">blockSize: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Int" class="extype">Int</span>] = <span class="symbol"><span class="name"><a href="../../scala/package.html">None</a></span></span></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<a name="scalax.io.ByteBlock" class="extype" href="ByteBlock.html">ByteBlock</a>]</span>
+        <span class="name">blocks</span><span class="params">(<span name="blockSize">blockSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<a href="ByteBlock.html" class="extype" name="scalax.io.ByteBlock">ByteBlock</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Read the input as blocks of bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Read the input as blocks of bytes.  This method should be avoided unless the maximum performance is
@@ -90,7 +118,8 @@ blocks is slightly more performance than bytes and therefore
 can be used when performance is the most important consideration.
 </p></div><dl class="paramcmts block"><dt class="param">blockSize</dt><dd class="cmt"><p>block size can optionally be specified but the default is normally acceptable.
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#bytes" data-isabs="true">
+    </li><li name="scalax.io.Input#bytes" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="bytes:scalax.io.LongTraversable[Byte]"></a>
       <a id="bytes:LongTraversable[Byte]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,13 +127,14 @@ can be used when performance is the most important consideration.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bytes</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Byte" class="extype">Byte</span>]</span>
+        <span class="name">bytes</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtains a Traversable for conveniently processing the resource as bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a Traversable for conveniently processing the resource as bytes.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an non-strict traversable over all the bytes
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#chars" data-isabs="true">
+    </li><li name="scalax.io.Input#chars" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="chars(implicitcodec:scalax.io.Codec):scalax.io.LongTraversable[Char]"></a>
       <a id="chars(Codec):LongTraversable[Char]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -112,18 +142,18 @@ can be used when performance is the most important consideration.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">chars</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+        <span class="name">chars</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The characters in the object.</p><div class="fullcomment"><div class="comment cmt"><p>The characters in the object.</p><p>If the codec is not the same as the source codec (the codec of
 the underlying data) then the characters will converted to the
 desired codec.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
-         The codec representing the desired encoding of the characters
-@return
+         The codec representing the desired encoding of the characters</p></dd><dt>returns</dt><dd class="cmt"><p>
          an traversable of all the characters
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#context" data-isabs="true">
+    </li><li name="scalax.io.Input#context" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="context:scalax.io.ResourceContext"></a>
       <a id="context:ResourceContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -131,14 +161,15 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">context</span><span class="result">: <a name="scalax.io.ResourceContext" class="extype" href="ResourceContext.html">ResourceContext</a></span>
+        <span class="name">context</span><span class="result">: <a href="ResourceContext.html" class="extype" name="scalax.io.ResourceContext">ResourceContext</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the Resource context that configures how the underlying resource is accessed
 </p><div class="fullcomment"><div class="comment cmt"><p>Get the Resource context that configures how the underlying resource is accessed
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the associated ResourceContext
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#size" data-isabs="true">
+    </li><li name="scalax.io.Input#size" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="size:Option[Long]"></a>
       <a id="size:Option[Long]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -146,7 +177,7 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">size</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Long" class="extype">Long</span>]</span>
+        <span class="name">size</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The number of bytes that can be read from the underlying resource.</p><div class="fullcomment"><div class="comment cmt"><p>The number of bytes that can be read from the underlying resource.</p><p>if length == None then it is not possible to determine the
@@ -155,9 +186,10 @@ number of bytes in advance.
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,11 +197,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -177,11 +210,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -189,11 +223,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -201,11 +236,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,11 +249,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -225,11 +262,12 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#byteArray" data-isabs="false">
+    </li><li name="scalax.io.Input#byteArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="byteArray:Array[Byte]"></a>
       <a id="byteArray:Array[Byte]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -237,12 +275,13 @@ number of bytes in advance.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">byteArray</span><span class="result">: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Byte" class="extype">Byte</span>]</span>
+        <span class="name">byteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">This method aspires to be the fastest way to read
 a stream of known length into memory.</p>
-    </li><li visbl="pub" name="scalax.io.Input#bytesAsInts" data-isabs="false">
+    </li><li name="scalax.io.Input#bytesAsInts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bytesAsInts:scalax.io.LongTraversable[Int]"></a>
       <a id="bytesAsInts:LongTraversable[Int]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -250,13 +289,14 @@ a stream of known length into memory.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bytesAsInts</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[<span name="scala.Int" class="extype">Int</span>]</span>
+        <span class="name">bytesAsInts</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtains a Traversable for conveniently processing the file as Ints.</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a Traversable for conveniently processing the file as Ints.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an non-strict traversable over all the bytes with the bytes being represented as Ints
 </p></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -264,14 +304,15 @@ a stream of known length into memory.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#copyDataTo" data-isabs="false">
+    </li><li name="scalax.io.Input#copyDataTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyDataTo(output:scalax.io.Output):Unit"></a>
       <a id="copyDataTo(Output):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -279,14 +320,15 @@ a stream of known length into memory.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyDataTo</span><span class="params">(<span name="output">output: <a name="scalax.io.Output" class="extype" href="Output.html">Output</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">copyDataTo</span><span class="params">(<span name="output">output: <a href="Output.html" class="extype" name="scalax.io.Output">Output</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Copy all data from this Input object to the Output object
 as efficiently as possible.</p><div class="fullcomment"><div class="comment cmt"><p>Copy all data from this Input object to the Output object
 as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="param">output</dt><dd class="cmt"><p>output sink to copy the data to
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -294,11 +336,12 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -306,11 +349,12 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -318,26 +362,28 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -345,11 +391,12 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -357,11 +404,12 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#lines" data-isabs="false">
+    </li><li name="scalax.io.Input#lines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lines(terminator:scalax.io.Line.Terminators.Terminator,includeTerminator:Boolean)(implicitcodec:scalax.io.Codec):scalax.io.LongTraversable[String]"></a>
       <a id="lines(Terminator,Boolean)(Codec):LongTraversable[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -369,7 +417,7 @@ as efficiently as possible.</p></div><dl class="paramcmts block"><dt class="para
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lines</span><span class="params">(<span name="terminator">terminator: <a name="scalax.io.Line.Terminators.Terminator" class="extype" href="Line$$Terminators$$Terminator.html">Terminator</a> = <span class="symbol"><span class="name"><a href="Line$.html">Terminators.Auto</a></span></span></span>, <span name="includeTerminator">includeTerminator: <span name="scala.Boolean" class="extype">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a name="scalax.io.LongTraversable" class="extype" href="LongTraversable.html">LongTraversable</a>[String]</span>
+        <span class="name">lines</span><span class="params">(<span name="terminator">terminator: <a href="Line$$Terminators$$Terminator.html" class="extype" name="scalax.io.Line.Terminators.Terminator">Terminator</a> = <span class="symbol"><span class="name"><a href="Line$.html">Terminators.Auto</a></span></span></span>, <span name="includeTerminator">includeTerminator: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <a href="LongTraversable.html" class="extype" name="scalax.io.LongTraversable">LongTraversable</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Obtain an non-strict traversable for iterating through the lines in the object</p><div class="fullcomment"><div class="comment cmt"><p>Obtain an non-strict traversable for iterating through the lines in the object</p><p>If the codec is not the same as the source codec (the codec of
@@ -379,11 +427,13 @@ desired codec.
          The strategy for determining the end of line
          Default is to auto-detect the EOL</p></dd><dt class="param">includeTerminator</dt><dd class="cmt"><p>
          if true then the line will end with the line terminator
-         Default is false</p><p>@return
-         a non-strict traversable for iterating through all the lines
+         Default is false
 </p></dd><dt class="param">codec</dt><dd class="cmt"><p>
-         The codec representing the desired encoding of the characters</p></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+         The codec representing the desired encoding of the characters</p></dd><dt>returns</dt><dd class="cmt"><p>
+         a non-strict traversable for iterating through all the lines
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -391,11 +441,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -403,11 +454,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -415,11 +467,12 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scalax.io.Input#string" data-isabs="false">
+    </li><li name="scalax.io.Input#string" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="string(implicitcodec:scalax.io.Codec):String"></a>
       <a id="string(Codec):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -427,7 +480,7 @@ desired codec.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">string</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a name="scalax.io.Codec" class="extype" href="Codec.html">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">string</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <a href="Codec.html" class="extype" name="scalax.io.Codec">Codec</a> = <span class="symbol"><span class="name"><a href="Codec$.html">Codec.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads all the characters into memory.</p><div class="fullcomment"><div class="comment cmt"><p>Loads all the characters into memory. There is no protection against
@@ -435,19 +488,21 @@ loading very large files/amounts of data.
 </p></div><dl class="paramcmts block"><dt class="param">codec</dt><dd class="cmt"><p>
          The codec representing the desired encoding of the characters
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -455,11 +510,12 @@ loading very large files/amounts of data.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -467,14 +523,15 @@ loading very large files/amounts of data.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -482,14 +539,15 @@ loading very large files/amounts of data.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -497,7 +555,7 @@ loading very large files/amounts of data.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -508,13 +566,23 @@ loading very large files/amounts of data.
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

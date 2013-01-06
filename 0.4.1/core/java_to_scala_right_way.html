@@ -1,7 +1,7 @@
 <span>
     <div class="example_summary"><span><span> The right way to convert java IO objects to Scala IO objects </span></span></div>
     <div class="example_code"><pre class="brush: scala">
-    import scalax.io.Resource
+        import scalax.io.Resource
     val in = Resource.fromReader(new StringReader(&quot;hello&quot;))
 
     val numVowels = in.chars.filter(&quot;aeiou&quot; contains _).size
