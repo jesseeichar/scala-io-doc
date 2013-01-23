@@ -1,0 +1,31 @@
+<span>
+    <div class="example_summary"><span><span> Examples of a grab bag of useful Seq methods.  </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    val file1 = Resource.fromFile(&quot;file1&quot;)
+    val file2 = Resource.fromFile(&quot;file2&quot;)
+
+    // obtain fourth byte.  In this case a FileChannel is opened, the index
+    // is moved to the third byte and one byte is read making the method
+    // relatively efficient (notice the word relatively ;-) )
+    val fourthByte = file1.bytes(3)
+
+    val firstIndexOfB = file1.chars.indexOf('B')
+
+    // Find the index of the last line with more than thirty characters
+    // Since the line is read from the file it might be more useful to
+    // perform use find to actually find the line, but who knows what the usecase is
+    val greaterThan30Characters = file1.lines().lastIndexWhere(_.size &gt; 30)
+
+    // check if file 1 startsWith file 2
+    file1.bytes.startsWith(file2.bytes)
+
+    // The number of consecutive lines starting at 0 containing e
+    file1.lines().segmentLength(_ contains &quot;e&quot;,0)
+
+    // check if all lines in file1 are the same as in file2 ignoring case
+    file1.lines().corresponds(file2.lines())(_ equalsIgnoreCase _)
+  </pre></div>
+    <span></span>
+  </span>

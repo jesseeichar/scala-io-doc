@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>managed - Scala IO - scalax.io.managed</title>
+          <meta name="description" content="managed - Scala IO - scalax.io.managed" />
+          <meta name="keywords" content="managed Scala IO scalax.io.managed" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalax.io.managed.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="scalax">scalax</a>.<a href="../package.html" class="extype" name="scalax.io">io</a></p>
+        <h1>managed</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">managed</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="scalax.io.managed.ByteChannelResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteChannelResource[+A&lt;:java.nio.channels.ByteChannel]extendsInputResource[A]withOutputResource[A]withResourceOps[A,scalax.io.managed.ByteChannelResource[A]]"></a>
+      <a id="ByteChannelResource[+A&lt;:ByteChannel]:ByteChannelResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteChannelResource.html"><span class="name">ByteChannelResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.nio.channels.ByteChannel">ByteChannel</span></span>]</span><span class="result"> extends <a href="../InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.managed.ByteChannelResource.A">A</span>] with <a href="../OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.managed.ByteChannelResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.ByteChannelResource.A">A</span>, <a href="ByteChannelResource.html" class="extype" name="scalax.io.managed.ByteChannelResource">ByteChannelResource</a>[<span class="extype" name="scalax.io.managed.ByteChannelResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A for accessing and using ByteChannels.</p>
+    </li><li name="scalax.io.managed.InputStreamResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InputStreamResource[+A&lt;:java.io.InputStream]extendsInputResource[A]withResourceOps[A,scalax.io.managed.InputStreamResource[A]]"></a>
+      <a id="InputStreamResource[+A&lt;:InputStream]:InputStreamResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InputStreamResource.html"><span class="name">InputStreamResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.io.InputStream">InputStream</span></span>]</span><span class="result"> extends <a href="../InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.managed.InputStreamResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.InputStreamResource.A">A</span>, <a href="InputStreamResource.html" class="extype" name="scalax.io.managed.InputStreamResource">InputStreamResource</a>[<span class="extype" name="scalax.io.managed.InputStreamResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using InputStreams.</p>
+    </li><li name="scalax.io.managed.OutputStreamResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OutputStreamResource[+A&lt;:java.io.OutputStream]extendsOutputResource[A]withResourceOps[A,scalax.io.managed.OutputStreamResource[A]]"></a>
+      <a id="OutputStreamResource[+A&lt;:OutputStream]:OutputStreamResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OutputStreamResource.html"><span class="name">OutputStreamResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>]</span><span class="result"> extends <a href="../OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.managed.OutputStreamResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.OutputStreamResource.A">A</span>, <a href="OutputStreamResource.html" class="extype" name="scalax.io.managed.OutputStreamResource">OutputStreamResource</a>[<span class="extype" name="scalax.io.managed.OutputStreamResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using OutputStreams.</p>
+    </li><li name="scalax.io.managed.ReadableByteChannelResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadableByteChannelResource[+A&lt;:java.nio.channels.ReadableByteChannel]extendsInputResource[A]withResourceOps[A,scalax.io.managed.ReadableByteChannelResource[A]]"></a>
+      <a id="ReadableByteChannelResource[+A&lt;:ReadableByteChannel]:ReadableByteChannelResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReadableByteChannelResource.html"><span class="name">ReadableByteChannelResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.nio.channels.ReadableByteChannel">ReadableByteChannel</span></span>]</span><span class="result"> extends <a href="../InputResource.html" class="extype" name="scalax.io.InputResource">InputResource</a>[<span class="extype" name="scalax.io.managed.ReadableByteChannelResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.ReadableByteChannelResource.A">A</span>, <a href="ReadableByteChannelResource.html" class="extype" name="scalax.io.managed.ReadableByteChannelResource">ReadableByteChannelResource</a>[<span class="extype" name="scalax.io.managed.ReadableByteChannelResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using ByteChannels.</p>
+    </li><li name="scalax.io.managed.ReaderResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReaderResource[+A&lt;:java.io.Reader]extendsReadCharsResource[A]withResourceOps[A,scalax.io.managed.ReaderResource[A]]"></a>
+      <a id="ReaderResource[+A&lt;:Reader]:ReaderResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReaderResource.html"><span class="name">ReaderResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.io.Reader">Reader</span></span>]</span><span class="result"> extends <a href="../ReadCharsResource.html" class="extype" name="scalax.io.ReadCharsResource">ReadCharsResource</a>[<span class="extype" name="scalax.io.managed.ReaderResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.ReaderResource.A">A</span>, <a href="ReaderResource.html" class="extype" name="scalax.io.managed.ReaderResource">ReaderResource</a>[<span class="extype" name="scalax.io.managed.ReaderResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using Readers.</p>
+    </li><li name="scalax.io.managed.SeekableByteChannelResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeekableByteChannelResource[+A&lt;:scalax.io.SeekableByteChannel]extendsSeekableResource[A]withResourceOps[A,scalax.io.managed.SeekableByteChannelResource[A]]"></a>
+      <a id="SeekableByteChannelResource[+A&lt;:SeekableByteChannel]:SeekableByteChannelResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SeekableByteChannelResource.html"><span class="name">SeekableByteChannelResource</span></a><span class="tparams">[<span name="A">+A &lt;: <a href="../SeekableByteChannel.html" class="extype" name="scalax.io.SeekableByteChannel">SeekableByteChannel</a></span>]</span><span class="result"> extends <a href="../SeekableResource.html" class="extype" name="scalax.io.SeekableResource">SeekableResource</a>[<span class="extype" name="scalax.io.managed.SeekableByteChannelResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.SeekableByteChannelResource.A">A</span>, <a href="SeekableByteChannelResource.html" class="extype" name="scalax.io.managed.SeekableByteChannelResource">SeekableByteChannelResource</a>[<span class="extype" name="scalax.io.managed.SeekableByteChannelResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using SeekableByteChannels.</p>
+    </li><li name="scalax.io.managed.WritableByteChannelResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WritableByteChannelResource[+A&lt;:java.nio.channels.WritableByteChannel]extendsOutputResource[A]withResourceOps[A,scalax.io.managed.WritableByteChannelResource[A]]"></a>
+      <a id="WritableByteChannelResource[+A&lt;:WritableByteChannel]:WritableByteChannelResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WritableByteChannelResource.html"><span class="name">WritableByteChannelResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.nio.channels.WritableByteChannel">WritableByteChannel</span></span>]</span><span class="result"> extends <a href="../OutputResource.html" class="extype" name="scalax.io.OutputResource">OutputResource</a>[<span class="extype" name="scalax.io.managed.WritableByteChannelResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.WritableByteChannelResource.A">A</span>, <a href="WritableByteChannelResource.html" class="extype" name="scalax.io.managed.WritableByteChannelResource">WritableByteChannelResource</a>[<span class="extype" name="scalax.io.managed.WritableByteChannelResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using ByteChannels.</p>
+    </li><li name="scalax.io.managed.WriterResource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WriterResource[+A&lt;:java.io.Writer]extendsWriteCharsResource[A]withResourceOps[A,scalax.io.managed.WriterResource[A]]"></a>
+      <a id="WriterResource[+A&lt;:Writer]:WriterResource[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WriterResource.html"><span class="name">WriterResource</span></a><span class="tparams">[<span name="A">+A &lt;: <span class="extype" name="java.io.Writer">Writer</span></span>]</span><span class="result"> extends <a href="../WriteCharsResource.html" class="extype" name="scalax.io.WriteCharsResource">WriteCharsResource</a>[<span class="extype" name="scalax.io.managed.WriterResource.A">A</span>] with <a href="../ResourceOps.html" class="extype" name="scalax.io.ResourceOps">ResourceOps</a>[<span class="extype" name="scalax.io.managed.WriterResource.A">A</span>, <a href="WriterResource.html" class="extype" name="scalax.io.managed.WriterResource">WriterResource</a>[<span class="extype" name="scalax.io.managed.WriterResource.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A ManagedResource for accessing and using Writers.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,17 @@
+<span>
+    <div class="example_summary"><span><span> obtains name and path information </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.Path
+
+    val path: Path = Path(&quot;file&quot;)
+
+    val name: String = path.name
+    val pathString: String = path.path
+    val segments = path.segments
+    val absolute: Boolean = path.isAbsolute
+    val absolutePath: Path = path.toAbsolute
+
+    val pathSegments: Seq[String] = path.segments
+  </pre></div>
+    <span></span>
+  </span>

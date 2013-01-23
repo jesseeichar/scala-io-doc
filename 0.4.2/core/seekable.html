@@ -1,0 +1,9 @@
+<span>
+    <div class="example_summary"><span><span> Seekable permits random access read and write.  <div><strong>NOTE:</strong> insert positions depend on the type of data being inserted <pre>insert(6,5L)</pre> will be insert 5L after the 6th Long(or 48th byte) in the Seekable </div> </span></span></div>
+    
+    <ul ng:class="sectionId" id="content-list">
+          <li ng:repeat="example in examples" ng:class="getClass(example)">
+            <a ng:class="selectedPartial(example)" tabindex="3" href="{{getUrl(example)}}"> <strong>{{example.shortName}}</strong> - <em>{{example.shortSummary}}</em></a>
+          </li>
+        </ul>
+  </span>

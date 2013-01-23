@@ -1,0 +1,22 @@
+<span>
+    <div class="example_summary"><span><span> Asynchronously read the header of a file and print the header in a more legible form.  <p> The other simplest method for async IO is to create an AsyncLongTraversable from a LongTraversable by calling the async method on LongTraversable.  </p><p> Each LongTraversable object has a async method that provides access to the blocking methods in a non-blocking manner.  In other words, methods like foreach or apply will block the calling thread until the data is read from the input source.  More often than not this is not desired behaviour.  </p><p> The async method on LongTraversable returns an object with a similar API to LongTraversable except it only contains the blocking methods and those methods all return Futures.  </p><p> Since the returned methods are futures the actual IO is performed asynchronously and the calling thread can use the future to poll or register a callback for the result.  </p> </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.Resource
+
+    val lines = Resource.fromFile(&quot;/tmp/file&quot;).lines()
+    val HeaderPattern = &quot;&quot;&quot;(???)(.*)&quot;&quot;&quot;.r
+
+    // once we have a LongTraversable we can convert the file to a AsyncLongTraversable and call
+    // head on that object.  This will return a Future[String] and reading of the files will
+    // have started in a seperate thread
+    val headFuture = lines.async.head
+
+    implicit val context = scalax.io.executionContext
+    // When the data has been read from the file the result will be passed to the
+    // function registered with onSuccess
+    headFuture.onSuccess{
+      case HeaderPattern(recordCount, description) =&gt; println(&quot;There are &quot;+recordCount+&quot;: &quot;+description)
+    }
+  </pre></div>
+    <span></span>
+  </span>

@@ -1,0 +1,59 @@
+<span>
+    <div class="example_summary"><span><span> Process only a portion of a file asynchronously.  A common case is to only process a portion of a file.  For example suppose we want the 5th record.  a record size is in the header so we have to read the header for the offset and jump to the 5th record.  <p> In truth this sort of processing is what the processing API was designed for but it can be done using the normal LongTraversable API as well using the fold methods </p> </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io.{Resource, Continue, End}
+    import scala.util.{Success, Failure}
+
+    val bytes = Resource.fromFile(&quot;/tmp/file&quot;).bytes
+
+    /*
+     * The State classes define the different stages
+     * of the process.  This has nothing to do with
+     * the scala-io framework it is just a useful
+     * way to implement folding in a readable way
+     */
+    trait State {
+      def value:Seq[Byte] = Nil
+    }
+
+    /**
+     * The first state.  If the state is Empty then the next element
+     * is the record length which we need to record and skip to the
+     * desired record with a Continue
+     */
+    case object Empty extends State
+
+    /**
+     * The second state.  Indicates we have the record length and
+     * have jumped to the desired record.
+     */
+    case class Searcher(recordLength:Int) extends State
+
+    /**
+     * The final state.  Indicates that we are reading the record bytes
+     * when recordLength == value.size we are done and can End the process
+     */
+    case class Value(recordLength:Int, override val value:Seq[Byte]) extends State
+
+    // we could perform the fold on bytes but we will be smart and perform it
+    // on the AsyncLongTraversable instead so that the process won't block
+    val desiredRecord = bytes.async.limitFold(Empty:State) {
+      case (Empty, recordLength) =&gt;
+        Continue(Searcher(recordLength), recordLength * 5)
+      case (Searcher(recordLength),byte) =&gt;
+        Continue(Value(recordLength, Vector(byte)))
+      case (Value(recordLength, sofar),next) if recordLength &gt; sofar.size - 1 =&gt;
+        Continue(Value(recordLength, sofar :+ next))
+      case (Value(recordLength, sofar),next) =&gt;
+        End(Value(recordLength, sofar :+ next))
+    }
+
+    implicit val context = scalax.io.executionContext
+    // Last step is to handle the result from the process
+    desiredRecord.onComplete{
+      case Success(Value(_, record)) =&gt; () // do something
+      case Failure(error) =&gt; () // uh oh need to handle error
+    }
+  </pre></div>
+    <span></span>
+  </span>

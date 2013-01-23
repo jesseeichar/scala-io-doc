@@ -1,0 +1,13 @@
+<span>
+    <div class="example_summary"><span><span> Explicitly declare a custom line terminator and <em>do not</em> include terminator </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Line.Terminators.Custom
+
+    val resource = Resource.fromFile(&quot;file&quot;)
+    // read each segment ending in ** but do not include **
+    val lines = resource.lines(terminator=Custom(&quot;**&quot;), includeTerminator=false)
+    println(lines.size)
+  </pre></div>
+    <span></span>
+  </span>

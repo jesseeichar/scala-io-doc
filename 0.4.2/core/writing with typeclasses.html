@@ -1,0 +1,9 @@
+<span>
+    <div class="example_summary"><span><span> Details on how output is converted to bytes and how the design can be extended and used.  <div> Many common types of objects can be written to an Output object or seekable object and is converted to bytes by the implicitly selected OutputConverter object </div> </span></span></div>
+    
+    <ul ng:class="sectionId" id="content-list">
+          <li ng:repeat="example in examples" ng:class="getClass(example)">
+            <a ng:class="selectedPartial(example)" tabindex="3" href="{{getUrl(example)}}"> <strong>{{example.shortName}}</strong> - <em>{{example.shortSummary}}</em></a>
+          </li>
+        </ul>
+  </span>

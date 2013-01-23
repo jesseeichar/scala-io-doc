@@ -1,0 +1,1 @@
+var IO_PROPS = {groupId: "com.github.scala-incubator.io",version: "0.4.2",scalaVersion: "2.10.0",scalaBaseVersion: "2.10",armVersion: "1.3",scalaArmVersion: "2.10",ioMavenPath: "com.github.scala-incubator.io".replace(/\./g,'/'),SNAPSHOT_BLURB: "",SNAPSHOT_DOWNLOAD_URL: "https://oss.sonatype.org/content/repositories/releases/",};
