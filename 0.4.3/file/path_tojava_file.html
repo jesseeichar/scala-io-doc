@@ -1,0 +1,12 @@
+<span>
+    <div class="example_summary"><span><span> Implicitly convert files to paths </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import java.io.File
+    import scalax.file.FileSystem
+    import scalax.file.ImplicitConversions.defaultPath2jfile
+
+    // DefaultPath objects can be converted to java.io.File objects
+    val file: File = FileSystem.default(&quot;somefile&quot;)
+  </pre></div>
+    <span></span>
+  </span>

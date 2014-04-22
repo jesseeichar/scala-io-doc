@@ -1,0 +1,13 @@
+<span>
+    <div class="example_summary"><span><span> Inserts data anywhere in the file/seekable object </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+
+    // see codec example for why codec is required
+    implicit val codec = Codec.UTF8
+
+    val someFile: Seekable = Resource.fromFile(&quot;someFile&quot;)
+    someFile.insert(3,List[Byte](3,2,1))
+  </pre></div>
+    <span></span>
+  </span>

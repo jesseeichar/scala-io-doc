@@ -1,0 +1,19 @@
+<span>
+    <div class="example_summary"><span><span> Several examples of creating Resources </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+     import scalax.io._
+     import scalax.io.managed._
+     import java.io._
+     import java.nio.channels.{FileChannel, ReadableByteChannel, WritableByteChannel, Channels}
+     import java.net.URL
+
+     // see codec examples in scala io core for details on why there is an implicit codec here
+     implicit val codec = scalax.io.Codec.UTF8
+
+     val readableByteChannel = Channels.newChannel(new FileInputStream(&quot;file&quot;))
+     val readChannel : ReadableByteChannelResource[ReadableByteChannel] =
+               Resource.fromReadableByteChannel(readableByteChannel)
+     val in2:Input = readChannel
+   </pre></div>
+    <span></span>
+  </span>

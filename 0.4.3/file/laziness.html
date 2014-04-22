@@ -1,0 +1,25 @@
+<span>
+    <div class="example_summary"><span><span></span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.file.{Path, PathMatcher }
+    import scalax.file.PathMatcher._
+
+    val path: Path = Path(&quot;/tmp/&quot;)
+
+    // all children of path.  the filesystem is not read touched
+    val allChildren = path.children()
+
+    // all files of children.  Still no filesystem access
+    val files = allChildren.filter(IsFile)
+
+    // all files smaller than 1000 bytes.  Still no filesystem access
+    val smallFiles = files.filter(_.size.forall(_ &lt; 1000))
+
+    // sizes of files.  still not filesystem access
+    val sizes = smallFiles.flatMap(_.size)
+
+    //val actualSizes = sizes.force
+
+  </pre></div>
+    <span></span>
+  </span>

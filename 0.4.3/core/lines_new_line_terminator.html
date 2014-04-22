@@ -1,0 +1,11 @@
+<span>
+    <div class="example_summary"><span><span> Explicitly declare line ending as NewLine and <em>do not</em> include terminator </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Line.Terminators.NewLine
+
+    val lines = Resource.fromFile(&quot;file&quot;).lines(NewLine,false)
+    println(lines.size)
+  </pre></div>
+    <span></span>
+  </span>

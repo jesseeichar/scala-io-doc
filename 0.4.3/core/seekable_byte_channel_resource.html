@@ -1,0 +1,35 @@
+<span>
+    <div class="example_summary"><span><span> Create Resource from an files and RandomAccessFiles.  These channels extend Seekable Trait which is a subtrait of Input and Output Traits </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+     import scalax.io._
+     import scalax.io.managed._
+     import java.io._
+     import java.nio.channels.{FileChannel, ReadableByteChannel, WritableByteChannel, Channels}
+     import java.net.URL
+
+     // One way to create a SeekableByteChannel which is a Seekable object
+     val channel: SeekableByteChannelResource[SeekableByteChannel] = Resource.fromFile(&quot;file&quot;)
+
+     // A second way to create a SeekableByteChannel which is a Seekable object
+     val channel2: SeekableByteChannelResource[SeekableByteChannel] =
+         Resource.fromRandomAccessFile(new RandomAccessFile(&quot;file&quot;,&quot;rw&quot;))
+
+     // demonstrate that resources are Seekable and Input and Output objects
+     val seekable: Seekable = channel2
+     val inOut: Input with Output = channel
+
+     // It is important to create the Resource correctly.  The following has an underlying Resource
+     // of type FileChannel but it is not Seekable, it is just an Input and Output Subclass
+     val channel3: ByteChannelResource[FileChannel] =
+       Resource.fromByteChannel(new RandomAccessFile(&quot;file&quot;,&quot;rw&quot;).getChannel)
+     val inOut2: Input with Output = channel2
+     
+     // ByteChannels also have conversion methods to outputStream, inputStream, 
+     // reader, writer, etc...
+     val outputStreamResource = channel3.outputStream
+     channel2.writer
+     channel.inputStream
+     channel.readableByteChannel
+   </pre></div>
+    <span></span>
+  </span>

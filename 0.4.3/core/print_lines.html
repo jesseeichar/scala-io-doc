@@ -1,0 +1,25 @@
+<span>
+    <div class="example_summary"><span><span> read and print out all lines from a URL </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+    import scalax.io._
+    import Resource._
+    import java.net.URL
+
+    // see codec example for why codec is required
+    implicit val codec = Codec.UTF8
+
+    val url:Input = fromURL(&quot;file://someFile&quot;)
+
+    // by default the line terminator is stripped and is
+    // auto detected
+    url.lines() foreach println _
+
+    // now do not strip terminator
+    url.lines (includeTerminator = true) foreach print _
+
+    // now declare explicitly the terminator
+    // terminator is restricted to 1 or 2 characters
+    url.lines (terminator = Line.Terminators.NewLine) foreach println _
+  </pre></div>
+    <span></span>
+  </span>

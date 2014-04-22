@@ -1,0 +1,22 @@
+<span>
+    <div class="example_summary"><span><span> Create Resource from an Output Stream.  Perform some conversions to obtain other types of Resources </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+     import scalax.io._
+     import scalax.io.managed._
+     import java.io._
+     import java.nio.channels.{FileChannel, ReadableByteChannel, WritableByteChannel, Channels}
+     import java.net.URL
+    
+    val outputStream: FileOutputStream = new FileOutputStream(&quot;file&quot;)
+    
+    // create a resource from a FileOutputStream.  The Resource extends Output Trait
+    val out: OutputStreamResource[OutputStream] = Resource.fromOutputStream(outputStream)
+
+    // Convert the output resource to a Resource based on a WritableByteChannel.  The Resource extends Output Trait
+    val writableChannel: WritableByteChannelResource[WritableByteChannel] = out.writableByteChannel
+    
+    // Convert the output resource to a WriterResource which extends the WriteChars Trait and is based on a Writer
+    val writer: WriterResource[Writer] = out.writer
+  </pre></div>
+    <span></span>
+  </span>

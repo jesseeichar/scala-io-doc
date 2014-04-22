@@ -1,0 +1,14 @@
+<span>
+    <div class="example_summary"><span><span> The right way to convert java IO objects to Scala IO objects </span></span></div>
+    <div class="example_code"><pre class="brush: scala">
+        import scalax.io.Resource
+    val in = Resource.fromReader(new StringReader(&quot;hello&quot;))
+
+    val numVowels = in.chars.filter(&quot;aeiou&quot; contains _).size
+
+    // resource can be reused because the *creation* of the reader is passed to fromReader
+    // the creation code is captured so Resource can instantiate a new reader for each use of the resource
+    val numNumbers = in.chars.filter('0' to '9' contains _)
+  </pre></div>
+    <span></span>
+  </span>
